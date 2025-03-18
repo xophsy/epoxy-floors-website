@@ -1,20 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
+    <!-- Metadata and responsive design settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epoxy Floors | Premium Flooring Solutions</title>
+
+    <!-- Importing Google Font: Montserrat -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        
+
+        /* General body styling */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #f5d76e;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f5d76e; /* Gold accent text */
             text-align: center;
         }
+
+        /* Header with logo */
         .header {
             display: flex;
             justify-content: center;
@@ -22,10 +28,13 @@
             padding: 20px;
             background-color: #2e2e2e;
         }
+
         .header img {
             max-width: 150px;
             height: auto;
         }
+
+        /* Hero section with background image and CTA */
         .hero {
             height: 100vh;
             display: flex;
@@ -34,100 +43,104 @@
             align-items: center;
             background: url('hero-image.jpg') no-repeat center center/cover;
         }
+
         .hero h1 {
             font-size: 3.5rem;
             margin: 0;
-            text-shadow: 2px 2px 15px rgba(255, 215, 0, 0.8);
+            text-shadow: 2px 2px 15px rgba(255, 215, 0, 0.8); /* Gold shadow effect */
             color: #ffd700;
         }
-        .hero p {
-            font-size: 1.5rem;
-        }
+
         .cta-button {
             background-color: #ffd700;
             color: #1a1a1a;
             padding: 15px 30px;
-            font-size: 1.3rem;
-            text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
-            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+            font-weight: bold;
         }
+
         .cta-button:hover {
             background-color: #e6c300;
             box-shadow: 0 6px 15px rgba(255, 215, 0, 0.7);
         }
+
+        /* Showcase styling for design gallery */
         .showcase {
             padding: 40px 20px;
             background-color: #2e2e2e;
             color: #fff;
         }
-        .showcase h2 {
-            color: #ffd700;
-            margin-bottom: 20px;
-        }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
+
         .gallery img {
             width: 100%;
             max-width: 300px;
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s;
         }
+
         .gallery img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Zoom effect */
         }
+
+        /* Quote section styling */
         .quote-section {
             padding: 50px;
             background-color: #1e1e1e;
             color: #fff;
         }
-        .quote-section h2 {
-            color: #ffd700;
-        }
+
         .quote-form {
             display: flex;
             flex-direction: column;
             max-width: 400px;
             margin: 0 auto;
         }
+
         .quote-form input, .quote-form textarea {
             margin: 10px 0;
             padding: 10px;
-            font-size: 1rem;
             border-radius: 5px;
             border: none;
         }
+
         .quote-form button {
             background-color: #ffd700;
             color: #1a1a1a;
             padding: 10px;
-            font-size: 1.2rem;
-            border: none;
             cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s;
         }
+
         .quote-form button:hover {
             background-color: #e6c300;
         }
     </style>
 </head>
 <body>
+    <!-- Header with Logo -->
     <div class="header">
         <img src="images/1.png" alt="Epoxy Floors Logo">
     </div>
+
+    <!-- Hero section with main message and CTA -->
     <div class="hero">
-        <h1>Epoxy Floors</h1>
+        <h1>Epoxy Floor Designs</h1>
         <p>Durable, Elegant, and Customizable Solutions for Your Space</p>
         <a href="#quote" class="cta-button">Get a Free Quote</a>
     </div>
-    
+
+    <!-- Flooring showcase gallery -->
     <div class="showcase">
         <h2>Our Epoxy Flooring Designs</h2>
         <div class="gallery">
@@ -137,7 +150,8 @@
             <img src="https://tse3.mm.bing.net/th?id=OIP.PwQV76xfOM_8NnrxGy5p5AHaJ4&pid=Api" alt="Epoxy Floor Design 4">
         </div>
     </div>
-    
+
+    <!-- Quote request form -->
     <div class="quote-section" id="quote">
         <h2>Get a Free Quote</h2>
         <form class="quote-form">
