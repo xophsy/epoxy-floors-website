@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Epoxy - Premium Epoxy Flooring Solutions</title>
+    <title>Epoxy Floors - Premium Epoxy Flooring Solutions</title>
     <style>
         * {
             margin: 0;
@@ -608,14 +608,14 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form animate-on-scroll">
-                    <form onsubmit="handleFormSubmit(event)">
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <input type="text" id="name" name="from_name" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            <input type="email" id="email" name="from_email" required placeholder="your@email.com">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
@@ -623,9 +623,9 @@
                         </div>
                         <div class="form-group">
                             <label for="project">Project Details</label>
-                            <textarea id="project" name="project" rows="4" placeholder="Tell us about your project..."></textarea>
+                            <textarea id="project" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary" id="submit-btn">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info animate-on-scroll">
@@ -670,6 +670,14 @@
             <p>&copy; 2025 Golden Epoxy. All rights reserved. | Licensed & Insured | Lifetime Warranty Available</p>
         </div>
     </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("xA4JPLCqeYzLRmG0t");
+        })();
+    </script>
 
     <script>
         // Smooth scrolling for navigation links
@@ -718,16 +726,42 @@
             observer.observe(el);
         });
 
-        // Form submission handler
+        // Form submission handler with EmailJS
         function handleFormSubmit(event) {
             event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
             
-            // Here you would normally send the data to your server
-            // For now, we'll just show a success message
-            alert('Thank you for your inquiry! We will contact you within 24 hours to discuss your project.');
-            form.reset();
+            const form = event.target;
+            const submitBtn = document.getElementById('submit-btn');
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Send email using EmailJS
+            emailjs.sendForm('service_ch9qdf9', 'template_xbuypxq', form)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
+                    alert('Thank you for your inquiry! We have received your quote request and will contact you within 24 hours to discuss your project.');
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Reset button
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Show error message
+                    alert('Sorry, there was an error sending your message. Please try again or contact us directly at xophsy@gmail.com');
+                    
+                    // Reset button
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                });
         }
 
         // Add some interactive effects to service cards
