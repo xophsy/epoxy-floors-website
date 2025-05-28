@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epoxy Floors - Premium Epoxy Flooring Solutions</title>
+    <title>Golden Epoxy - Premium Epoxy Flooring Solutions</title>
     <style>
         * {
             margin: 0;
@@ -62,6 +62,13 @@
             font-size: 1.2rem;
             color: #1a1a1a;
             font-weight: bold;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 8px;
         }
 
         .nav-menu {
@@ -488,7 +495,7 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <div class="logo-icon">GE</div>
+                <img src="images/logo.png" alt="Golden Epoxy Logo" class="logo-image">
                 Golden Epoxy
             </div>
             <ul class="nav-menu">
@@ -738,7 +745,7 @@
             submitBtn.disabled = true;
             
             // Send email using EmailJS
-            emailjs.sendForm('service_ch9qdf9', 'template_xbuypxq', form)
+            emailjs.sendForm('service_ch9qdf9', 'template_myfvf2y', form)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     
