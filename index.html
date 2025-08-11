@@ -1,802 +1,472 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Epoxy - Premium Epoxy Flooring Solutions</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Epoxy | Premium Epoxy Flooring in Tampa Bay</title>
+  <meta name="description" content="Golden Epoxy installs premium residential, commercial, and industrial epoxy floors across Tampa Bay. Free quotes, lifetime residential warranty, stunning metallic and flake finishes." />
+  <link rel="canonical" href="https://goldenepoxy.com/" />
 
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Golden Epoxy – Premium Epoxy Flooring" />
+  <meta property="og:description" content="Durable, elegant epoxy floors. Metallic, flake & quartz systems. Free quotes in Tampa Bay." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://goldenepoxy.com/" />
+  <meta property="og:image" content="images/main.jpg" />
 
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-            min-height: 100px;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: #1a1a1a;
-            font-weight: bold;
-        }
-
-        .logo-image {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            color: #ffd700;
-        }
-
-        .cta-button {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #1a1a1a;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="floor" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23666;stop-opacity:1" /><stop offset="100%" style="stop-color:%23333;stop-opacity:1" /></linearGradient></defs><rect width="1200" height="800" fill="url(%23floor)"/><circle cx="200" cy="200" r="3" fill="%23ffd700" opacity="0.8"/><circle cx="400" cy="300" r="2" fill="%23ffd700" opacity="0.6"/><circle cx="600" cy="150" r="4" fill="%23ffd700" opacity="0.9"/><circle cx="800" cy="400" r="3" fill="%23ffd700" opacity="0.7"/><circle cx="1000" cy="200" r="2" fill="%23ffd700" opacity="0.8"/></svg>') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            padding: 0 2rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #1a1a1a;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            padding: 1rem 2rem;
-            border: 2px solid #ffd700;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-primary:hover, .btn-secondary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
-        }
-
-        /* Services Section */
-        .services {
-            padding: 5rem 0;
-            background: #f8f9fa;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-
-        .section-title p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-
-        /* About Section */
-        .about {
-            padding: 5rem 0;
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
-
-        .about-features {
-            list-style: none;
-            margin-top: 2rem;
-        }
-
-        .about-features li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .about-features li::before {
-            content: '✓';
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #1a1a1a;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            font-weight: bold;
-        }
-
-        .about-image {
-            background: linear-gradient(135deg, #ffd700, #ffed4e);
-            border-radius: 15px;
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Gallery Section */
-        .gallery {
-            padding: 5rem 0;
-            background: #f8f9fa;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-top: 3rem;
-        }
-
-        .gallery-item {
-            height: 250px;
-            background: linear-gradient(135deg, #ddd, #bbb);
-            border-radius: 10px;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-item::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, rgba(255, 215, 0, 0.8), rgba(255, 237, 78, 0.8));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover::after {
-            opacity: 1;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-        }
-
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 1rem;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-item-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            color: #1a1a1a;
-        }
-
-        /* Footer */
-        .footer {
-            background: #1a1a1a;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              50: '#fff8e6', 100: '#ffefc2', 200: '#ffe491', 300: '#ffd65b', 400: '#ffc32b', 500: '#f4b400', 600: '#d69900', 700: '#a87300', 800: '#7a5400', 900: '#4d3500'
+            },
+            coal: {
+              50: '#f7f7f7', 100: '#e3e3e3', 200: '#c8c8c8', 300: '#a4a4a4', 400: '#7a7a7a', 500: '#555', 600: '#3f3f3f', 700: '#2f2f2f', 800: '#1e1e1e', 900: '#0f0f10'
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+          },
+          boxShadow: {
+            glow: '0 0 0 2px rgba(244,180,0,0.2), 0 8px 30px rgba(0,0,0,0.35)'
+          },
+          fontFamily: { sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Arial", "sans-serif"] }
         }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient{background:linear-gradient(135deg,#ffd65b, #f4b400 30%, #a87300 70%, #ffd65b)}
+    .shine{position:relative;overflow:hidden}
+    .shine::after{content:"";position:absolute;inset:-200% -30%;transform:rotate(20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);animation:shine 8s linear infinite}
+    @keyframes shine{0%{transform:translateX(-100%) rotate(20deg)} 100%{transform:translateX(100%) rotate(20deg)}}
+    .glass{backdrop-filter:saturate(140%) blur(10px);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+    .section{scroll-margin-top:96px}
+  </style>
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .about-content,
-            .contact-content {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* Scroll animations */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+  <!-- JSON-LD: Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Golden Epoxy",
+    "image": "images/main.jpg",
+    "url": "https://goldenepoxy.com/",
+    "telephone": "+1-813-580-0323",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {"@type":"GeoCoordinates","latitude":27.95,"longitude":-82.46},
+      "geoRadius": 65000
+    },
+    "address": {"@type":"PostalAddress","addressLocality":"Tampa Bay","addressRegion":"FL","addressCountry":"US"},
+    "description": "Premium epoxy flooring – metallic, flake, and quartz systems for residential, commercial, and industrial spaces.",
+    "sameAs": []
+  }
+  </script>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Golden Epoxy Logo" class="logo-image">
-                Golden Epoxy
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="bg-coal-900 text-white antialiased">
+  <!-- Top Bar -->
+  <div class="w-full text-sm bg-black/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <p class="opacity-80">Tampa Bay &amp; Surrounding Areas</p>
+      <a href="tel:+18135800323" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 text-gold-200 hover:bg-gold-500/20 transition">Call (813) 580-0323</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-coal-900/80 glass">
+    <nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <img src="images/logo.png" alt="Golden Epoxy logo" class="w-8 h-8 rounded-lg" />
+        <span class="font-semibold tracking-wide">Golden <span class="text-gold-400">Epoxy</span></span>
+      </a>
+      <ul class="hidden md:flex items-center gap-6 text-sm">
+        <li><a class="hover:text-gold-300" href="#services">Services</a></li>
+        <li><a class="hover:text-gold-300" href="#process">Process</a></li>
+        <li><a class="hover:text-gold-300" href="#gallery">Gallery</a></li>
+        <li><a class="hover:text-gold-300" href="#reviews">Reviews</a></li>
+        <li><a class="hover:text-gold-300" href="#faq">FAQ</a></li>
+        <li><a class="hover:text-gold-300" href="#contact">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gold-500 text-black font-medium hover:shadow-glow transition">Free Quote</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <ul class="px-4 py-3 space-y-2">
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services">Services</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process">Process</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#gallery">Gallery</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews">Reviews</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq">FAQ</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 gold-gradient opacity-10"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Premium <span class="text-gold-400">Epoxy Flooring</span> Solutions</h1>
+        <p class="mt-4 text-white/80 text-lg">Durable. Elegant. Low maintenance. We install metallic, flake, and quartz systems that transform garages, living spaces, and commercial floors.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition">Get Free Quote</a>
+          <a href="#gallery" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5">View Our Work</a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-white/70">
+          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> Lifetime residential warranty</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> Licensed &amp; insured</div>
+        </div>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shine">
+        <img src="images/main.jpg" alt="Metallic gold epoxy floor" class="w-full h-80 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust badges -->
+  <section class="section" id="badges">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">10+ Years</p><p class="text-sm opacity-80">Experience</p></div>
+      <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">4.9★</p><p class="text-sm opacity-80">Customer Rating</p></div>
+      <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">48hr</p><p class="text-sm opacity-80">Typical Install</p></div>
+      <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">Dustless</p><p class="text-sm opacity-80">Prep System</p></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Our Expert Services</h2>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10">Start a Project</a>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/1.jpg" alt="Residential epoxy floor" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Residential Floors</h3>
+            <p class="text-white/80 mt-2">Transform your garage, basement, or living space. Metallic, flake, and solid systems in bespoke colorways.</p>
+          </div>
+        </article>
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/2.jpg" alt="Commercial epoxy floor" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Commercial Floors</h3>
+            <p class="text-white/80 mt-2">High-performance solutions for retail, offices, salons, gyms, and showrooms. Built for heavy foot traffic.</p>
+          </div>
+        </article>
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/3.jpg" alt="Industrial epoxy floor" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Industrial Coatings</h3>
+            <p class="text-white/80 mt-2">Warehouses, production lines, and chemical-resistant systems that meet strict performance needs.</p>
+          </div>
+        </article>
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/4.jpg" alt="Metallic epoxy" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Decorative Finishes</h3>
+            <p class="text-white/80 mt-2">Metallic swirls, flake blends, quartz, and custom logos to turn floors into a feature.</p>
+          </div>
+        </article>
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/5.jpg" alt="Concrete repair" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Floor Repairs</h3>
+            <p class="text-white/80 mt-2">Crack repair, moisture mitigation, leveling, and surface prep for flawless adhesion.</p>
+          </div>
+        </article>
+        <!-- Card -->
+        <article class="glass rounded-2xl overflow-hidden">
+          <img src="images/6.jpg" alt="Protective coatings" class="w-full h-40 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Protective Coatings</h3>
+            <p class="text-white/80 mt-2">Anti-slip additives, UV stability, antimicrobial topcoats, and heavy-duty wear protection.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold">Our Install Process</h2>
+      <ol class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6 list-none counter-reset step">
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 0</p>
+          <h3 class="font-semibold mt-1">Consult &amp; Design</h3>
+          <p class="text-white/80 mt-2">Site visit, moisture reading, color/system selection, and final quote.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 1</p>
+          <h3 class="font-semibold mt-1">Prep &amp; Repair</h3>
+          <p class="text-white/80 mt-2">Diamond grind or shot-blast. Crack chase and patch. Dustless cleanup.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 2</p>
+          <h3 class="font-semibold mt-1">Prime &amp; Build</h3>
+          <p class="text-white/80 mt-2">Moisture barrier primer and body coat. Decorative system applied.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 3</p>
+          <h3 class="font-semibold mt-1">Seal &amp; Turnover</h3>
+          <p class="text-white/80 mt-2">UV-stable topcoat. Light foot traffic in 24h; vehicles in ~72h.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Before / After Slider -->
+  <section class="section" id="before-after">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold">See the Difference</h2>
+          <p class="text-white/80 mt-3">Drag the handle to compare before and after. Our metallic and flake systems level, seal, and elevate concrete—fast.</p>
+        </div>
+        <div class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/10" id="compare">
+          <img src="images/7.jpg" alt="Before" class="absolute inset-0 w-full h-full object-cover" />
+          <img src="images/8.jpg" alt="After" class="absolute inset-0 w-1/2 h-full object-cover clip" style="clip-path:inset(0 50% 0 0)" id="afterImg" />
+          <input type="range" id="slider" min="0" max="100" value="50" aria-label="Before/after slider" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Gallery</h2>
+        <div class="flex gap-2">
+          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="all">All</button>
+          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="metallic">Metallic</button>
+          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="flake">Flake</button>
+          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="quartz">Quartz</button>
+        </div>
+      </div>
+      <div class="mt-8 columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
+        <!-- Repeatable item -->
+        <figure class="mb-4 break-inside-avoid filter-item metallic"><img src="images/9.jpg" alt="Metallic epoxy floor" class="w-full rounded-xl" /><figcaption class="sr-only">Metallic epoxy</figcaption></figure>
+        <figure class="mb-4 break-inside-avoid filter-item flake"><img src="images/10.jpg" alt="Flake system" class="w-full rounded-xl" /></figure>
+        <figure class="mb-4 break-inside-avoid filter-item quartz"><img src="images/11.jpg" alt="Quartz system" class="w-full rounded-xl" /></figure>
+        <figure class="mb-4 break-inside-avoid filter-item metallic"><img src="images/1.jpg" alt="Metallic epoxy" class="w-full rounded-xl" /></figure>
+        <figure class="mb-4 break-inside-avoid filter-item flake"><img src="images/2.jpg" alt="Flake system" class="w-full rounded-xl" /></figure>
+        <figure class="mb-4 break-inside-avoid filter-item quartz"><img src="images/3.jpg" alt="Quartz system" class="w-full rounded-xl" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <h2 class="text-3xl md:text-4xl font-bold">What Clients Say</h2>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium">Get My Quote</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <blockquote class="glass rounded-2xl p-6">
+          <p class="text-lg">“Garage looks like a showroom. Dust is gone and the flakes hide everything.”</p>
+          <footer class="mt-4 text-white/70">— Maria G., Tampa</footer>
+        </blockquote>
+        <blockquote class="glass rounded-2xl p-6">
+          <p class="text-lg">“The metallic gold swirl is insane. Installers were professional and fast.”</p>
+          <footer class="mt-4 text-white/70">— Kevin R., St. Pete</footer>
+        </blockquote>
+        <blockquote class="glass rounded-2xl p-6">
+          <p class="text-lg">“Zero hot-tire pickup and easy to clean. Worth every penny.”</p>
+          <footer class="mt-4 text-white/70">— Dana S., Clearwater</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold">FAQ</h2>
+      <div class="mt-8 space-y-4">
+        <details class="glass rounded-2xl p-6 group">
+          <summary class="cursor-pointer font-medium flex items-center justify-between">How long does installation take?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">▾</span></summary>
+          <p class="mt-4 text-white/80">Most garages take 1–2 days. Light foot traffic in 24 hours; vehicles after ~72 hours depending on system and weather.</p>
+        </details>
+        <details class="glass rounded-2xl p-6 group">
+          <summary class="cursor-pointer font-medium flex items-center justify-between">Will it yellow in the sun?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">▾</span></summary>
+          <p class="mt-4 text-white/80">We use UV-stable topcoats and recommend quartz/flake systems in areas with strong UV exposure.</p>
+        </details>
+        <details class="glass rounded-2xl p-6 group">
+          <summary class="cursor-pointer font-medium flex items-center justify-between">What’s the warranty?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">▾</span></summary>
+          <p class="mt-4 text-white/80">Lifetime warranty on residential against peeling and delamination under normal use. Commercial warranties available by system.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid lg:grid-cols-5 gap-10 items-start">
+        <div class="lg:col-span-3">
+          <h2 class="text-3xl md:text-4xl font-bold">Get Your Free Quote</h2>
+          <p class="text-white/80 mt-2">Tell us about your space and desired finish. We’ll follow up within one business day.</p>
+          <form id="contact-form" class="mt-8 grid sm:grid-cols-2 gap-4 glass p-6 rounded-2xl" onsubmit="handleFormSubmit(event)">
+            <input required name="name" placeholder="Full name" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
+            <input required type="email" name="email" placeholder="Email" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
+            <input name="phone" placeholder="Phone" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
+            <select name="system" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400">
+              <option value="" disabled selected>System type</option>
+              <option>Metallic</option>
+              <option>Flake</option>
+              <option>Quartz</option>
+              <option>Solid color</option>
+            </select>
+            <textarea name="details" placeholder="Project details (sq ft, location, timeframe)" class="sm:col-span-2 px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" rows="4"></textarea>
+            <button id="submit-btn" class="sm:col-span-2 px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow">Send Message</button>
+          </form>
+        </div>
+        <aside class="lg:col-span-2 space-y-4">
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold">Contact</h3>
+            <ul class="mt-3 space-y-2 text-white/80">
+              <li>Phone: <a class="hover:text-gold-300" href="tel:+18135800323">(813) 580-0323</a></li>
+              <li>Email: <a class="hover:text-gold-300" href="mailto:goldenepoxyworks@gmail.com">goldenepoxyworks@gmail.com</a></li>
+              <li>Hours: Mon–Fri 8am–5pm</li>
             </ul>
-            <a href="#contact" class="cta-button">Get Free Quote</a>
-        </nav>
-    </header>
+          </div>
+          <div class="glass rounded-2xl p-6">
+            <h3 class="font-semibold">Service Area</h3>
+            <p class="text-white/80 mt-2">Tampa, St. Petersburg, Clearwater, Brandon, Wesley Chapel, and nearby.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Premium Epoxy Flooring Solutions</h1>
-            <p>Transform your space with durable, elegant, and customizable epoxy floors that last a lifetime. Professional installation with exceptional results guaranteed.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Get Free Estimate</a>
-                <a href="#gallery" class="btn-secondary">View Our Work</a>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid sm:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2"><span class="w-7 h-7 rounded-lg gold-gradient"></span><span class="font-semibold">Golden <span class="text-gold-400">Epoxy</span></span></div>
+        <p class="mt-3 text-white/70 max-w-sm">Premium epoxy floors for homes and businesses. Beautiful, durable, and built to last.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Company</h4>
+        <ul class="mt-3 space-y-2 text-white/80">
+          <li><a href="#services" class="hover:text-gold-300">Services</a></li>
+          <li><a href="#gallery" class="hover:text-gold-300">Gallery</a></li>
+          <li><a href="#faq" class="hover:text-gold-300">FAQ</a></li>
+          <li><a href="#contact" class="hover:text-gold-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Get a Quote</h4>
+        <form class="mt-3 flex gap-2" onsubmit="handleFormSubmit(event)">
+          <input required name="email" type="email" placeholder="Email" class="flex-1 px-4 py-2 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
+          <button class="px-4 py-2 rounded-xl bg-gold-500 text-black font-semibold">Start</button>
+        </form>
+      </div>
+    </div>
+    <div class="py-4 text-center text-xs text-white/50">© <span id="year"></span> Golden Epoxy. All rights reserved.</div>
+  </footer>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-title animate-on-scroll">
-                <h2>Our Expert Services</h2>
-                <p>We provide comprehensive epoxy flooring solutions for residential, commercial, and industrial applications</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">🏠</div>
-                    <h3>Residential Floors</h3>
-                    <p>Transform your garage, basement, or living space with beautiful, durable epoxy flooring. Available in countless colors and finishes to match your style.</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Floors</h3>
-                    <p>High-performance epoxy solutions for retail spaces, offices, and showrooms. Designed to withstand heavy foot traffic while maintaining a professional appearance.</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">🏭</div>
-                    <h3>Industrial Coatings</h3>
-                    <p>Heavy-duty epoxy systems for warehouses, manufacturing facilities, and industrial environments. Chemical resistant and built to last.</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">✨</div>
-                    <h3>Decorative Finishes</h3>
-                    <p>Metallic epoxy, flake systems, and custom designs that create stunning visual effects. Make your floor a work of art.</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">🔧</div>
-                    <h3>Floor Repairs</h3>
-                    <p>Expert concrete repair and surface preparation. We fix cracks, level uneven surfaces, and ensure perfect adhesion for your new epoxy floor.</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Protective Coatings</h3>
-                    <p>Specialized coatings for chemical resistance, anti-slip properties, and UV protection. Tailored solutions for unique requirements.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("xA4JPLCqeYzLRmG0t");
+    })();
+  </script>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text animate-on-scroll">
-                    <h2>Why Choose Golden Epoxy?</h2>
-                    <p>With over a decade of experience in the epoxy flooring industry, Golden Epoxy has become the trusted choice for homeowners and businesses seeking premium flooring solutions.</p>
-                    <p>We use only the highest quality materials and employ certified installation techniques to ensure your floor not only looks amazing but performs exceptionally for years to come.</p>
-                    <ul class="about-features">
-                        <li>Lifetime Warranty on Residential Projects</li>
-                        <li>Licensed & Insured Professionals</li>
-                        <li>Premium Materials & Equipment</li>
-                        <li>Custom Design Capabilities</li>
-                        <li>Fast, Efficient Installation</li>
-                        <li>Exceptional Customer Service</li>
-                    </ul>
-                    <a href="#contact" class="btn-primary">Start Your Project</a>
-                </div>
-                <div class="about-image animate-on-scroll">
-                    <img src="images/main.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;">
-                </div>
-            </div>
-        </div>
-    </section>
+  <script>
+    // Form submission handler with EmailJS
+    function handleFormSubmit(event) {
+      event.preventDefault();
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-title animate-on-scroll">
-                <h2>Our Portfolio</h2>
-                <p>Explore our recent projects and see the quality craftsmanship that sets Golden Epoxy apart</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item animate-on-scroll"><img src="images/1.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                    
-                <div class="gallery-item animate-on-scroll"><img src="images/2.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                    
-                <div class="gallery-item animate-on-scroll"><img src="images/3.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                    
-                <div class="gallery-item animate-on-scroll"> <img src="images/5.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                   
-                <div class="gallery-item animate-on-scroll"> <img src="images/9.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                   
-                <div class="gallery-item animate-on-scroll"> <img src="images/8.jpg" alt="Golden Epoxy flooring showcase" style="width: 100%; height: 300px; object-fit: cover; object-position: center;"></div>
-                   
-            </div>
-        </div>
-    </section>
+      const form = event.target;
+      const submitBtn = document.getElementById('submit-btn');
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title animate-on-scroll">
-                <h3>Get Your Free Quote Today</h3>
-                <p>Ready to transform your space? Contact us for a free consultation and estimate</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form animate-on-scroll">
-                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="from_name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="from_email" required placeholder="your@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
-                        </div>
-                        <div class="form-group">
-                            <label for="project">Project Details</label>
-                            <textarea id="project" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary" id="submit-btn">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info animate-on-scroll">
-                    <h3>Get In Touch</h3>
-                    <div class="contact-item">
-                        <div class="contact-item-icon">📞</div>
-                        <div>
-                            <strong>Phone</strong><br>
-                            (813) 580-0323
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item-icon">✉️</div>
-                        <div>
-                            <strong>Email</strong><br>
-                            goldenepoxyworks@gmail.com
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item-icon">📍</div>
-                        <div>
-                            <strong>Service Area</strong><br>
-                            Tampa Bay & Surrounding Areas
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-item-icon">🕒</div>
-                        <div>
-                            <strong>Hours</strong><br>
-                            Mon-Fri: 8AM-5PM<br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      // Show loading state
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Golden Epoxy. All rights reserved. </p>
-        </div>
-    </footer>
+      // Send email using EmailJS
+      emailjs.sendForm('service_ch9qdf9', 'template_myfvf2y', form)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
 
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-           emailjs.init("xA4JPLCqeYzLRmG0t");
-        })();
-    </script>
+          // Show success message
+          alert('Thank you for your inquiry! We have received your quote request and will contact you within 24 hours to discuss your project.');
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerHeight = document.querySelector('.header').offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+          // Reset form
+          form.reset();
+
+          // Reset button
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
+
+        }, function(error) {
+          console.log('FAILED...', error);
+
+          // Show error message
+          alert('Sorry, there was an error sending your message. Please try again or contact us directly at xophsy@gmail.com');
+
+          // Reset button
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
         });
+    }
+    // Add some interactive effects
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 50) {
-                header.style.background = 'rgba(26, 26, 26, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)';
-                header.style.backdropFilter = 'none';
-            }
-        });
+    // Mobile menu
+    document.getElementById('menuBtn').addEventListener('click',()=>{
+      document.getElementById('mobileMenu').classList.toggle('hidden')
+    })
 
-        // Animate on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    // Before/after slider
+    const slider=document.getElementById('slider');
+    const after=document.getElementById('afterImg');
+    slider.addEventListener('input',e=>{
+      const v=e.target.value; // 0-100
+      const right=100 - Number(v);
+      after.style.clipPath = `inset(0 ${right}% 0 0)`;
+    })
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Form submission handler with EmailJS
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            
-            const form = event.target;
-            const submitBtn = document.getElementById('submit-btn');
-            
-            // Show loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Send email using EmailJS
-            emailjs.sendForm('service_ch9qdf9', 'template_myfvf2y', form)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    
-                    // Show success message
-                    alert('Thank you for your inquiry! We have received your quote request and will contact you within 24 hours to discuss your project.');
-                    
-                    // Reset form
-                    form.reset();
-                    
-                    // Reset button
-                    submitBtn.textContent = 'Send Message';
-                    submitBtn.disabled = false;
-                    
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    
-                    // Show error message
-                    alert('Sorry, there was an error sending your message. Please try again or contact us directly at xophsy@gmail.com');
-                    
-                    // Reset button
-                    submitBtn.textContent = 'Send Message';
-                    submitBtn.disabled = false;
-                });
+    // Gallery filter
+    const buttons=[...document.querySelectorAll('.filter-btn')];
+    const items=[...document.querySelectorAll('.filter-item')];
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      const f=btn.dataset.filter;
+      buttons.forEach(b=>b.classList.remove('ring','ring-gold-400'));
+      btn.classList.add('ring','ring-gold-400');
+      items.forEach(it=>{
+        if(f==='all'||it.classList.contains(f)){
+          it.classList.remove('hidden');
+        } else {
+          it.classList.add('hidden');
         }
+      })
+    }))
 
-        // Add some interactive effects to service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(-5px) scale(1)';
-            });
-        });
-
-        // Gallery item click handler
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('click', function() {
-                // In a real implementation, this would open a lightbox or modal
-                alert('Gallery image clicked! In a real implementation, this would open a larger view of the project.');
-            });
-        });
-    </script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
 </body>
 </html>
