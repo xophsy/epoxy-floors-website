@@ -13,12 +13,24 @@ describe('handleFormSubmit', () => {
 
   beforeEach(() => {
     document.body.innerHTML = `
-      <form id="contact-form">
-        <button id="submit-btn">Send Message</button>
+      <form
+        id="contact-form"
+        data-emailjs-form
+        data-success-message="Custom success"
+        data-error-message="Custom error"
+      >
+        <button
+          type="submit"
+          data-submit-button
+          data-idle-text="Send Message"
+          data-loading-text="Loading..."
+        >
+          Send Message
+        </button>
       </form>
     `;
     form = document.getElementById('contact-form');
-    submitBtn = document.getElementById('submit-btn');
+    submitBtn = form.querySelector('[data-submit-button]');
 
     global.emailjs = { sendForm: jest.fn() };
     originalAlert = global.alert;
@@ -42,23 +54,25 @@ describe('handleFormSubmit', () => {
   test('successfully sends form and resets button state', async () => {
     global.emailjs.sendForm.mockResolvedValue({ status: 200, text: 'OK' });
     const event = { preventDefault: jest.fn(), target: form };
-    handleFormSubmit(event);
-    expect(submitBtn.textContent).toBe('Sending...');
+    const submission = handleFormSubmit(event);
+    expect(submitBtn.textContent).toBe('Loading...');
     expect(submitBtn.disabled).toBe(true);
-    await global.emailjs.sendForm.mock.results[0].value;
+    await submission;
     expect(submitBtn.textContent).toBe('Send Message');
     expect(submitBtn.disabled).toBe(false);
+    expect(global.alert).toHaveBeenCalledWith('Custom success');
   });
 
   test('handles failure and resets button state', async () => {
     global.emailjs.sendForm.mockRejectedValue(new Error('failed'));
     const event = { preventDefault: jest.fn(), target: form };
-    handleFormSubmit(event);
-    expect(submitBtn.textContent).toBe('Sending...');
+    const submission = handleFormSubmit(event);
+    expect(submitBtn.textContent).toBe('Loading...');
     expect(submitBtn.disabled).toBe(true);
-    await global.emailjs.sendForm.mock.results[0].value.catch(() => {});
+    await submission.catch(() => {});
     expect(submitBtn.textContent).toBe('Send Message');
     expect(submitBtn.disabled).toBe(false);
+    expect(global.alert).toHaveBeenCalledWith('Custom error');
   });
 });
 
