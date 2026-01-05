@@ -44,6 +44,20 @@
     @keyframes shine{0%{transform:translateX(-100%) rotate(20deg)} 100%{transform:translateX(100%) rotate(20deg)}}
     .glass{backdrop-filter:saturate(140%) blur(10px);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
     .section{scroll-margin-top:96px}
+
+    /* Before/After slider helpers */
+    .ba-wrapper{position:relative}
+    .ba-wrapper img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .ba-divider{position:absolute;top:0;bottom:0;width:2px;background:rgba(255,255,255,0.45);transform:translateX(-1px);pointer-events:none}
+    /* optional small handle at divider to make alignment obvious */
+    .ba-handle{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);width:22px;height:22px;border-radius:999px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);opacity:0.9;pointer-events:none}
+    /* Make range full width so thumb position matches divider */
+    .ba-range{appearance:none;height:24px;background:transparent;outline:none}
+    .ba-range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.25)}
+    .ba-range::-moz-range-thumb{width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15)}
+    /* hide the track on some browsers to keep UI clean */
+    .ba-range::-webkit-slider-runnable-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
+    .ba-range::-moz-range-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
   </style>
 
   <!-- JSON-LD: Local Business -->
@@ -242,10 +256,16 @@
           <h2 class="text-3xl md:text-4xl font-bold">See the Difference</h2>
           <p class="text-white/80 mt-3">Drag the handle to compare before and after. Our metallic and flake systems level, seal, and elevate concrete—fast.</p>
         </div>
-        <div class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/10" id="compare">
-          <img src="images/7.jpg" alt="Floor before coating" class="absolute inset-0 w-full h-full object-cover" />
-          <img src="images/8.jpg" alt="Floor after coating" class="absolute inset-0 w-1/2 h-full object-cover clip" style="clip-path:inset(0 50% 0 0)" id="afterImg" />
-          <input type="range" id="slider" min="0" max="100" value="50" aria-label="Before/after slider" class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2/3">
+        <div class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 ba-wrapper" id="compare">
+          <!-- both images are full-size and stacked; after image is clipped to reveal 'before' -->
+          <img src="images/slider/before.png" alt="Floor before coating" class="" />
+          <img src="images/slider/after.png" alt="Floor after coating" id="afterImg" style="clip-path:inset(0 50% 0 0)" />
+          <!-- divider and optional handle -->
+          <div id="divider" class="ba-divider" style="left:50%"></div>
+          <div id="handle" class="ba-handle" style="left:50%"></div>
+
+          <!-- full-width range so thumb position maps 1:1 to image percentages -->
+          <input type="range" id="slider" min="0" max="100" value="50" aria-label="Before/after slider" class="absolute bottom-4 left-0 w-full px-4 ba-range">
         </div>
       </div>
     </div>
@@ -509,12 +529,30 @@
     function initBeforeAfterSlider() {
       const slider = document.getElementById('slider');
       const afterImage = document.getElementById('afterImg');
-      if (!slider || !afterImage) return;
-      slider.addEventListener('input', (event) => {
-        const value = Number(event.target.value) || 0;
-        const right = Math.max(0, Math.min(100, 100 - value));
-        afterImage.style.clipPath = `inset(0 ${right}% 0 0)`;
-      });
+      const divider = document.getElementById('divider');
+      const handle = document.getElementById('handle');
+      const container = document.getElementById('compare');
+
+      if (!slider || !afterImage || !divider || !container) return;
+
+      function update(v) {
+        const value = Math.max(0, Math.min(100, Number(v) || 0));
+        // clip-path inset(top right bottom left) — right should be 100 - value
+        afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+        // position divider and small handle so they align with the current value
+        divider.style.left = `${value}%`;
+        if (handle) handle.style.left = `${value}%`;
+      }
+
+      // keep synced on input and initialize
+      slider.addEventListener('input', (e) => update(e.target.value));
+      // support keyboard arrows (change event sometimes needed)
+      slider.addEventListener('change', (e) => update(e.target.value));
+      // initialize on load and whenever the container resizes
+      update(slider.value);
+
+      // Recalculate on resize (keeps divider visually correct if layout changes)
+      window.addEventListener('resize', () => update(slider.value));
     }
 
     function initGalleryFilter() {
