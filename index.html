@@ -102,7 +102,6 @@
       <ul class="hidden md:flex items-center gap-6 text-sm">
         <li><a class="hover:text-gold-300" href="#services">Services</a></li>
         <li><a class="hover:text-gold-300" href="#process">Process</a></li>
-        <li><a class="hover:text-gold-300" href="#gallery">Gallery</a></li>
         <li><a class="hover:text-gold-300" href="#reviews">Reviews</a></li>
         <li><a class="hover:text-gold-300" href="#faq">FAQ</a></li>
         <li><a class="hover:text-gold-300" href="#contact">Contact</a></li>
@@ -118,7 +117,6 @@
       <ul class="px-4 py-3 space-y-2 text-center">
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services">Services</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process">Process</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#gallery">Gallery</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews">Reviews</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq">FAQ</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact">Contact</a></li>
@@ -136,7 +134,7 @@
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition" aria-label="Get a free quote">Get a Free Quote</a>
-          <a href="#gallery" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work">View Our Work</a>
+          <a href="#before-after" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work">View Our Work</a>
         </div>
         <div class="mt-6 flex items-center gap-6 text-sm text-white/70">
           <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> Lifetime residential warranty</div>
@@ -271,30 +269,6 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="section" id="gallery">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <div class="flex items-end justify-between flex-wrap gap-6">
-        <h2 class="text-3xl md:text-4xl font-bold">Gallery</h2>
-        <div class="flex gap-2">
-          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="all">All</button>
-          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="metallic">Metallic</button>
-          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="flake">Flake</button>
-          <button class="filter-btn px-3 py-2 rounded-lg bg-white/5 border border-white/10" data-filter="quartz">Quartz</button>
-        </div>
-      </div>
-      <div class="mt-8 columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
-        <!-- Repeatable item -->
-        <figure class="mb-4 break-inside-avoid filter-item metallic"><img src="images/1.jpg" alt="Metallic epoxy floor" class="w-full rounded-xl" /><figcaption class="sr-only">Metallic epoxy</figcaption></figure>
-        <figure class="mb-4 break-inside-avoid filter-item flake"><img src="images/2.jpg" alt="Flake system" class="w-full rounded-xl" /></figure>
-        <figure class="mb-4 break-inside-avoid filter-item quartz"><img src="images/3.jpg" alt="Quartz system" class="w-full rounded-xl" /></figure>
-        <figure class="mb-4 break-inside-avoid filter-item metallic"><img src="images/9.jpg" alt="Metallic epoxy finish" class="w-full rounded-xl" /></figure>
-        <figure class="mb-4 break-inside-avoid filter-item flake"><img src="images/10.jpg" alt="Flake system floor" class="w-full rounded-xl" /></figure>
-        <figure class="mb-4 break-inside-avoid filter-item quartz"><img src="images/11.jpg" alt="Quartz system floor" class="w-full rounded-xl" /></figure>
-      </div>
-    </div>
-  </section>
-
   <!-- Reviews -->
   <section class="section" id="reviews">
     <div class="max-w-7xl mx-auto px-4 py-16">
@@ -401,14 +375,17 @@
   <footer class="border-t border-white/10">
     <div class="max-w-7xl mx-auto px-4 py-10 grid sm:grid-cols-3 gap-8 text-sm">
       <div>
-        <div class="flex items-center gap-2"><span class="w-7 h-7 rounded-lg gold-gradient"></span><span class="font-semibold">Golden <span class="text-gold-400">Epoxy</span></span></div>
+        <div class="flex items-center gap-2">
+          <img src="images/logo.png" alt="Golden Epoxy logo" class="w-7 h-7 rounded-lg object-contain" />
+          <span class="font-semibold">Golden <span class="text-gold-400">Epoxy</span></span>
+        </div>
         <p class="mt-3 text-white/70 max-w-sm">Premium epoxy floors for homes and businesses. Beautiful, durable, and built to last.</p>
       </div>
       <div>
         <h4 class="font-semibold">Company</h4>
         <ul class="mt-3 space-y-2 text-white/80">
           <li><a href="#services" class="hover:text-gold-300">Services</a></li>
-          <li><a href="#gallery" class="hover:text-gold-300">Gallery</a></li>
+          <li><a href="#before-after" class="hover:text-gold-300">Before / After</a></li>
           <li><a href="#faq" class="hover:text-gold-300">FAQ</a></li>
           <li><a href="#contact" class="hover:text-gold-300">Contact</a></li>
         </ul>
@@ -497,6 +474,10 @@
       const successMessage = form.dataset.successMessage || DEFAULT_SUCCESS_MESSAGE;
       const errorMessage = form.dataset.errorMessage || DEFAULT_ERROR_MESSAGE;
 
+      // call before emailjs.sendForm(...)
+      const timeInput = form.querySelector('input[name="submitted_at"]');
+      if (timeInput) timeInput.value = new Date().toLocaleString();
+
       setButtonState(submitBtn, loadingText, true);
 
       try {
@@ -555,26 +536,6 @@
       window.addEventListener('resize', () => update(slider.value));
     }
 
-    function initGalleryFilter() {
-      const buttons = [...document.querySelectorAll('.filter-btn')];
-      const items = [...document.querySelectorAll('.filter-item')];
-      if (!buttons.length || !items.length) return;
-
-      const activeClasses = ['ring', 'ring-gold-400'];
-
-      buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-          const filter = button.dataset.filter;
-          buttons.forEach((btn) => btn.classList.remove(...activeClasses));
-          button.classList.add(...activeClasses);
-          items.forEach((item) => {
-            const matchesFilter = filter === 'all' || item.classList.contains(filter);
-            item.classList.toggle('hidden', !matchesFilter);
-          });
-        });
-      });
-    }
-
     function initDynamicYear() {
       const yearElement = document.getElementById('year');
       if (!yearElement) return;
@@ -583,7 +544,6 @@
 
     initMobileMenu();
     initBeforeAfterSlider();
-    initGalleryFilter();
     initDynamicYear();
   </script>
 </body>
