@@ -38,6 +38,7 @@
     }
   </script>
   <style>
+    html{scroll-behavior:smooth}
     .gold-gradient{background:linear-gradient(135deg,#ffd65b, #f4b400 30%, #a87300 70%, #ffd65b)}
     .shine{position:relative;overflow:hidden}
     .shine::after{content:"";position:absolute;inset:-200% -30%;transform:rotate(20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);animation:shine 8s linear infinite}
@@ -51,8 +52,13 @@
     .ba-divider{position:absolute;top:0;bottom:0;width:2px;background:rgba(255,255,255,0.45);transform:translateX(-1px);pointer-events:none}
     /* optional small handle at divider to make alignment obvious */
     .ba-handle{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);width:22px;height:22px;border-radius:999px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);opacity:0.9;pointer-events:none}
+    .ba-divider,
+    .ba-handle{transition:left .35s ease}
     /* Make range full width so thumb position matches divider */
     .ba-range{appearance:none;height:24px;background:transparent;outline:none}
+    .subsection-button{transition:transform .28s ease,box-shadow .28s ease}
+    .subsection-button-press{animation:subsection-press .42s cubic-bezier(0.4,0,0.2,1)}
+    @keyframes subsection-press{0%{transform:scale(1)}40%{transform:scale(.92)}70%{transform:scale(1.03)}100%{transform:scale(1)}}
     .ba-range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.25)}
     .ba-range::-moz-range-thumb{width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15)}
     /* hide the track on some browsers to keep UI clean */
@@ -100,14 +106,14 @@
         <span class="font-semibold tracking-wide">Golden <span class="text-gold-400">Epoxy</span></span>
       </a>
       <ul class="hidden md:flex items-center gap-6 text-sm">
-        <li><a class="hover:text-gold-300" href="#services">Services</a></li>
-        <li><a class="hover:text-gold-300" href="#process">Process</a></li>
-        <li><a class="hover:text-gold-300" href="#reviews">Reviews</a></li>
-        <li><a class="hover:text-gold-300" href="#faq">FAQ</a></li>
-        <li><a class="hover:text-gold-300" href="#contact">Contact</a></li>
+        <li><a class="hover:text-gold-300" href="#services" data-subsection-btn>Services</a></li>
+        <li><a class="hover:text-gold-300" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="hover:text-gold-300" href="#reviews" data-subsection-btn>Reviews</a></li>
+        <li><a class="hover:text-gold-300" href="#faq" data-subsection-btn>FAQ</a></li>
+        <li><a class="hover:text-gold-300" href="#contact" data-subsection-btn>Contact</a></li>
       </ul>
       <div class="flex items-center gap-3">
-        <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gold-500 text-black font-medium hover:shadow-glow transition">Free Quote</a>
+        <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gold-500 text-black font-medium hover:shadow-glow transition" data-subsection-btn>Free Quote</a>
         <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
@@ -115,11 +121,11 @@
     </nav>
     <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
       <ul class="px-4 py-3 space-y-2 text-center">
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services">Services</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process">Process</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews">Reviews</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq">FAQ</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact">Contact</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services" data-subsection-btn>Services</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews" data-subsection-btn>Reviews</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq" data-subsection-btn>FAQ</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact" data-subsection-btn>Contact</a></li>
       </ul>
     </div>
   </header>
@@ -133,8 +139,8 @@
         <p class="mt-4 text-white/80 text-lg">Durable. Elegant. Low maintenance. We install metallic, flake, and quartz systems that transform garages, living spaces, and commercial floors.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition" aria-label="Get a free quote">Get a Free Quote</a>
-          <a href="#before-after" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work">View Our Work</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition" aria-label="Get a free quote" data-subsection-btn>Get a Free Quote</a>
+          <a href="#before-after" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work" data-subsection-btn>View Our Work</a>
         </div>
         <div class="mt-6 flex items-center gap-6 text-sm text-white/70">
           <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> Lifetime residential warranty</div>
@@ -162,7 +168,7 @@
     <div class="max-w-7xl mx-auto px-4 py-16">
       <div class="flex items-end justify-between flex-wrap gap-6">
         <h2 class="text-3xl md:text-4xl font-bold">Our Expert Services</h2>
-        <a href="#contact" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10">Start a Project</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10" data-subsection-btn>Start a Project</a>
       </div>
       <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
@@ -263,7 +269,19 @@
           <div id="handle" class="ba-handle" style="left:50%"></div>
 
           <!-- full-width range so thumb position maps 1:1 to image percentages -->
-          <input type="range" id="slider" min="0" max="100" value="50" aria-label="Before/after slider" class="absolute bottom-4 left-0 w-full px-4 ba-range">
+          <input
+            type="range"
+            id="slider"
+            min="0"
+            max="100"
+            value="50"
+            role="slider"
+            aria-label="Before/after slider"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="50"
+            class="absolute bottom-4 left-0 w-full px-4 ba-range"
+          >
         </div>
       </div>
     </div>
@@ -274,7 +292,7 @@
     <div class="max-w-7xl mx-auto px-4 py-16">
       <div class="flex items-end justify-between flex-wrap gap-6">
         <h2 class="text-3xl md:text-4xl font-bold">What Clients Say</h2>
-        <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium">Get My Quote</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium" data-subsection-btn>Get My Quote</a>
       </div>
       <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <blockquote class="glass rounded-2xl p-6">
@@ -549,24 +567,97 @@
 
     if (!slider || !afterImage || !divider || !container) return;
 
+    const MIN = 0;
+    const MAX = 100;
+
     function update(v) {
-      const value = Math.max(0, Math.min(100, Number(v) || 0));
-      // clip-path inset(top right bottom left) — right should be 100 - value
+      const value = Math.max(MIN, Math.min(MAX, Number(v) || 0));
+      slider.value = value;
+      slider.setAttribute('aria-valuenow', value.toFixed(0));
       afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-      // position divider and small handle so they align with the current value
       divider.style.left = `${value}%`;
       if (handle) handle.style.left = `${value}%`;
     }
 
-    // keep synced on input and initialize
-    slider.addEventListener('input', (e) => update(e.target.value));
-    // support keyboard arrows (change event sometimes needed)
-    slider.addEventListener('change', (e) => update(e.target.value));
-    // initialize on load and whenever the container resizes
+    function changeValue(delta) {
+      update(Number(slider.value) + delta);
+    }
+
+    slider.addEventListener('input', (event) => update(event.target.value));
+    slider.addEventListener('change', (event) => update(event.target.value));
+
+    slider.addEventListener('keydown', (event) => {
+      const key = event.key;
+      if (!['ArrowLeft', 'ArrowDown', 'ArrowRight', 'ArrowUp', 'Home', 'End', 'PageDown', 'PageUp'].includes(key)) {
+        return;
+      }
+      event.preventDefault();
+      switch (key) {
+        case 'ArrowLeft':
+        case 'ArrowDown':
+          changeValue(-1);
+          break;
+        case 'ArrowRight':
+        case 'ArrowUp':
+          changeValue(1);
+          break;
+        case 'PageDown':
+          changeValue(-10);
+          break;
+        case 'PageUp':
+          changeValue(10);
+          break;
+        case 'Home':
+          update(MIN);
+          break;
+        case 'End':
+          update(MAX);
+          break;
+      }
+    });
+
+    slider.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      changeValue(event.deltaY > 0 ? -1 : 1);
+    });
+
+    container.addEventListener('pointerdown', (event) => {
+      const rect = container.getBoundingClientRect();
+      const percent = ((event.clientX - rect.left) / rect.width) * 100;
+      update(percent);
+    });
+
     update(slider.value);
 
-    // Recalculate on resize (keeps divider visually correct if layout changes)
     window.addEventListener('resize', () => update(slider.value));
+  }
+
+  function initSubsectionButtonAnimation() {
+    const buttons = document.querySelectorAll('[data-subsection-btn]');
+    if (!buttons.length) return;
+
+    buttons.forEach((button) => {
+      button.classList.add('subsection-button');
+      button.addEventListener('click', (event) => {
+        button.classList.remove('subsection-button-press');
+        void button.offsetWidth;
+        button.classList.add('subsection-button-press');
+
+        const href = button.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            event.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (!target.hasAttribute('tabindex')) {
+              target.setAttribute('tabindex', '-1');
+              target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+            }
+            target.focus({ preventScroll: true });
+          }
+        }
+      });
+    });
   }
 
   function initDynamicYear() {
@@ -577,6 +668,7 @@
 
   initMobileMenu();
   initBeforeAfterSlider();
+  initSubsectionButtonAnimation();
   initDynamicYear();
   </script>
 </body>
