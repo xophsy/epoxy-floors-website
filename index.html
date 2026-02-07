@@ -54,8 +54,8 @@
     .ba-handle{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);width:22px;height:22px;border-radius:999px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);opacity:0.9;pointer-events:none}
     .ba-divider,
     .ba-handle{transition:left .35s ease}
-    .ba-divider-animate{animation:ba-divider-pulse .5s ease-out}
-    @keyframes ba-divider-pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,0.5)}50%{box-shadow:0 0 12px 4px rgba(255,255,255,0.55)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+    .ba-divider-glow{animation:ba-divider-glow .55s ease-out}
+    @keyframes ba-divider-glow{0%{box-shadow:0 0 0 0 rgba(255,255,255,0.4)}45%{box-shadow:0 0 14px 6px rgba(255,255,255,0.45)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
     /* Make range full width so thumb position matches divider */
     .ba-range{appearance:none;height:24px;background:transparent;outline:none}
     .subsection-button{transition:transform .28s ease,box-shadow .28s ease}
@@ -571,25 +571,26 @@
 
     const MIN = 0;
     const MAX = 100;
+    let activePointerId = null;
 
-    function update(v) {
-      const value = Math.max(MIN, Math.min(MAX, Number(v) || 0));
-      slider.value = value;
-      slider.setAttribute('aria-valuenow', value.toFixed(0));
-      afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-      divider.style.left = `${value}%`;
-      if (handle) handle.style.left = `${value}%`;
-      pulseDivider();
+    function clamp(value) {
+      return Math.min(MAX, Math.max(MIN, Number(value) || 0));
     }
 
-    function pulseDivider() {
-      divider.classList.remove('ba-divider-animate');
+    function update(value) {
+      const normalized = clamp(value);
+      slider.value = normalized;
+      slider.setAttribute('aria-valuenow', normalized.toFixed(0));
+      afterImage.style.clipPath = `inset(0 ${100 - normalized}% 0 0)`;
+      divider.style.left = `${normalized}%`;
+      if (handle) handle.style.left = `${normalized}%`;
+      animateDivider();
+    }
+
+    function animateDivider() {
+      divider.classList.remove('ba-divider-glow');
       void divider.offsetWidth;
-      divider.classList.add('ba-divider-animate');
-    }
-
-    function changeValue(delta) {
-      update(Number(slider.value) + delta);
+      divider.classList.add('ba-divider-glow');
     }
 
     slider.addEventListener('input', (event) => update(event.target.value));
@@ -604,17 +605,17 @@
       switch (key) {
         case 'ArrowLeft':
         case 'ArrowDown':
-          changeValue(-1);
+          update(slider.value - 1);
           break;
         case 'ArrowRight':
         case 'ArrowUp':
-          changeValue(1);
+          update(+slider.value + 1);
           break;
         case 'PageDown':
-          changeValue(-10);
+          update(slider.value - 10);
           break;
         case 'PageUp':
-          changeValue(10);
+          update(+slider.value + 10);
           break;
         case 'Home':
           update(MIN);
@@ -627,14 +628,36 @@
 
     slider.addEventListener('wheel', (event) => {
       event.preventDefault();
-      changeValue(event.deltaY > 0 ? -1 : 1);
+      update(+slider.value + (event.deltaY > 0 ? -1 : 1));
     });
 
-    container.addEventListener('pointerdown', (event) => {
+    const handlePointer = (clientX) => {
       const rect = container.getBoundingClientRect();
-      const percent = ((event.clientX - rect.left) / rect.width) * 100;
+      const percent = ((clientX - rect.left) / rect.width) * 100;
       update(percent);
+    };
+
+    const releasePointer = (pointerId) => {
+      if (activePointerId !== pointerId) return;
+      if (container.hasPointerCapture(pointerId)) {
+        container.releasePointerCapture(pointerId);
+      }
+      activePointerId = null;
+    };
+
+    container.addEventListener('pointerdown', (event) => {
+      activePointerId = event.pointerId;
+      container.setPointerCapture(activePointerId);
+      handlePointer(event.clientX);
     });
+
+    container.addEventListener('pointermove', (event) => {
+      if (activePointerId !== event.pointerId) return;
+      handlePointer(event.clientX);
+    });
+
+    container.addEventListener('pointerup', (event) => releasePointer(event.pointerId));
+    container.addEventListener('pointercancel', (event) => releasePointer(event.pointerId));
 
     update(slider.value);
 
