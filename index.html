@@ -65,6 +65,10 @@
     /* hide the track on some browsers to keep UI clean */
     .ba-range::-webkit-slider-runnable-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
     .ba-range::-moz-range-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
+    .ba-range-hint{animation:ba-range-hint .9s ease-in-out}
+    .ba-divider-hint{animation:ba-divider-hint .9s ease-in-out}
+    @keyframes ba-range-hint{0%{transform:translateX(0)}10%{transform:translateX(-6px)}25%{transform:translateX(5px)}40%{transform:translateX(-3px)}55%{transform:translateX(2px)}70%,100%{transform:translateX(0)}}
+    @keyframes ba-divider-hint{0%{transform:translateX(0)}15%{transform:translateX(-8px)}30%{transform:translateX(7px)}50%{transform:translateX(-4px)}70%{transform:translateX(3px)}100%{transform:translateX(0)}}
   </style>
 
   <!-- JSON-LD: Local Business -->
@@ -657,7 +661,18 @@
 
     update(slider.value);
 
+    function hintSlider() {
+      const RANGE_HINT_CLASS = 'ba-range-hint';
+      const DIVIDER_HINT_CLASS = 'ba-divider-hint';
+      const cleanup = (element, className) => element.addEventListener('animationend', () => element.classList.remove(className), { once: true });
+      slider.classList.add(RANGE_HINT_CLASS);
+      divider.classList.add(DIVIDER_HINT_CLASS);
+      cleanup(slider, RANGE_HINT_CLASS);
+      cleanup(divider, DIVIDER_HINT_CLASS);
+    }
+
     window.addEventListener('resize', () => update(slider.value));
+    setTimeout(hintSlider, 700);
   }
 
   function initSubsectionButtonAnimation() {
