@@ -113,6 +113,7 @@
       <ul class="hidden md:flex items-center gap-6 text-sm">
         <li><a class="hover:text-gold-300" href="#services" data-subsection-btn>Services</a></li>
         <li><a class="hover:text-gold-300" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="hover:text-gold-300" href="#gallery" data-subsection-btn>Gallery</a></li>
         <li><a class="hover:text-gold-300" href="#reviews" data-subsection-btn>Reviews</a></li>
         <li><a class="hover:text-gold-300" href="#faq" data-subsection-btn>FAQ</a></li>
         <li><a class="hover:text-gold-300" href="#contact" data-subsection-btn>Contact</a></li>
@@ -128,6 +129,7 @@
       <ul class="px-4 py-3 space-y-2 text-center">
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services" data-subsection-btn>Services</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#gallery" data-subsection-btn>Gallery</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews" data-subsection-btn>Reviews</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq" data-subsection-btn>FAQ</a></li>
         <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact" data-subsection-btn>Contact</a></li>
@@ -228,35 +230,6 @@
     </div>
   </section>
 
-  <!-- Process -->
-  <section class="section" id="process">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold">Our Install Process</h2>
-      <ol class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6 list-none counter-reset step">
-        <li class="glass rounded-2xl p-6">
-          <p class="text-sm text-white/70">Day 0</p>
-          <h3 class="font-semibold mt-1">Consult &amp; Design</h3>
-          <p class="text-white/80 mt-2">Site visit, moisture reading, color/system selection, and final quote.</p>
-        </li>
-        <li class="glass rounded-2xl p-6">
-          <p class="text-sm text-white/70">Day 1</p>
-          <h3 class="font-semibold mt-1">Prep &amp; Repair</h3>
-          <p class="text-white/80 mt-2">Diamond grind or shot-blast. Crack chase and patch. Dustless cleanup.</p>
-        </li>
-        <li class="glass rounded-2xl p-6">
-          <p class="text-sm text-white/70">Day 2</p>
-          <h3 class="font-semibold mt-1">Prime &amp; Build</h3>
-          <p class="text-white/80 mt-2">Moisture barrier primer and body coat. Decorative system applied.</p>
-        </li>
-        <li class="glass rounded-2xl p-6">
-          <p class="text-sm text-white/70">Day 3</p>
-          <h3 class="font-semibold mt-1">Seal &amp; Turnover</h3>
-          <p class="text-white/80 mt-2">UV-stable topcoat. Light foot traffic in 24h; vehicles in ~72h.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
   <!-- Before / After Slider -->
   <section class="section" id="before-after">
     <div class="max-w-7xl mx-auto px-4 py-16">
@@ -288,6 +261,73 @@
           >
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold">Our Install Process</h2>
+      <ol class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6 list-none counter-reset step">
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 0</p>
+          <h3 class="font-semibold mt-1">Consult &amp; Design</h3>
+          <p class="text-white/80 mt-2">Site visit, moisture reading, color/system selection, and final quote.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 1</p>
+          <h3 class="font-semibold mt-1">Prep &amp; Repair</h3>
+          <p class="text-white/80 mt-2">Diamond grind or shot-blast. Crack chase and patch. Dustless cleanup.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 2</p>
+          <h3 class="font-semibold mt-1">Prime &amp; Build</h3>
+          <p class="text-white/80 mt-2">Moisture barrier primer and body coat. Decorative system applied.</p>
+        </li>
+        <li class="glass rounded-2xl p-6">
+          <p class="text-sm text-white/70">Day 3</p>
+          <h3 class="font-semibold mt-1">Seal &amp; Turnover</h3>
+          <p class="text-white/80 mt-2">UV-stable topcoat. Light foot traffic in 24h; vehicles in ~72h.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/60">Gallery</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold">Recent installs &amp; finishes</h2>
+          <p class="mt-3 text-white/80 max-w-2xl">Drop your project photos into <code class="text-white/90">images/gallery/</code> and rebuild <code class="text-white/90">gallery.json</code>. This section will auto-render them in a clean grid with click-to-zoom.</p>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium" data-subsection-btn>Use my space</a>
+          <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10" id="galleryRefreshBtn">Refresh</a>
+        </div>
+      </div>
+
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid" aria-label="Project gallery"></div>
+
+      <div class="mt-8 glass rounded-2xl p-6 text-sm text-white/75">
+        <p class="font-semibold text-white">How to add photos</p>
+        <ol class="mt-3 space-y-2 list-decimal list-inside">
+          <li>Copy images into <code>epoxy-floors-website/images/gallery/</code></li>
+          <li>Run: <code>node scripts/build_gallery_manifest.js</code></li>
+          <li>Refresh the page.</li>
+        </ol>
+        <p class="mt-3 text-white/60">Tip: filenames become captions (e.g., <code>copper-swirl-1.jpg</code> → “copper swirl 1”).</p>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80">
+      <button class="absolute top-4 right-4 p-3 rounded-xl bg-white/10 hover:bg-white/20" id="lightboxClose" aria-label="Close gallery preview">✕</button>
+      <figure class="max-w-5xl w-full">
+        <img id="lightboxImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-2xl border border-white/10" />
+        <figcaption id="lightboxCap" class="mt-3 text-white/80 text-center"></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -709,10 +749,99 @@
     yearElement.textContent = new Date().getFullYear();
   }
 
+  function initGallery() {
+    const grid = document.getElementById('galleryGrid');
+    const refreshBtn = document.getElementById('galleryRefreshBtn');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCap = document.getElementById('lightboxCap');
+    const closeBtn = document.getElementById('lightboxClose');
+
+    if (!grid) return;
+
+    const openLightbox = (src, alt) => {
+      if (!lightbox || !lightboxImg || !lightboxCap) return;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Gallery image';
+      lightboxCap.textContent = alt || '';
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeLightbox = () => {
+      if (!lightbox || !lightboxImg) return;
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    };
+
+    const render = (items) => {
+      const safe = Array.isArray(items) ? items : [];
+      if (!safe.length) {
+        grid.innerHTML = `
+          <div class="col-span-full glass rounded-2xl p-6 text-white/75">
+            <p class="font-semibold text-white">No gallery images yet.</p>
+            <p class="mt-2">Add photos to <code>images/gallery/</code> then run <code>node scripts/build_gallery_manifest.js</code>.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = safe.map((it) => {
+        const src = it?.src || '';
+        const alt = it?.alt || 'Project photo';
+        return `
+          <button class="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition" type="button" data-gallery-item data-src="${src}" data-alt="${alt}">
+            <img src="${src}" alt="${alt}" class="w-full h-40 md:h-44 lg:h-48 object-cover group-hover:scale-[1.02] transition" loading="lazy" />
+            <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-sm text-white/90 truncate">${alt}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      grid.querySelectorAll('[data-gallery-item]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          openLightbox(btn.getAttribute('data-src'), btn.getAttribute('data-alt'));
+        });
+      });
+    };
+
+    const load = async () => {
+      try {
+        // Bust cache for local file reloads
+        const res = await fetch(`gallery.json?ts=${Date.now()}`, { cache: 'no-store' });
+        const data = await res.json();
+        render(data.items);
+      } catch (err) {
+        console.warn('Gallery load failed:', err);
+        render([]);
+      }
+    };
+
+    refreshBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      load();
+    });
+
+    closeBtn?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    load();
+  }
+
   initMobileMenu();
   initBeforeAfterSlider();
   initSubsectionButtonAnimation();
   initDynamicYear();
+  initGallery();
   </script>
 </body>
 </html>
