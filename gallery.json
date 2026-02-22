@@ -1,3 +1,44 @@
 {
-  "items": []
+  "items": [
+    {
+      "src": "images/gallery/decorative.jpg",
+      "alt": "decorative"
+    },
+    {
+      "src": "images/gallery/IMG_1587.jpg",
+      "alt": "IMG 1587"
+    },
+    {
+      "src": "images/gallery/IMG_3466.jpg",
+      "alt": "IMG 3466"
+    },
+    {
+      "src": "images/gallery/IMG_3765.jpg",
+      "alt": "IMG 3765"
+    },
+    {
+      "src": "images/gallery/IMG_3800.jpg",
+      "alt": "IMG 3800"
+    },
+    {
+      "src": "images/gallery/IMG_4388.jpg",
+      "alt": "IMG 4388"
+    },
+    {
+      "src": "images/gallery/IMG_4398.jpg",
+      "alt": "IMG 4398"
+    },
+    {
+      "src": "images/gallery/IMG_4400.jpg",
+      "alt": "IMG 4400"
+    },
+    {
+      "src": "images/gallery/IMG_4402.jpg",
+      "alt": "IMG 4402"
+    },
+    {
+      "src": "images/gallery/IMG_5075.png",
+      "alt": "IMG 5075"
+    }
+  ]
 }
