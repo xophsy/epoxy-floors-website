@@ -32,15 +32,16 @@ describe('handleFormSubmit', () => {
     form = document.getElementById('contact-form');
     submitBtn = form.querySelector('[data-submit-button]');
 
-    global.emailjs = { sendForm: jest.fn() };
+    global.emailjs = { init: jest.fn(), sendForm: jest.fn(), send: jest.fn() };
     originalAlert = global.alert;
     global.alert = jest.fn();
 
     const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-    const start = html.indexOf('// Form submission handler with EmailJS');
+    const start = html.indexOf('// EmailJS setup');
     const end = html.indexOf('// Add some interactive effects');
     const functionCode = html.slice(start, end);
-    const sandbox = { emailjs: global.emailjs, alert: global.alert, document, console };
+    const sandbox = { emailjs: global.emailjs, alert: global.alert, document, window, console };
+    sandbox.window.EMAILJS_PUBLIC_KEY = 'test_public_key';
     vm.runInNewContext(functionCode, sandbox);
     handleFormSubmit = sandbox.handleFormSubmit;
   });
