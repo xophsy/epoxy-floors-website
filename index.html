@@ -38,6 +38,7 @@
     }
   </script>
   <style>
+    html{scroll-behavior:smooth}
     .gold-gradient{background:linear-gradient(135deg,#ffd65b, #f4b400 30%, #a87300 70%, #ffd65b)}
     .shine{position:relative;overflow:hidden}
     .shine::after{content:"";position:absolute;inset:-200% -30%;transform:rotate(20deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);animation:shine 8s linear infinite}
@@ -48,16 +49,26 @@
     /* Before/After slider helpers */
     .ba-wrapper{position:relative}
     .ba-wrapper img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-    .ba-divider{position:absolute;top:0;bottom:0;width:2px;background:rgba(255,255,255,0.45);transform:translateX(-1px);pointer-events:none}
+    .ba-divider{position:absolute;top:0;bottom:0;width:2px;background:rgba(255,255,255,0.45);transform:translateX(-1px);pointer-events:none;box-shadow:0 0 0 0 rgba(255,255,255,0);}
     /* optional small handle at divider to make alignment obvious */
-    .ba-handle{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);width:22px;height:22px;border-radius:999px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);opacity:0.9;pointer-events:none}
+    .ba-handle{display:none}
+    .ba-divider{transition:none}
+    .ba-divider-glow{animation:ba-divider-glow .55s ease-out}
+    @keyframes ba-divider-glow{0%{box-shadow:0 0 0 0 rgba(255,255,255,0.4)}45%{box-shadow:0 0 14px 6px rgba(255,255,255,0.45)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
     /* Make range full width so thumb position matches divider */
     .ba-range{appearance:none;height:24px;background:transparent;outline:none}
+    .subsection-button{transition:transform .28s ease,box-shadow .28s ease}
+    .subsection-button-press{animation:subsection-press .42s cubic-bezier(0.4,0,0.2,1)}
+    @keyframes subsection-press{0%{transform:scale(1)}40%{transform:scale(.92)}70%{transform:scale(1.03)}100%{transform:scale(1)}}
     .ba-range::-webkit-slider-thumb{appearance:none;width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.25)}
     .ba-range::-moz-range-thumb{width:22px;height:22px;border-radius:999px;background:#f4b400;border:2px solid rgba(0,0,0,0.15)}
     /* hide the track on some browsers to keep UI clean */
     .ba-range::-webkit-slider-runnable-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
     .ba-range::-moz-range-track{height:6px;background:rgba(255,255,255,0.06);border-radius:999px}
+    .ba-range-hint{animation:ba-range-hint .9s ease-in-out}
+    .ba-divider-hint{animation:ba-divider-hint .9s ease-in-out}
+    @keyframes ba-range-hint{0%{transform:translateX(0)}10%{transform:translateX(-6px)}25%{transform:translateX(5px)}40%{transform:translateX(-3px)}55%{transform:translateX(2px)}70%,100%{transform:translateX(0)}}
+    @keyframes ba-divider-hint{0%{transform:translateX(0)}15%{transform:translateX(-8px)}30%{transform:translateX(7px)}50%{transform:translateX(-4px)}70%{transform:translateX(3px)}100%{transform:translateX(0)}}
   </style>
 
   <!-- JSON-LD: Local Business -->
@@ -100,14 +111,15 @@
         <span class="font-semibold tracking-wide">Golden <span class="text-gold-400">Epoxy</span></span>
       </a>
       <ul class="hidden md:flex items-center gap-6 text-sm">
-        <li><a class="hover:text-gold-300" href="#services">Services</a></li>
-        <li><a class="hover:text-gold-300" href="#process">Process</a></li>
-        <li><a class="hover:text-gold-300" href="#reviews">Reviews</a></li>
-        <li><a class="hover:text-gold-300" href="#faq">FAQ</a></li>
-        <li><a class="hover:text-gold-300" href="#contact">Contact</a></li>
+        <li><a class="hover:text-gold-300" href="#services" data-subsection-btn>Services</a></li>
+        <li><a class="hover:text-gold-300" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="hover:text-gold-300" href="#gallery" data-subsection-btn>Gallery</a></li>
+        <!-- Reviews removed -->
+        <li><a class="hover:text-gold-300" href="#faq" data-subsection-btn>FAQ</a></li>
+        <li><a class="hover:text-gold-300" href="#contact" data-subsection-btn>Contact</a></li>
       </ul>
       <div class="flex items-center gap-3">
-        <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gold-500 text-black font-medium hover:shadow-glow transition">Free Quote</a>
+        <a href="#contact" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-gold-500 text-black font-medium hover:shadow-glow transition" data-subsection-btn>Free Quote</a>
         <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
@@ -115,11 +127,12 @@
     </nav>
     <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
       <ul class="px-4 py-3 space-y-2 text-center">
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services">Services</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process">Process</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#reviews">Reviews</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq">FAQ</a></li>
-        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact">Contact</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#services" data-subsection-btn>Services</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#process" data-subsection-btn>Process</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#gallery" data-subsection-btn>Gallery</a></li>
+        <!-- Reviews removed -->
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#faq" data-subsection-btn>FAQ</a></li>
+        <li><a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="#contact" data-subsection-btn>Contact</a></li>
       </ul>
     </div>
   </header>
@@ -133,8 +146,8 @@
         <p class="mt-4 text-white/80 text-lg">Durable. Elegant. Low maintenance. We install metallic, flake, and quartz systems that transform garages, living spaces, and commercial floors.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition" aria-label="Get a free quote">Get a Free Quote</a>
-          <a href="#before-after" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work">View Our Work</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-gold-500 text-black font-semibold hover:shadow-glow transition" aria-label="Get a free quote" data-subsection-btn>Get a Free Quote</a>
+          <a href="#before-after" class="px-5 py-3 rounded-xl border border-white/15 hover:bg-white/5" aria-label="View our work" data-subsection-btn>View Our Work</a>
         </div>
         <div class="mt-6 flex items-center gap-6 text-sm text-white/70">
           <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold-400"></span> Lifetime residential warranty</div>
@@ -149,9 +162,9 @@
 
   <!-- Trust badges -->
   <section class="section" id="badges">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-3 gap-4">
       <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">10+ Years</p><p class="text-sm opacity-80">Experience</p></div>
-      <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">4.9★</p><p class="text-sm opacity-80">Customer Rating</p></div>
+      <!-- Customer Rating removed -->
       <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">48hr</p><p class="text-sm opacity-80">Typical Install</p></div>
       <div class="glass rounded-2xl p-4 text-center"><p class="text-gold-300 font-semibold">Dustless</p><p class="text-sm opacity-80">Prep System</p></div>
     </div>
@@ -162,7 +175,7 @@
     <div class="max-w-7xl mx-auto px-4 py-16">
       <div class="flex items-end justify-between flex-wrap gap-6">
         <h2 class="text-3xl md:text-4xl font-bold">Our Expert Services</h2>
-        <a href="#contact" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10">Start a Project</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10" data-subsection-btn>Start a Project</a>
       </div>
       <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
@@ -217,6 +230,40 @@
     </div>
   </section>
 
+  <!-- Before / After Slider -->
+  <section class="section" id="before-after">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold">See the Difference</h2>
+          <p class="text-white/80 mt-3">Drag the handle to compare before and after. Our metallic and flake systems level, seal, and elevate concrete—fast.</p>
+        </div>
+        <div class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 ba-wrapper" id="compare">
+          <!-- both images are full-size and stacked; after image is clipped to reveal 'before' -->
+          <img src="images/slider/before.png" alt="Floor before coating" class="" />
+          <img src="images/slider/after.png" alt="Floor after coating" id="afterImg" style="clip-path:inset(0 50% 0 0)" />
+          <!-- divider and optional handle -->
+          <div id="divider" class="ba-divider" style="left:50%"></div>
+
+          <!-- full-width range so thumb position maps 1:1 to image percentages -->
+          <input
+            type="range"
+            id="slider"
+            min="0"
+            max="100"
+            value="50"
+            role="slider"
+            aria-label="Before/after slider"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="50"
+            class="absolute bottom-4 left-0 w-full px-4 ba-range"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Process -->
   <section class="section" id="process">
     <div class="max-w-7xl mx-auto px-4 py-16">
@@ -246,52 +293,35 @@
     </div>
   </section>
 
-  <!-- Before / After Slider -->
-  <section class="section" id="before-after">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold">See the Difference</h2>
-          <p class="text-white/80 mt-3">Drag the handle to compare before and after. Our metallic and flake systems level, seal, and elevate concrete—fast.</p>
-        </div>
-        <div class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 ba-wrapper" id="compare">
-          <!-- both images are full-size and stacked; after image is clipped to reveal 'before' -->
-          <img src="images/slider/before.png" alt="Floor before coating" class="" />
-          <img src="images/slider/after.png" alt="Floor after coating" id="afterImg" style="clip-path:inset(0 50% 0 0)" />
-          <!-- divider and optional handle -->
-          <div id="divider" class="ba-divider" style="left:50%"></div>
-          <div id="handle" class="ba-handle" style="left:50%"></div>
-
-          <!-- full-width range so thumb position maps 1:1 to image percentages -->
-          <input type="range" id="slider" min="0" max="100" value="50" aria-label="Before/after slider" class="absolute bottom-4 left-0 w-full px-4 ba-range">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews -->
-  <section class="section" id="reviews">
+  <!-- Gallery -->
+  <section class="section" id="gallery">
     <div class="max-w-7xl mx-auto px-4 py-16">
       <div class="flex items-end justify-between flex-wrap gap-6">
-        <h2 class="text-3xl md:text-4xl font-bold">What Clients Say</h2>
-        <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium">Get My Quote</a>
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/60">Gallery</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold">Recent installs &amp; finishes</h2>
+          <p class="mt-3 text-white/80 max-w-2xl">A look at recent installs, metallic swirls, flakes, and finishes across Tampa Bay.</p>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <a href="#contact" class="px-4 py-2 rounded-xl bg-gold-500 text-black font-medium" data-subsection-btn>Use my space</a>
+          <a href="#" class="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10" id="galleryRefreshBtn">Refresh</a>
+        </div>
       </div>
-      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <blockquote class="glass rounded-2xl p-6">
-          <p class="text-lg">“Garage looks like a showroom. Dust is gone and the flakes hide everything.”</p>
-          <footer class="mt-4 text-white/70">— Maria G., Tampa</footer>
-        </blockquote>
-        <blockquote class="glass rounded-2xl p-6">
-          <p class="text-lg">“The metallic gold swirl is insane. Installers were professional and fast.”</p>
-          <footer class="mt-4 text-white/70">— Kevin R., St. Pete</footer>
-        </blockquote>
-        <blockquote class="glass rounded-2xl p-6">
-          <p class="text-lg">“Zero hot-tire pickup and easy to clean. Worth every penny.”</p>
-          <footer class="mt-4 text-white/70">— Dana S., Clearwater</footer>
-        </blockquote>
-      </div>
+
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid" aria-label="Project gallery"></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80">
+      <button class="absolute top-4 right-4 p-3 rounded-xl bg-white/10 hover:bg-white/20" id="lightboxClose" aria-label="Close gallery preview">✕</button>
+      <figure class="max-w-5xl w-full">
+        <img id="lightboxImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-2xl border border-white/10" />
+        <figcaption id="lightboxCap" class="mt-3 text-white/80 text-center"></figcaption>
+      </figure>
     </div>
   </section>
+
+  <!-- Reviews removed -->
 
   <!-- FAQ -->
   <section class="section" id="faq">
@@ -328,13 +358,14 @@
             id="contact-form"
             class="mt-8 grid sm:grid-cols-2 gap-4 glass p-6 rounded-2xl"
             data-emailjs-form
-            data-service-id="service_ch9qdf9"
-            data-template-id="template_lg14g8b"
-            data-autoreply-template-id="template_autoreply"
+            data-service-id="service_l1hy6hk"
+            data-template-id="template_rv85jwj"
+            data-autoreply-template-id="template_pib8zpm"
             data-success-message="Thank you for your inquiry! We have received your quote request and will contact you within 24 hours to discuss your project."
             data-error-message="Sorry, there was an error sending your message. Please try again or contact us directly at goldenepoxyworks@gmail.com."
           >
             <input type="hidden" name="submitted_at" />
+            <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
             <input required name="name" placeholder="Full name" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
             <input required type="email" name="email" placeholder="Email" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
             <input name="phone" placeholder="Phone" class="px-4 py-3 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
@@ -399,13 +430,14 @@
         <form
           class="mt-3 flex gap-2"
           data-emailjs-form
-          data-service-id="service_ch9qdf9"
-          data-template-id="template_lg14g8b"
-          data-autoreply-template-id="template_autoreply"
+          data-service-id="service_l1hy6hk"
+          data-template-id="template_rv85jwj"
+          data-autoreply-template-id="template_pib8zpm"
           data-success-message="Thanks! We'll be in touch soon."
           data-error-message="Sorry, there was an error sending your message. Please try again or email us at goldenepoxyworks@gmail.com."
         >
           <input type="hidden" name="submitted_at" />
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
           <input required name="email" type="email" placeholder="Email" class="flex-1 px-4 py-2 rounded-xl bg-black/30 border border-white/10 outline-none focus:border-gold-400" />
           <button
             type="submit"
@@ -424,19 +456,39 @@
 
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-       emailjs.init("xA4JPLCqeYzLRmG0t");
-    })();
-  </script>
 
   <script>
-  // Form submission handler with EmailJS (updated to optionally send an autoresponder)
-  const DEFAULT_SERVICE_ID = 'service_ch9qdf9';
-  const DEFAULT_TEMPLATE_ID = 'template_myfvf2y';
-  const DEFAULT_AUTOREPLY_TEMPLATE_ID = 'template_autoreply';
+  // EmailJS setup
+  // 1) Create an EmailJS account, then add an Email Service (e.g. Gmail) and a template.
+  // 2) Paste your EmailJS "Public Key" below.
+  // NOTE: This is safe to expose client-side. DO NOT put any private keys in the browser.
+  const DEFAULT_PUBLIC_KEY = 'xA4JPLCqeYzLRmG0t';
+
+  // Form submission handler with EmailJS (optionally sends an autoresponder)
+  const DEFAULT_SERVICE_ID = 'service_l1hy6hk';
+  const DEFAULT_TEMPLATE_ID = 'template_rv85jwj';
+  const DEFAULT_AUTOREPLY_TEMPLATE_ID = 'template_pib8zpm';
   const DEFAULT_SUCCESS_MESSAGE = 'Thank you for your inquiry! We have received your quote request and will contact you within 24 hours to discuss your project.';
   const DEFAULT_ERROR_MESSAGE = 'Sorry, there was an error sending your message. Please try again or contact us directly at goldenepoxyworks@gmail.com.';
+
+  function initEmailJsOnce() {
+    const key = (typeof window !== 'undefined' && window.EMAILJS_PUBLIC_KEY)
+      ? window.EMAILJS_PUBLIC_KEY
+      : DEFAULT_PUBLIC_KEY;
+    if (!key || key === 'YOUR_EMAILJS_PUBLIC_KEY') {
+      console.warn('EmailJS not configured: set DEFAULT_PUBLIC_KEY');
+      return false;
+    }
+    try {
+      emailjs.init(key);
+      return true;
+    } catch (e) {
+      console.error('EmailJS init failed', e);
+      return false;
+    }
+  }
+
+  const EMAILJS_READY = initEmailJsOnce();
 
   function getSubmitButton(form) {
     return (
@@ -478,6 +530,17 @@
     const submitBtn = getSubmitButton(form);
     const idleText = getIdleText(submitBtn) || 'Send Message';
     const loadingText = (submitBtn && submitBtn.dataset && submitBtn.dataset.loadingText) || 'Sending...';
+    if (!EMAILJS_READY) {
+      alert('Email service is not configured yet. Please call or email us directly at goldenepoxyworks@gmail.com.');
+      return;
+    }
+
+    // basic spam trap (hidden field). If a bot fills it, silently drop.
+    const honeypot = form.querySelector('input[name="website"]');
+    if (honeypot && honeypot.value) {
+      return;
+    }
+
     const serviceId = form.dataset.serviceId || DEFAULT_SERVICE_ID;
     const templateId = form.dataset.templateId || DEFAULT_TEMPLATE_ID;
     const autoreplyTemplateId = form.dataset.autoreplyTemplateId || DEFAULT_AUTOREPLY_TEMPLATE_ID;
@@ -544,29 +607,141 @@
     const slider = document.getElementById('slider');
     const afterImage = document.getElementById('afterImg');
     const divider = document.getElementById('divider');
-    const handle = document.getElementById('handle');
     const container = document.getElementById('compare');
 
     if (!slider || !afterImage || !divider || !container) return;
 
-    function update(v) {
-      const value = Math.max(0, Math.min(100, Number(v) || 0));
-      // clip-path inset(top right bottom left) — right should be 100 - value
-      afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-      // position divider and small handle so they align with the current value
-      divider.style.left = `${value}%`;
-      if (handle) handle.style.left = `${value}%`;
+    const MIN = 0;
+    const MAX = 100;
+    let activePointerId = null;
+
+    function clamp(value) {
+      return Math.min(MAX, Math.max(MIN, Number(value) || 0));
     }
 
-    // keep synced on input and initialize
-    slider.addEventListener('input', (e) => update(e.target.value));
-    // support keyboard arrows (change event sometimes needed)
-    slider.addEventListener('change', (e) => update(e.target.value));
-    // initialize on load and whenever the container resizes
+    function update(value) {
+      const normalized = clamp(value);
+      slider.value = normalized;
+      slider.setAttribute('aria-valuenow', normalized.toFixed(0));
+      afterImage.style.clipPath = `inset(0 ${100 - normalized}% 0 0)`;
+      divider.style.left = `${normalized}%`;
+      animateDivider();
+    }
+
+    function animateDivider() {
+      divider.classList.remove('ba-divider-glow');
+      void divider.offsetWidth;
+      divider.classList.add('ba-divider-glow');
+    }
+
+    slider.addEventListener('input', (event) => update(event.target.value));
+    slider.addEventListener('change', (event) => update(event.target.value));
+
+    slider.addEventListener('keydown', (event) => {
+      const key = event.key;
+      if (!['ArrowLeft', 'ArrowDown', 'ArrowRight', 'ArrowUp', 'Home', 'End', 'PageDown', 'PageUp'].includes(key)) {
+        return;
+      }
+      event.preventDefault();
+      switch (key) {
+        case 'ArrowLeft':
+        case 'ArrowDown':
+          update(slider.value - 1);
+          break;
+        case 'ArrowRight':
+        case 'ArrowUp':
+          update(+slider.value + 1);
+          break;
+        case 'PageDown':
+          update(slider.value - 10);
+          break;
+        case 'PageUp':
+          update(+slider.value + 10);
+          break;
+        case 'Home':
+          update(MIN);
+          break;
+        case 'End':
+          update(MAX);
+          break;
+      }
+    });
+
+    slider.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      update(+slider.value + (event.deltaY > 0 ? -1 : 1));
+    });
+
+    const handlePointer = (clientX) => {
+      const rect = container.getBoundingClientRect();
+      const percent = ((clientX - rect.left) / rect.width) * 100;
+      update(percent);
+    };
+
+    const releasePointer = (pointerId) => {
+      if (activePointerId !== pointerId) return;
+      if (container.hasPointerCapture(pointerId)) {
+        container.releasePointerCapture(pointerId);
+      }
+      activePointerId = null;
+    };
+
+    container.addEventListener('pointerdown', (event) => {
+      activePointerId = event.pointerId;
+      container.setPointerCapture(activePointerId);
+      handlePointer(event.clientX);
+    });
+
+    container.addEventListener('pointermove', (event) => {
+      if (activePointerId !== event.pointerId) return;
+      handlePointer(event.clientX);
+    });
+
+    container.addEventListener('pointerup', (event) => releasePointer(event.pointerId));
+    container.addEventListener('pointercancel', (event) => releasePointer(event.pointerId));
+
     update(slider.value);
 
-    // Recalculate on resize (keeps divider visually correct if layout changes)
+    function hintSlider() {
+      const RANGE_HINT_CLASS = 'ba-range-hint';
+      const DIVIDER_HINT_CLASS = 'ba-divider-hint';
+      const cleanup = (element, className) => element.addEventListener('animationend', () => element.classList.remove(className), { once: true });
+      slider.classList.add(RANGE_HINT_CLASS);
+      divider.classList.add(DIVIDER_HINT_CLASS);
+      cleanup(slider, RANGE_HINT_CLASS);
+      cleanup(divider, DIVIDER_HINT_CLASS);
+    }
+
     window.addEventListener('resize', () => update(slider.value));
+    setTimeout(hintSlider, 700);
+  }
+
+  function initSubsectionButtonAnimation() {
+    const buttons = document.querySelectorAll('[data-subsection-btn]');
+    if (!buttons.length) return;
+
+    buttons.forEach((button) => {
+      button.classList.add('subsection-button');
+      button.addEventListener('click', (event) => {
+        button.classList.remove('subsection-button-press');
+        void button.offsetWidth;
+        button.classList.add('subsection-button-press');
+
+        const href = button.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            event.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (!target.hasAttribute('tabindex')) {
+              target.setAttribute('tabindex', '-1');
+              target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+            }
+            target.focus({ preventScroll: true });
+          }
+        }
+      });
+    });
   }
 
   function initDynamicYear() {
@@ -575,9 +750,99 @@
     yearElement.textContent = new Date().getFullYear();
   }
 
+  function initGallery() {
+    const grid = document.getElementById('galleryGrid');
+    const refreshBtn = document.getElementById('galleryRefreshBtn');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCap = document.getElementById('lightboxCap');
+    const closeBtn = document.getElementById('lightboxClose');
+
+    if (!grid) return;
+
+    const openLightbox = (src, alt) => {
+      if (!lightbox || !lightboxImg || !lightboxCap) return;
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Gallery image';
+      lightboxCap.textContent = alt || '';
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeLightbox = () => {
+      if (!lightbox || !lightboxImg) return;
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    };
+
+    const render = (items) => {
+      const safe = Array.isArray(items) ? items : [];
+      if (!safe.length) {
+        grid.innerHTML = `
+          <div class="col-span-full glass rounded-2xl p-6 text-white/75">
+            <p class="font-semibold text-white">No gallery images yet.</p>
+            <p class="mt-2">Add photos to <code>images/gallery/</code> then run <code>node scripts/build_gallery_manifest.js</code>.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = safe.map((it) => {
+        const src = it?.src || '';
+        const alt = it?.alt || 'Project photo';
+        return `
+          <button class="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition" type="button" data-gallery-item data-src="${src}" data-alt="${alt}">
+            <img src="${src}" alt="${alt}" class="w-full h-40 md:h-44 lg:h-48 object-cover group-hover:scale-[1.02] transition" loading="lazy" />
+            <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+              <p class="text-sm text-white/90 truncate">${alt}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      grid.querySelectorAll('[data-gallery-item]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          openLightbox(btn.getAttribute('data-src'), btn.getAttribute('data-alt'));
+        });
+      });
+    };
+
+    const load = async () => {
+      try {
+        // Bust cache for local file reloads
+        const res = await fetch(`gallery.json?ts=${Date.now()}`, { cache: 'no-store' });
+        const data = await res.json();
+        render(data.items);
+      } catch (err) {
+        console.warn('Gallery load failed:', err);
+        render([]);
+      }
+    };
+
+    refreshBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      load();
+    });
+
+    closeBtn?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    load();
+  }
+
   initMobileMenu();
   initBeforeAfterSlider();
+  initSubsectionButtonAnimation();
   initDynamicYear();
+  initGallery();
   </script>
 </body>
 </html>
