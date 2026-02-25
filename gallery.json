@@ -5,8 +5,16 @@
       "alt": "decorative"
     },
     {
+      "src": "images/gallery/IMG_0804.JPEG",
+      "alt": "IMG 0804"
+    },
+    {
       "src": "images/gallery/IMG_1587.jpg",
       "alt": "IMG 1587"
+    },
+    {
+      "src": "images/gallery/IMG_3732.JPEG",
+      "alt": "IMG 3732"
     },
     {
       "src": "images/gallery/IMG_3765.jpg",
@@ -17,8 +25,20 @@
       "alt": "IMG 3800"
     },
     {
+      "src": "images/gallery/IMG_4275.JPEG",
+      "alt": "IMG 4275"
+    },
+    {
+      "src": "images/gallery/IMG_4374.JPEG",
+      "alt": "IMG 4374"
+    },
+    {
       "src": "images/gallery/IMG_4388.jpg",
       "alt": "IMG 4388"
+    },
+    {
+      "src": "images/gallery/IMG_4393.JPEG",
+      "alt": "IMG 4393"
     },
     {
       "src": "images/gallery/IMG_4398.jpg",
@@ -33,8 +53,56 @@
       "alt": "IMG 4402"
     },
     {
+      "src": "images/gallery/IMG_4403.JPEG",
+      "alt": "IMG 4403"
+    },
+    {
+      "src": "images/gallery/IMG_4404.JPEG",
+      "alt": "IMG 4404"
+    },
+    {
+      "src": "images/gallery/IMG_4406.JPEG",
+      "alt": "IMG 4406"
+    },
+    {
+      "src": "images/gallery/IMG_4560.JPEG",
+      "alt": "IMG 4560"
+    },
+    {
       "src": "images/gallery/IMG_5075.png",
       "alt": "IMG 5075"
+    },
+    {
+      "src": "images/gallery/IMG_5434.JPEG",
+      "alt": "IMG 5434"
+    },
+    {
+      "src": "images/gallery/IMG_5445.JPEG",
+      "alt": "IMG 5445"
+    },
+    {
+      "src": "images/gallery/IMG_5449.JPEG",
+      "alt": "IMG 5449"
+    },
+    {
+      "src": "images/gallery/IMG_5504.JPEG",
+      "alt": "IMG 5504"
+    },
+    {
+      "src": "images/gallery/IMG_5855.JPEG",
+      "alt": "IMG 5855"
+    },
+    {
+      "src": "images/gallery/IMG_5893.JPEG",
+      "alt": "IMG 5893"
+    },
+    {
+      "src": "images/gallery/IMG_5908.JPEG",
+      "alt": "IMG 5908"
+    },
+    {
+      "src": "images/gallery/IMG_6031.JPEG",
+      "alt": "IMG 6031"
     }
   ]
 }
