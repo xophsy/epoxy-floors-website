@@ -811,14 +811,31 @@
     };
 
     const load = async () => {
+      const tryFetch = async (url) => {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) {
+          throw new Error(`Gallery request failed: ${res.status} ${res.statusText} @ ${url}`);
+        }
+        return await res.json();
+      };
+
       try {
-        // Bust cache for local file reloads
-        const res = await fetch(`gallery.json?ts=${Date.now()}`, { cache: 'no-store' });
-        const data = await res.json();
+        // Bust cache
+        const ts = Date.now();
+        // Try a couple common base paths (some hosts rewrite routes / change base)
+        const data = await tryFetch(`gallery.json?ts=${ts}`).catch(() => tryFetch(`./gallery.json?ts=${ts}`));
         render(data.items);
       } catch (err) {
         console.warn('Gallery load failed:', err);
-        render([]);
+
+        // Helpful on-page error instead of silent empty gallery
+        grid.innerHTML = `
+          <div class="col-span-full glass rounded-2xl p-6 text-white/80">
+            <p class="font-semibold text-white">Gallery failed to load.</p>
+            <p class="mt-2 text-sm text-white/70">${String(err).replaceAll('<','&lt;').replaceAll('>','&gt;')}</p>
+            <p class="mt-4 text-sm">If you're opening this as a local file, run a local server (e.g. <code>npx http-server</code>) so <code>fetch('gallery.json')</code> works.</p>
+          </div>
+        `;
       }
     };
 
