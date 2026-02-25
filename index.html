@@ -314,9 +314,15 @@
     <!-- Lightbox -->
     <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80">
       <button class="absolute top-4 right-4 p-3 rounded-xl bg-white/10 hover:bg-white/20" id="lightboxClose" aria-label="Close gallery preview">✕</button>
+
+      <!-- Desktop arrows -->
+      <button id="lightboxPrev" class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-xl bg-white/10 hover:bg-white/20" aria-label="Previous photo">◀</button>
+      <button id="lightboxNext" class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-xl bg-white/10 hover:bg-white/20" aria-label="Next photo">▶</button>
+
       <figure class="max-w-5xl w-full">
         <img id="lightboxImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-2xl border border-white/10" />
         <figcaption id="lightboxCap" class="mt-3 text-white/80 text-center"></figcaption>
+        <p class="mt-2 text-center text-xs text-white/50 md:hidden">Swipe left/right to navigate</p>
       </figure>
     </div>
   </section>
@@ -757,14 +763,29 @@
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxCap = document.getElementById('lightboxCap');
     const closeBtn = document.getElementById('lightboxClose');
+    const prevBtn = document.getElementById('lightboxPrev');
+    const nextBtn = document.getElementById('lightboxNext');
+
+    let currentIndex = -1;
+    let currentItems = [];
 
     if (!grid) return;
 
-    const openLightbox = (src, alt) => {
+    const openLightboxAt = (index) => {
       if (!lightbox || !lightboxImg || !lightboxCap) return;
+      if (!Array.isArray(currentItems) || !currentItems.length) return;
+
+      // wrap
+      const len = currentItems.length;
+      currentIndex = ((index % len) + len) % len;
+
+      const it = currentItems[currentIndex] || {};
+      const src = it?.src || '';
+      const alt = it?.alt || 'Gallery image';
+
       lightboxImg.src = src;
-      lightboxImg.alt = alt || 'Gallery image';
-      lightboxCap.textContent = alt || '';
+      lightboxImg.alt = alt;
+      lightboxCap.textContent = alt;
       lightbox.classList.remove('hidden');
       lightbox.classList.add('flex');
       document.body.style.overflow = 'hidden';
@@ -775,6 +796,7 @@
       lightbox.classList.add('hidden');
       lightbox.classList.remove('flex');
       lightboxImg.src = '';
+      currentIndex = -1;
       document.body.style.overflow = '';
     };
 
@@ -790,11 +812,11 @@
         return;
       }
 
-      grid.innerHTML = safe.map((it) => {
+      grid.innerHTML = safe.map((it, idx) => {
         const src = it?.src || '';
         const alt = it?.alt || 'Project photo';
         return `
-          <button class="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition" type="button" data-gallery-item data-src="${src}" data-alt="${alt}">
+          <button class="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition" type="button" data-gallery-item data-index="${idx}">
             <img src="${src}" alt="${alt}" class="w-full h-40 md:h-44 lg:h-48 object-cover group-hover:scale-[1.02] transition" loading="lazy" />
             <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
               <p class="text-sm text-white/90 truncate">${alt}</p>
@@ -805,7 +827,9 @@
 
       grid.querySelectorAll('[data-gallery-item]').forEach((btn) => {
         btn.addEventListener('click', () => {
-          openLightbox(btn.getAttribute('data-src'), btn.getAttribute('data-alt'));
+          const idx = parseInt(btn.getAttribute('data-index') || '-1', 10);
+          if (!Number.isFinite(idx) || idx < 0) return;
+          openLightboxAt(idx);
         });
       });
     };
@@ -824,7 +848,8 @@
         const ts = Date.now();
         // Try a couple common base paths (some hosts rewrite routes / change base)
         const data = await tryFetch(`gallery.json?ts=${ts}`).catch(() => tryFetch(`./gallery.json?ts=${ts}`));
-        render(data.items);
+        currentItems = Array.isArray(data?.items) ? data.items : [];
+        render(currentItems);
       } catch (err) {
         console.warn('Gallery load failed:', err);
 
@@ -843,6 +868,58 @@
       e.preventDefault();
       load();
     });
+
+    const isLightboxOpen = () => lightbox && !lightbox.classList.contains('hidden');
+
+    const prev = () => {
+      if (!isLightboxOpen()) return;
+      openLightboxAt(currentIndex - 1);
+    };
+
+    const next = () => {
+      if (!isLightboxOpen()) return;
+      openLightboxAt(currentIndex + 1);
+    };
+
+    // Desktop arrow buttons
+    prevBtn?.addEventListener('click', (e) => { e.preventDefault(); prev(); });
+    nextBtn?.addEventListener('click', (e) => { e.preventDefault(); next(); });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!isLightboxOpen()) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    });
+
+    // Mobile swipe navigation
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchActive = false;
+
+    const onTouchStart = (e) => {
+      const t = e.touches?.[0];
+      if (!t) return;
+      touchActive = true;
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+    };
+
+    const onTouchEnd = (e) => {
+      if (!touchActive) return;
+      touchActive = false;
+      const t = e.changedTouches?.[0];
+      if (!t) return;
+      const dx = t.clientX - touchStartX;
+      const dy = t.clientY - touchStartY;
+      if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy)) return;
+      if (dx < 0) next();
+      else prev();
+    };
+
+    lightboxImg?.addEventListener('touchstart', onTouchStart, { passive: true });
+    lightboxImg?.addEventListener('touchend', onTouchEnd, { passive: true });
 
     closeBtn?.addEventListener('click', closeLightbox);
     lightbox?.addEventListener('click', (e) => {
