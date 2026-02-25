@@ -320,10 +320,7 @@
       <button id="lightboxNext" class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-xl bg-white/10 hover:bg-white/20" aria-label="Next photo">▶</button>
 
       <figure class="max-w-5xl w-full">
-        <div class="relative w-full">
-          <img id="lightboxImgA" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-2xl border border-white/10 opacity-0 translate-x-0 transition-transform transition-opacity duration-250 ease-out" />
-          <img id="lightboxImgB" src="" alt="" class="absolute inset-0 w-full max-h-[80vh] object-contain rounded-2xl border border-white/10 opacity-0 translate-x-0 transition-transform transition-opacity duration-250 ease-out" />
-        </div>
+        <img id="lightboxImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-2xl border border-white/10 transition-transform transition-opacity duration-200 ease-out" />
         <figcaption id="lightboxCap" class="mt-3 text-white/80 text-center"></figcaption>
         <p class="mt-2 text-center text-xs text-white/50 md:hidden">Swipe left/right to navigate</p>
       </figure>
@@ -763,8 +760,7 @@
     const grid = document.getElementById('galleryGrid');
     const refreshBtn = document.getElementById('galleryRefreshBtn');
     const lightbox = document.getElementById('lightbox');
-    const lightboxImgA = document.getElementById('lightboxImgA');
-    const lightboxImgB = document.getElementById('lightboxImgB');
+    const lightboxImg = document.getElementById('lightboxImg');
     const lightboxCap = document.getElementById('lightboxCap');
     const closeBtn = document.getElementById('lightboxClose');
     const prevBtn = document.getElementById('lightboxPrev');
@@ -772,23 +768,11 @@
 
     let currentIndex = -1;
     let currentItems = [];
-    let activeLayer = 'A';
-    let isAnimating = false;
-
-    const getActiveImg = () => (activeLayer === 'A' ? lightboxImgA : lightboxImgB);
-    const getInactiveImg = () => (activeLayer === 'A' ? lightboxImgB : lightboxImgA);
-
-    const setImgVisible = (img, visible) => {
-      if (!img) return;
-      img.style.opacity = visible ? '1' : '0';
-      img.style.transform = 'translateX(0px)';
-    };
 
     if (!grid) return;
 
-    const openLightboxAt = async (index, opts = {}) => {
-      if (!lightbox || !lightboxCap) return;
-      if (!lightboxImgA || !lightboxImgB) return;
+    const openLightboxAt = (index, opts = {}) => {
+      if (!lightbox || !lightboxImg || !lightboxCap) return;
       if (!Array.isArray(currentItems) || !currentItems.length) return;
 
       const animate = opts?.animate !== false;
@@ -796,98 +780,50 @@
 
       // wrap
       const len = currentItems.length;
-      const nextIndex = ((index % len) + len) % len;
+      currentIndex = ((index % len) + len) % len;
 
-      const it = currentItems[nextIndex] || {};
+      const it = currentItems[currentIndex] || {};
       const src = it?.src || '';
       const alt = it?.alt || 'Gallery image';
+
+      const doSet = () => {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt;
+        lightboxCap.textContent = alt;
+      };
 
       // Open the lightbox immediately
       lightbox.classList.remove('hidden');
       lightbox.classList.add('flex');
       document.body.style.overflow = 'hidden';
 
-      const activeImg = getActiveImg();
-      const incomingImg = getInactiveImg();
-
-      const primeIncoming = () => {
-        incomingImg.alt = alt;
-        incomingImg.src = src;
-      };
-
-      const showStatic = () => {
-        activeImg.alt = alt;
-        activeImg.src = src;
-        setImgVisible(activeImg, true);
-        setImgVisible(incomingImg, false);
-        lightboxCap.textContent = alt;
-        currentIndex = nextIndex;
-      };
-
-      // First open / no animation requested
-      if (!animate || !direction || currentIndex === -1 || !activeImg.src) {
-        showStatic();
+      if (!animate || !direction) {
+        doSet();
         return;
       }
 
-      if (isAnimating) return;
-      isAnimating = true;
-
-      // Prepare incoming layer offscreen
-      primeIncoming();
-      const offset = 42;
-      const inFrom = direction > 0 ? offset : -offset;
-      const outTo = direction > 0 ? -offset : offset;
-
-      incomingImg.style.transition = 'none';
-      incomingImg.style.opacity = '0';
-      incomingImg.style.transform = `translateX(${inFrom}px)`;
-      // Force style flush
-      incomingImg.getBoundingClientRect();
-      incomingImg.style.transition = '';
-
-      // Try to decode image before animating (reduces jank on mobile)
-      try { await incomingImg.decode?.(); } catch (e) {}
+      // Slide/fade transition (mobile-friendly)
+      const px = direction > 0 ? 24 : -24;
+      // start: slight offset opposite of motion, then slide through
+      lightboxImg.style.opacity = '0';
+      lightboxImg.style.transform = `translateX(${px}px)`;
 
       requestAnimationFrame(() => {
-        // animate outgoing + incoming
-        activeImg.style.opacity = '0';
-        activeImg.style.transform = `translateX(${outTo}px)`;
-        incomingImg.style.opacity = '1';
-        incomingImg.style.transform = 'translateX(0px)';
-
-        // finish after transition
-        const done = () => {
-          activeImg.removeEventListener('transitionend', done);
-
-          // swap layers
-          activeLayer = activeLayer === 'A' ? 'B' : 'A';
-
-          // reset outgoing for next time
-          activeImg.style.opacity = '0';
-          activeImg.style.transform = 'translateX(0px)';
-          activeImg.src = '';
-
-          lightboxCap.textContent = alt;
-          currentIndex = nextIndex;
-          isAnimating = false;
-        };
-
-        activeImg.addEventListener('transitionend', done, { once: true });
+        doSet();
+        // next frame: settle into place
+        requestAnimationFrame(() => {
+          lightboxImg.style.opacity = '1';
+          lightboxImg.style.transform = 'translateX(0px)';
+        });
       });
     };
 
     const closeLightbox = () => {
-      if (!lightbox || !lightboxImgA || !lightboxImgB) return;
+      if (!lightbox || !lightboxImg) return;
       lightbox.classList.add('hidden');
       lightbox.classList.remove('flex');
-      lightboxImgA.src = '';
-      lightboxImgB.src = '';
-      setImgVisible(lightboxImgA, false);
-      setImgVisible(lightboxImgB, false);
-      activeLayer = 'A';
+      lightboxImg.src = '';
       currentIndex = -1;
-      isAnimating = false;
       document.body.style.overflow = '';
     };
 
@@ -1009,9 +945,8 @@
       else prev();
     };
 
-    // Attach swipe listeners to the lightbox overlay (works regardless of which image layer is active)
-    lightbox?.addEventListener('touchstart', onTouchStart, { passive: true });
-    lightbox?.addEventListener('touchend', onTouchEnd, { passive: true });
+    lightboxImg?.addEventListener('touchstart', onTouchStart, { passive: true });
+    lightboxImg?.addEventListener('touchend', onTouchEnd, { passive: true });
 
     closeBtn?.addEventListener('click', closeLightbox);
     lightbox?.addEventListener('click', (e) => {
