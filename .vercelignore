@@ -1,1 +1,15 @@
+node_modules
+.next
+.env
+.env.*
+.vercel/output
 public/gallery/source
+automation/
+google-search.html
+longnums.txt
+maps-place.html
+maps-preview-place.txt
+nextjs-animations-reference.txt
+preload-url.txt
+reviews-test.txt
+share-google.html

@@ -98,7 +98,7 @@ export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [step, setStep] = useState(0);
   const [sending, setSending] = useState(false);
-  const [sent, setSent] = useState(false);
+  const [submissionMode, setSubmissionMode] = useState<"emailjs" | "mailto" | null>(null);
   const [error, setError] = useState("");
   const totalSteps = questions.length + 1; // multi-choice steps + final details step
   const emailJsConfig = useMemo(
@@ -138,15 +138,37 @@ export default function ContactForm() {
     `Timeline: ${form.timeline || "Not selected"}`,
     `Anything else: ${form.message.trim() || "None"}`,
   ].join("\n");
+  const hasEmailJsConfig = Boolean(
+    emailJsConfig.serviceId && emailJsConfig.templateId && emailJsConfig.publicKey,
+  );
+  const fallbackMailtoHref = `mailto:goldenepoxyworks@gmail.com?subject=${encodeURIComponent(
+    `Free estimate request from ${form.name.trim() || "Website visitor"}`,
+  )}&body=${encodeURIComponent(
+    [
+      `Name: ${form.name.trim() || "Not provided"}`,
+      `Phone: ${form.phone.trim() || "Not provided"}`,
+      `Email: ${form.email.trim() || "Not provided"}`,
+      "",
+      "Project summary",
+      projectSummary,
+      "",
+      "Project details",
+      projectDetails,
+    ].join("\n"),
+  )}`;
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSending(true);
     setError("");
 
-    if (!emailJsConfig.serviceId || !emailJsConfig.templateId || !emailJsConfig.publicKey) {
+    if (!hasEmailJsConfig) {
+      if (typeof window !== "undefined") {
+        window.location.href = fallbackMailtoHref;
+      }
+
       setSending(false);
-      setError("Email is not configured yet. Please call or text us instead.");
+      setSubmissionMode("mailto");
       return;
     }
 
@@ -190,7 +212,7 @@ export default function ContactForm() {
         }
       }
 
-      setSent(true);
+      setSubmissionMode("emailjs");
     } catch {
       setError("Something went wrong — please try calling us instead.");
     } finally {
@@ -201,7 +223,7 @@ export default function ContactForm() {
   const progress = ((step + 1) / totalSteps) * 100;
   const currentQuestion = step < questions.length ? questions[step] : null;
 
-  if (sent) {
+  if (submissionMode) {
     return (
       <div className="mt-8">
         <motion.div
@@ -214,8 +236,23 @@ export default function ContactForm() {
               <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-white mb-2">We got your request!</h3>
-          <p className="text-sm text-white/50">We&apos;ll be in touch within one business day. If you need us sooner, call or text <a href="tel:+18135800323" className="text-gold-400">(813) 580-0323</a>.</p>
+          <h3 className="text-xl font-semibold text-white mb-2">
+            {submissionMode === "emailjs" ? "We got your request!" : "Your estimate email is ready"}
+          </h3>
+          <p className="text-sm text-white/50">
+            {submissionMode === "emailjs" ? (
+              <>
+                We&apos;ll be in touch within one business day. If you need us sooner, call or text{" "}
+                <a href="tel:+18135800323" className="text-gold-400">(813) 580-0323</a>.
+              </>
+            ) : (
+              <>
+                Your email app should open with your project details filled in. Send that draft and we&apos;ll reply within one business day. If it didn&apos;t open,{" "}
+                <a href={fallbackMailtoHref} className="text-gold-400">tap here to email us</a> or call/text{" "}
+                <a href="tel:+18135800323" className="text-gold-400">(813) 580-0323</a>.
+              </>
+            )}
+          </p>
         </motion.div>
       </div>
     );
