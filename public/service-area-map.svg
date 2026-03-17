@@ -1,0 +1,54 @@
+<svg width="820" height="620" viewBox="0 0 820 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7BC6E7"/>
+      <stop offset="1" stop-color="#5EAFD4"/>
+    </linearGradient>
+    <linearGradient id="land" x1="260" y1="0" x2="820" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8E7A5"/>
+      <stop offset="1" stop-color="#8EC97D"/>
+    </linearGradient>
+    <filter id="shadow" x="275" y="145" width="274" height="274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.146 0 0 0 0 0.341 0 0 0 0 0.756 0 0 0 0.28 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="820" height="620" rx="36" fill="url(#water)"/>
+  <path d="M278 0H820V620H221C232 585 254 544 236 503C216 458 163 421 160 380C157 327 229 300 238 246C246 194 196 128 225 80C236 61 253 33 278 0Z" fill="url(#land)"/>
+
+  <path d="M282 38C260 85 243 154 268 203C301 269 277 347 318 415C348 464 427 509 417 576" stroke="#EFF8E7" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+  <path d="M431 83C395 124 426 182 397 226C372 263 299 273 303 324C307 382 391 393 404 442C414 479 390 528 372 563" stroke="#EFF8E7" stroke-width="10" stroke-linecap="round" opacity="0.28"/>
+  <path d="M574 22C538 69 561 137 522 186C484 234 405 255 405 309C405 366 487 378 511 429C531 470 513 526 479 584" stroke="#D8F0C9" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+
+  <path d="M205 191C262 174 296 220 288 262C279 309 189 330 186 392C183 451 266 481 279 548" stroke="#F5F7FA" stroke-width="7" stroke-linecap="round" opacity="0.34"/>
+  <path d="M664 159C630 206 637 257 603 303C572 345 515 362 518 408C521 454 579 487 578 538" stroke="#D6EDCA" stroke-width="8" stroke-linecap="round" opacity="0.32"/>
+
+  <circle cx="410" cy="285" r="240" fill="#3D63C9" fill-opacity="0.08"/>
+  <circle cx="410" cy="285" r="238" stroke="#5A73C8" stroke-width="6" stroke-opacity="0.48"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="412" cy="282" r="56" fill="#3B69F2"/>
+    <circle cx="412" cy="282" r="49" fill="#4A78FF"/>
+    <path d="M392 281L406 295L432 268" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g opacity="0.72" fill="#4F6072" font-family="Arial, sans-serif" font-weight="700">
+    <text x="176" y="110" font-size="36">Spring Hill</text>
+    <text x="118" y="400" font-size="34">Largo</text>
+    <text x="314" y="437" font-size="52">Tampa</text>
+    <text x="562" y="398" font-size="42">Riverview</text>
+    <text x="594" y="320" font-size="46">Lakeland</text>
+  </g>
+
+  <g opacity="0.82" fill="#4F6072" font-family="Arial, sans-serif" font-weight="700">
+    <text x="377" y="300" font-size="30" text-anchor="middle">Town n</text>
+    <text x="377" y="336" font-size="30" text-anchor="middle">Country</text>
+  </g>
+</svg>
