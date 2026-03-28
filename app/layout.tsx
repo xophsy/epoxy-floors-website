@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Space_Grotesk } from "next/font/google";
+import { Geist, Space_Grotesk, Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -10,6 +10,13 @@ const geist = Geist({
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+});
+
+const bodoniModa = Bodoni_Moda({
+  variable: "--font-bodoni-moda",
+  subsets: ["latin"],
+  style: ["italic"],
+  weight: ["600"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geist.variable} ${spaceGrotesk.variable} antialiased`}>{children}</body>
+      <body className={`${geist.variable} ${spaceGrotesk.variable} ${bodoniModa.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -87,7 +87,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 className="h-28 w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[30px] transform-gpu md:translate-y-[32px] md:h-34"
               />
             </motion.div>
-            <span className="text-sm sm:text-base font-semibold tracking-[0.08em] text-gold-400">
+            <span className="text-sm sm:text-base font-semibold tracking-[0.08em] text-gold-400" style={{ fontFamily: "var(--font-bodoni-moda)", fontWeight: 600, fontStyle: "italic" }}>
               Golden Epoxy
             </span>
           </Link>
