@@ -29,6 +29,7 @@ function Lightbox({
   onNext: () => void;
 }) {
   const image = images[index];
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // Keyboard nav + scroll lock
   useEffect(() => {
@@ -46,8 +47,43 @@ function Lightbox({
     };
   }, [onClose, onPrev, onNext]);
 
+  // Focus trap
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    // Move focus into the dialog on open
+    const closeBtn = container.querySelector<HTMLElement>("button");
+    closeBtn?.focus();
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      const focusable = Array.from(
+        container.querySelectorAll<HTMLElement>("button:not([disabled])")
+      );
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleTab);
+    return () => window.removeEventListener("keydown", handleTab);
+  }, []);
+
   return createPortal(
     <motion.div
+      ref={containerRef}
       className="gallery-lightbox"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

@@ -88,6 +88,7 @@ export default function Home() {
   return (
     <div className="site-shell">
       <SiteHeader homeLinks overlayHero />
+      <main>
       <HeroSection />
       <ReviewsMarquee />
 
@@ -314,6 +315,7 @@ export default function Home() {
         </RevealSection>
       </SectionShell>
 
+      </main>
       <SiteFooter homeLinks />
     </div>
   );
