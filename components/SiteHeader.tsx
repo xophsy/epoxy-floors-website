@@ -90,9 +90,9 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
             <Image
               src="/legacy-images/logo-text.png"
               alt="Golden Epoxy"
-              width={160}
-              height={60}
-              className="h-20 w-auto object-contain mix-blend-screen md:h-24"
+              width={320}
+              height={120}
+              className="h-28 w-auto object-left object-contain mix-blend-screen md:h-32"
             />
           </Link>
           {/* Mobile center: Free Quote */}
