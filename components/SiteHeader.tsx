@@ -65,7 +65,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
       >
         <nav
           className={cx(
-            "content-shell relative grid grid-cols-[auto_1fr_auto] lg:flex lg:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem]",
+            "content-shell relative flex justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem]",
             scrolledPastHero || mobileOpen
               ? "glass border border-white/10 bg-coal-900/78 shadow-[0_18px_40px_rgba(0,0,0,0.22)]"
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
@@ -101,16 +101,10 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
               className="hidden sm:block h-36 w-auto object-left object-contain mix-blend-screen -ml-12 translate-y-2"
             />
           </Link>
-          {/* Mobile center: Free Quote */}
-          <div className="flex items-center justify-center lg:!hidden">
-            <ButtonLink href="/contact" className="!w-auto !min-h-0 !py-2.5 !px-5 !text-[0.65rem]">
-              Free Quote
-            </ButtonLink>
-          </div>
-
-          {/* Desktop: nav links + Free Quote + no burger */}
-          <div className="hidden lg:!flex items-center gap-7">
-            <ul className="flex items-center gap-7 text-sm text-white/72">
+          {/* Right side — always flex, content switches at lg */}
+          <div className="flex items-center gap-3">
+            {/* Desktop nav links */}
+            <ul className="hidden lg:flex items-center gap-7 text-sm text-white/72">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link className="hover:text-gold-300" href={link.href}>
@@ -119,26 +113,34 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 </li>
               ))}
             </ul>
-            <ButtonLink href="/contact" className="w-auto">
-              Free Quote
-            </ButtonLink>
+            {/* Free Quote mobile/tablet */}
+            <div className="lg:hidden">
+              <ButtonLink href="/contact" className="!w-auto !min-h-0 !py-2.5 !px-5 !text-[0.65rem]">
+                Free Quote
+              </ButtonLink>
+            </div>
+            {/* Free Quote desktop */}
+            <div className="hidden lg:block">
+              <ButtonLink href="/contact" className="w-auto">
+                Free Quote
+              </ButtonLink>
+            </div>
+            {/* Burger — hidden on desktop */}
+            <button
+              type="button"
+              className={cx(
+                "button-ghost flex h-11 w-11 items-center justify-center rounded-2xl lg:hidden",
+                mobileOpen && "border-gold-300/40 bg-white/8",
+              )}
+              aria-label="Open menu"
+              aria-expanded={mobileOpen}
+              onClick={() => setMobileOpen((prev) => !prev)}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
           </div>
-
-          {/* Mobile: burger only */}
-          <button
-            type="button"
-            className={cx(
-              "button-ghost flex h-11 w-11 items-center justify-center rounded-2xl lg:!hidden",
-              mobileOpen && "border-gold-300/40 bg-white/8",
-            )}
-            aria-label="Open menu"
-            aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((prev) => !prev)}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 7h16M4 12h16M4 17h16" />
-            </svg>
-          </button>
         </nav>
         {mobileOpen ? (
           <div className="content-shell glass mt-3 rounded-[1.75rem] border border-white/10 bg-coal-900/86 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.22)] lg:hidden">
