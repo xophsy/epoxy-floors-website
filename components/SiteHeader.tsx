@@ -73,7 +73,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
         >
           <Link href="/" className="flex items-center gap-0 overflow-visible" onClick={handleLogoClick}>
             <motion.div
-              className="relative -my-[55px] flex h-[170px] w-[190px] items-end justify-center overflow-visible"
+              className="relative -my-[55px] flex-shrink-0 flex h-[170px] w-[190px] items-end justify-center overflow-visible"
               whileHover={{ scale: 1.12 }}
               whileTap={{ scale: 1.12 }}
               transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
@@ -84,7 +84,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 alt="Golden Epoxy logo"
                 width={175}
                 height={175}
-                className="h-[170px] w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[40px] transform-gpu"
+                className="h-[170px] w-auto flex-shrink-0 object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[40px] transform-gpu"
               />
             </motion.div>
             <Image
