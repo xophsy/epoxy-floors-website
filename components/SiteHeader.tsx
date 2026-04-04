@@ -65,7 +65,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
       >
         <nav
           className={cx(
-            "content-shell grid grid-cols-[auto_1fr_auto] md:flex md:justify-between items-center overflow-visible rounded-[1.75rem] px-4 py-1 md:px-6",
+            "content-shell grid grid-cols-[auto_1fr_auto] md:flex md:justify-between items-center overflow-visible rounded-[1.75rem] px-4 py-0 md:px-6",
             scrolledPastHero || mobileOpen
               ? "glass border border-white/10 bg-coal-900/78 shadow-[0_18px_40px_rgba(0,0,0,0.22)]"
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
@@ -73,7 +73,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
         >
           <Link href="/" className="flex items-center gap-0 overflow-visible" onClick={handleLogoClick}>
             <motion.div
-              className="relative -my-[55px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[70px] md:h-[170px] md:w-[190px] md:items-end"
+              className="relative -my-[65px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[80px] md:h-[170px] md:w-[190px] md:items-end"
               whileHover={{ scale: 1.12 }}
               whileTap={{ scale: 1.12 }}
               transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
