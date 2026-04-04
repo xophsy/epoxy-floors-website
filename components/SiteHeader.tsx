@@ -113,8 +113,8 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 </li>
               ))}
             </ul>
-            {/* Free Quote mobile/tablet */}
-            <div className="lg:hidden">
+            {/* Free Quote tablet only (sm–lg) */}
+            <div className="hidden sm:block lg:hidden">
               <ButtonLink href="/contact" className="!w-auto !min-h-0 !py-2.5 !px-5 !text-[0.65rem]">
                 Free Quote
               </ButtonLink>
