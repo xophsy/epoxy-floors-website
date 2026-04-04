@@ -71,7 +71,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
           )}
         >
-          <Link href="/" className="flex items-center gap-3 overflow-visible" onClick={handleLogoClick}>
+          <Link href="/" className="flex items-center gap-0 overflow-visible" onClick={handleLogoClick}>
             <motion.div
               className="relative -my-[25px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[30px] md:h-[170px] md:w-[190px] md:items-end"
               whileHover={{ scale: 1.12 }}
@@ -90,9 +90,9 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
             <Image
               src="/legacy-images/logo-text.png"
               alt="Golden Epoxy"
-              width={320}
-              height={120}
-              className="h-28 w-auto object-left object-contain mix-blend-screen md:h-32"
+              width={400}
+              height={150}
+              className="h-36 w-auto object-left object-contain mix-blend-screen md:h-40 -ml-10"
             />
           </Link>
           {/* Mobile center: Free Quote */}
