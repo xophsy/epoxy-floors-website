@@ -65,7 +65,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
       >
         <nav
           className={cx(
-            "content-shell grid grid-cols-[auto_1fr_auto] md:flex md:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem] md:px-6",
+            "content-shell grid grid-cols-[auto_1fr_auto] lg:flex lg:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem] lg:px-6",
             scrolledPastHero || mobileOpen
               ? "glass border border-white/10 bg-coal-900/78 shadow-[0_18px_40px_rgba(0,0,0,0.22)]"
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
@@ -96,14 +96,14 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
             />
           </Link>
           {/* Mobile center: Free Quote */}
-          <div className="flex items-center justify-center md:!hidden">
+          <div className="flex items-center justify-center lg:!hidden">
             <ButtonLink href="/contact" className="!w-auto !min-h-0 !py-2.5 !px-5 !text-[0.65rem]">
               Free Quote
             </ButtonLink>
           </div>
 
           {/* Desktop: nav links + Free Quote + no burger */}
-          <div className="hidden md:!flex items-center gap-7">
+          <div className="hidden lg:!flex items-center gap-7">
             <ul className="flex items-center gap-7 text-sm text-white/72">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -122,7 +122,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
           <button
             type="button"
             className={cx(
-              "button-ghost flex h-11 w-11 items-center justify-center rounded-2xl md:!hidden",
+              "button-ghost flex h-11 w-11 items-center justify-center rounded-2xl lg:!hidden",
               mobileOpen && "border-gold-300/40 bg-white/8",
             )}
             aria-label="Open menu"
@@ -135,7 +135,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
           </button>
         </nav>
         {mobileOpen ? (
-          <div className="content-shell glass mt-3 rounded-[1.75rem] border border-white/10 bg-coal-900/86 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.22)] md:hidden">
+          <div className="content-shell glass mt-3 rounded-[1.75rem] border border-white/10 bg-coal-900/86 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.22)] lg:hidden">
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
