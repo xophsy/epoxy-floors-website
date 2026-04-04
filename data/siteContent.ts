@@ -61,7 +61,7 @@ export const flooringTypes: MediaCardItem[] = [
     title: "Flake Systems",
     description:
       "Broadcast vinyl flakes for textured slip resistance and a terrazzo-like appearance that hides imperfections.",
-    image: "/legacy-images/flake-floor.png",
+    image: "/legacy-images/flake-floor-v2.png",
   },
   {
     title: "Custom Solids & Logos",

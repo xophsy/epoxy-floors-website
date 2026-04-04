@@ -219,6 +219,16 @@ textarea {
   box-shadow: var(--shadow-soft), 0 0 0 1px rgba(255, 214, 91, 0.12);
 }
 
+.flooring-overlay-card:hover .flooring-overlay-card__gradient {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.24) 48%,
+    rgba(0, 0, 0, 0.0) 100%
+  );
+  transition: background 0.7s ease;
+}
+
 .flooring-overlay-card__gradient {
   position: absolute;
   inset: 0;
