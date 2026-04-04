@@ -73,7 +73,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
         >
           <Link href="/" className="flex items-center gap-0 overflow-visible" onClick={handleLogoClick}>
             <motion.div
-              className="relative -my-[75px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[90px] md:h-[170px] md:w-[190px] md:items-end"
+              className="relative -my-[85px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[105px] md:h-[170px] md:w-[190px] md:items-end"
               whileHover={{ scale: 1.12 }}
               whileTap={{ scale: 1.12 }}
               transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
