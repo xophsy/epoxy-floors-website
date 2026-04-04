@@ -101,6 +101,18 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
               className="hidden sm:block h-36 w-auto object-left object-contain mix-blend-screen -ml-12 translate-y-2"
             />
           </Link>
+          {/* Wordmark — mobile only, absolutely positioned to escape flex constraints */}
+          <div className="absolute sm:hidden left-[155px] top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+            <Link href="/" onClick={handleLogoClick} className="pointer-events-auto">
+              <Image
+                src="/legacy-images/logo-text.png"
+                alt="Golden Epoxy"
+                width={200}
+                height={60}
+                className="w-[78px] h-auto object-contain mix-blend-screen"
+              />
+            </Link>
+          </div>
           {/* Right side — always flex, content switches at lg */}
           <div className="flex items-center gap-3">
             {/* Desktop nav links */}
