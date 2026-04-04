@@ -65,33 +65,34 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
       >
         <nav
           className={cx(
-            "content-shell relative grid grid-cols-[auto_1fr_auto] lg:flex lg:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem] lg:px-6",
+            "content-shell relative grid grid-cols-[auto_1fr_auto] lg:flex lg:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-[5.5rem]",
             scrolledPastHero || mobileOpen
               ? "glass border border-white/10 bg-coal-900/78 shadow-[0_18px_40px_rgba(0,0,0,0.22)]"
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
           )}
         >
           {/* Crown — absolutely anchored to nav pill, never affected by layout */}
-          <motion.div
-            className="absolute left-4 lg:left-6 top-1/2 z-10 overflow-visible pointer-events-none"
-            style={{ transform: "translateY(-38%)" }}
-            whileHover={{ scale: 1.12 }}
-            whileTap={{ scale: 1.12 }}
-            transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
-          >
-            <Link href="/" onClick={handleLogoClick} className="block pointer-events-auto">
-              <Image
-                src="/legacy-images/logonew.png"
-                alt="Golden Epoxy logo"
-                width={175}
-                height={175}
-                className="h-[170px] w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)]"
-              />
-            </Link>
-          </motion.div>
+          <div className="absolute left-4 top-1/2 -translate-y-[38%] z-10 overflow-visible">
+            <motion.div
+              whileHover={{ scale: 1.12 }}
+              whileTap={{ scale: 1.12 }}
+              transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
+              style={{ transformOrigin: "center center" }}
+            >
+              <Link href="/" onClick={handleLogoClick} className="block overflow-visible">
+                <Image
+                  src="/legacy-images/logonew.png"
+                  alt="Golden Epoxy logo"
+                  width={175}
+                  height={175}
+                  className="h-[170px] w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)]"
+                />
+              </Link>
+            </motion.div>
+          </div>
 
           {/* Wordmark — reserves crown space with pl, then shows wordmark */}
-          <Link href="/" className="flex items-center overflow-visible pl-[170px] lg:pl-[175px]" onClick={handleLogoClick}>
+          <Link href="/" className="flex items-center overflow-visible pl-[170px]" onClick={handleLogoClick}>
             <Image
               src="/legacy-images/logo-text.png"
               alt="Golden Epoxy"
