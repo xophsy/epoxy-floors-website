@@ -84,7 +84,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 alt="Golden Epoxy logo"
                 width={175}
                 height={175}
-                className="h-[170px] w-auto flex-shrink-0 object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[40px] transform-gpu"
+                className="h-[170px] w-auto flex-shrink-0 object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[15px] transform-gpu"
               />
             </motion.div>
             <Image
