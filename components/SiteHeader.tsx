@@ -87,9 +87,13 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 className="h-35 w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[38px] transform-gpu md:translate-y-[40px] md:h-[170px]"
               />
             </motion.div>
-            <span className="text-lg sm:text-xl font-semibold tracking-[0.08em] text-gold-400" style={{ fontFamily: "var(--font-bodoni-moda)", fontWeight: 600, fontStyle: "italic" }}>
-              Golden Epoxy
-            </span>
+            <Image
+              src="/legacy-images/logo-text.png"
+              alt="Golden Epoxy"
+              width={160}
+              height={60}
+              className="h-10 w-auto object-contain mix-blend-screen md:h-12"
+            />
           </Link>
           {/* Mobile center: Free Quote */}
           <div className="flex items-center justify-center md:!hidden">
