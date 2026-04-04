@@ -92,7 +92,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
               alt="Golden Epoxy"
               width={160}
               height={60}
-              className="h-10 w-auto object-contain mix-blend-screen md:h-12"
+              className="h-20 w-auto object-contain mix-blend-screen md:h-24"
             />
           </Link>
           {/* Mobile center: Free Quote */}
