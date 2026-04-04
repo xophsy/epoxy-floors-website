@@ -20,18 +20,20 @@ export default function SiteFooter({ homeLinks = true }: Props) {
           <div className="grid gap-8 text-left md:grid-cols-[1.4fr_0.9fr_1.1fr]">
             <div className="space-y-5">
               <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/4">
-                  <Image
-                    src="/legacy-images/logonew.png"
-                    alt="Golden Epoxy logo"
-                    width={36}
-                    height={36}
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                <span className="font-semibold tracking-[0.08em]">
-                  Golden <span className="text-gold-400">Epoxy</span>
-                </span>
+                <Image
+                  src="/legacy-images/logonew.png"
+                  alt="Golden Epoxy logo"
+                  width={64}
+                  height={64}
+                  className="h-16 w-auto object-contain"
+                />
+                <Image
+                  src="/legacy-images/logo-text.png"
+                  alt="Golden Epoxy"
+                  width={200}
+                  height={60}
+                  className="h-7 w-auto object-contain"
+                />
               </div>
               <p className="max-w-md text-sm leading-7 text-white/72">
                 Premium epoxy floors for homes and businesses across Tampa Bay. Clean prep,
