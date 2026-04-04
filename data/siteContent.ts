@@ -100,7 +100,7 @@ export const processSteps: TextCardItem[] = [
     description: "We inspect the slab, confirm the finish, and set the plan before installation day.",
   },
   {
-    title: "Day 1: Prep, Repair, Build & Seal",
+    title: "Day 1: Prep, Build & Seal",
     description: "We grind, repair, prime, build the system, and apply the seal coat in one disciplined install day.",
   },
   {

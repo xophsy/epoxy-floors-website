@@ -268,16 +268,26 @@ export default function Home() {
           viewport={motionPresets.viewport}
         >
           {processSteps.map((step, i) => (
-            <motion.div key={step.title} variants={motionPresets.card}>
+            <motion.div key={step.title} variants={motionPresets.card} className="relative">
               <SpotlightCard className="h-full p-7">
                 <div className="process-step-numeral">{String(i + 1).padStart(2, "0")}</div>
                 <h3 className="mt-3 text-xl font-bold tracking-[-0.025em] text-gold-300">{step.title}</h3>
                 <div className="mt-3 h-px w-10 bg-gradient-to-r from-gold-500/50 to-transparent" />
                 <p className="mt-4 text-sm leading-7 text-white/68">{step.description}</p>
               </SpotlightCard>
+              {i < processSteps.length - 1 && (
+                <div className="hidden md:flex items-center justify-center absolute -right-3 top-1/2 -translate-y-1/2 z-10">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gold-500/50">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>
+        <div className="mt-10 flex justify-center">
+          <ButtonLink href="/contact">Book Your Consult</ButtonLink>
+        </div>
       </SectionShell>
 
       {/* ── FAQ ───────────────────────────────────────────────── */}

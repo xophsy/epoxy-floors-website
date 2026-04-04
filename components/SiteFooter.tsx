@@ -27,13 +27,6 @@ export default function SiteFooter({ homeLinks = true }: Props) {
                   height={64}
                   className="h-16 w-auto object-contain"
                 />
-                <Image
-                  src="/legacy-images/logo-text.png"
-                  alt="Golden Epoxy"
-                  width={200}
-                  height={60}
-                  className="h-7 w-auto object-contain"
-                />
               </div>
               <p className="max-w-md text-sm leading-7 text-white/72">
                 Premium epoxy floors for homes and businesses across Tampa Bay. Clean prep,
