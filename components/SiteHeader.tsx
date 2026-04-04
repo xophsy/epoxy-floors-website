@@ -157,6 +157,11 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
                 </li>
               ))}
             </ul>
+            <div className="mt-3 px-1">
+              <ButtonLink href="/contact" className="w-full" onClick={() => setMobileOpen(false)}>
+                Get a Free Quote
+              </ButtonLink>
+            </div>
           </div>
         ) : null}
       </header>
