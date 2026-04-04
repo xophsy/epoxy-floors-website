@@ -72,7 +72,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
           )}
         >
           {/* Crown — absolutely anchored to nav pill, never affected by layout */}
-          <div className="absolute left-4 top-1/2 -translate-y-[28%] z-10 overflow-visible">
+          <div className="absolute left-1 top-1/2 -translate-y-[28%] z-10 overflow-visible">
             <motion.div
               whileHover={{ scale: 1.12 }}
               whileTap={{ scale: 1.12 }}
