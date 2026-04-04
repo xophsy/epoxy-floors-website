@@ -65,7 +65,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
       >
         <nav
           className={cx(
-            "content-shell grid grid-cols-[auto_1fr_auto] md:flex md:justify-between items-center overflow-visible rounded-[1.75rem] px-4 py-0 md:px-6",
+            "content-shell grid grid-cols-[auto_1fr_auto] md:flex md:justify-between items-center overflow-visible rounded-[1.75rem] px-4 h-12 md:px-6",
             scrolledPastHero || mobileOpen
               ? "glass border border-white/10 bg-coal-900/78 shadow-[0_18px_40px_rgba(0,0,0,0.22)]"
               : "glass border border-white/10 bg-coal-900/24 shadow-[0_12px_30px_rgba(0,0,0,0.16)]",
