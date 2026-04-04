@@ -91,16 +91,20 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
             </motion.div>
           </div>
 
-          {/* Wordmark — reserves crown space with pl, then shows wordmark */}
-          <Link href="/" className="flex items-center overflow-visible pl-[170px]" onClick={handleLogoClick}>
-            <Image
-              src="/legacy-images/logo-text.png"
-              alt="Golden Epoxy"
-              width={400}
-              height={150}
-              className="hidden sm:block h-36 w-auto object-left object-contain mix-blend-screen -ml-12 translate-y-2"
-            />
-          </Link>
+          {/* Wordmark — absolutely positioned like the crown, independent of flex layout */}
+          <div className="absolute left-[110px] top-1/2 -translate-y-[40%] z-10">
+            <Link href="/" onClick={handleLogoClick}>
+              <Image
+                src="/legacy-images/logo-text.png"
+                alt="Golden Epoxy"
+                width={400}
+                height={150}
+                className="h-[115px] w-auto object-contain mix-blend-screen"
+              />
+            </Link>
+          </div>
+          {/* Spacer to push right side into position */}
+          <div className="flex-1" />
           {/* Right side — always flex, content switches at lg */}
           <div className="flex items-center gap-3">
             {/* Desktop nav links */}
