@@ -72,23 +72,21 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
           )}
         >
           <Link href="/" className="flex items-center gap-0 overflow-visible" onClick={handleLogoClick}>
-            <div className="relative w-36 md:w-44 flex-shrink-0">
-              <motion.div
-                className="absolute bottom-[-30px] left-0 flex h-35 w-36 items-end justify-center overflow-visible md:bottom-[-38px] md:h-[170px] md:w-44"
-                whileHover={{ scale: 1.12 }}
-                whileTap={{ scale: 1.12 }}
-                transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
-                style={{ transformOrigin: "center bottom" }}
-              >
-                <Image
-                  src="/legacy-images/logonew.png"
-                  alt="Golden Epoxy logo"
-                  width={175}
-                  height={175}
-                  className="h-35 w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] transform-gpu md:h-[170px]"
-                />
-              </motion.div>
-            </div>
+            <motion.div
+              className="relative -my-[25px] flex h-35 w-40 items-end justify-center overflow-visible md:-my-[30px] md:h-[170px] md:w-[190px] md:items-end"
+              whileHover={{ scale: 1.12 }}
+              whileTap={{ scale: 1.12 }}
+              transition={{ type: "spring", stiffness: 360, damping: 24, mass: 0.45 }}
+              style={{ transformOrigin: "center center" }}
+            >
+              <Image
+                src="/legacy-images/logonew.png"
+                alt="Golden Epoxy logo"
+                width={175}
+                height={175}
+                className="h-35 w-auto object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.35)] translate-y-[38px] transform-gpu md:translate-y-[40px] md:h-[170px]"
+              />
+            </motion.div>
             <Image
               src="/legacy-images/logo-text.png"
               alt="Golden Epoxy"
