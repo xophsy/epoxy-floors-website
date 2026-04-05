@@ -80,7 +80,7 @@ export default function GalleryPage() {
                 transition={{ delay: 0.15, duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
               >
                 <Image
-                  src="/gallery/generated/img-4403/1080.webp"
+                  src="/legacy-images/owner-photo.webp"
                   alt="Golden Epoxy owner"
                   width={1080}
                   height={810}

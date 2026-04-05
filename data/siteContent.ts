@@ -67,7 +67,7 @@ export const flooringTypes: MediaCardItem[] = [
     title: "Custom Solids & Logos",
     description:
       "Decorative finishes, solid hues, and custom logos that match your brand while staying uniform and low-maintenance.",
-    image: "/legacy-images/solid-floor.png",
+    image: "/legacy-images/teslalogo-floor.png",
   },
 ];
 

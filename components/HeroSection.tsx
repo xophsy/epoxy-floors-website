@@ -37,7 +37,7 @@ function useCountUp(target: number, duration = 1800, delay = 600) {
   return count;
 }
 
-const HEADLINE = "Epoxy floors that bring beauty, durability, and a more welcoming feel to your space.";
+const HEADLINE = "Floors built to last. Installed in a day.";
 const WORDS = HEADLINE.split(" ");
 
 export default function HeroSection() {
