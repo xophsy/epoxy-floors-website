@@ -405,6 +405,7 @@ textarea {
   overflow: hidden;
   padding-top: clamp(4.5rem, 8vw, 6.5rem);
   padding-bottom: clamp(2rem, 3.5vw, 3rem);
+  background: #0d0d0e;
 }
 
 .gallery-page-header__glow {
@@ -619,6 +620,7 @@ textarea {
 
 .gallery-grid-shell {
   padding-bottom: clamp(4rem, 8vw, 6rem);
+  background: #0d0d0e;
 }
 
 /* ── Masonry gallery ──────────────────────────────────── */
