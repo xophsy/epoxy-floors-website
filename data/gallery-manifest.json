@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-16T18:06:26.946Z",
+  "generatedAt": "2026-04-04T23:51:30.407Z",
   "sourceDir": "public/gallery/source",
-  "sourceFingerprint": "[{\"name\":\"IMG_0804.JPEG\",\"size\":810677,\"mtimeMs\":1773684061588.699},{\"name\":\"IMG_1587.jpg\",\"size\":909194,\"mtimeMs\":1773684061588.699},{\"name\":\"IMG_3732.JPEG\",\"size\":977576,\"mtimeMs\":1773684061589.6992},{\"name\":\"IMG_3765.jpg\",\"size\":4037932,\"mtimeMs\":1773684061591.6992},{\"name\":\"IMG_3800.jpg\",\"size\":5357269,\"mtimeMs\":1773684061594.6985},{\"name\":\"IMG_4275.JPEG\",\"size\":793179,\"mtimeMs\":1773684061594.6985},{\"name\":\"IMG_4374.JPEG\",\"size\":1077967,\"mtimeMs\":1773684061596.7},{\"name\":\"IMG_4388.jpg\",\"size\":9031907,\"mtimeMs\":1773684061599.7},{\"name\":\"IMG_4393.JPEG\",\"size\":991654,\"mtimeMs\":1773684061600.6997},{\"name\":\"IMG_4398.jpg\",\"size\":5006787,\"mtimeMs\":1773684061602.699},{\"name\":\"IMG_4400.jpg\",\"size\":4853282,\"mtimeMs\":1773684061604.699},{\"name\":\"IMG_4402.jpg\",\"size\":4953198,\"mtimeMs\":1773684061607.6995},{\"name\":\"IMG_4403.JPEG\",\"size\":1377835,\"mtimeMs\":1773684061608.699},{\"name\":\"IMG_4404.JPEG\",\"size\":991851,\"mtimeMs\":1773684061608.699},{\"name\":\"IMG_4406.JPEG\",\"size\":1368438,\"mtimeMs\":1773684061610.6992},{\"name\":\"IMG_4560.JPEG\",\"size\":1289331,\"mtimeMs\":1773684061611.6982},{\"name\":\"IMG_5075.png\",\"size\":12131909,\"mtimeMs\":1773684061615.6987},{\"name\":\"IMG_5434.JPEG\",\"size\":546171,\"mtimeMs\":1773684061616.6997},{\"name\":\"IMG_5445.JPEG\",\"size\":935849,\"mtimeMs\":1773684061617.6997},{\"name\":\"IMG_5449.JPEG\",\"size\":795482,\"mtimeMs\":1773684061619.6992},{\"name\":\"IMG_5504.JPEG\",\"size\":1390730,\"mtimeMs\":1773684061622.699},{\"name\":\"IMG_5855.JPEG\",\"size\":1957808,\"mtimeMs\":1773684061624.707},{\"name\":\"IMG_5893.JPEG\",\"size\":1291161,\"mtimeMs\":1773684061625.6987},{\"name\":\"IMG_5908.JPEG\",\"size\":1975480,\"mtimeMs\":1773684061626.6992},{\"name\":\"IMG_6031.JPEG\",\"size\":1474754,\"mtimeMs\":1773684061627.699},{\"name\":\"TeslaLogo.png\",\"size\":2262169,\"mtimeMs\":1773684061629.6997}]",
+  "sourceFingerprint": "[{\"name\":\"IMG_0804.JPEG\",\"size\":810677,\"mtimeMs\":1773732821043.6428},{\"name\":\"IMG_1587.jpg\",\"size\":909194,\"mtimeMs\":1773732821048.6436},{\"name\":\"IMG_3732.JPEG\",\"size\":977576,\"mtimeMs\":1773732821051.7593},{\"name\":\"IMG_3765.jpg\",\"size\":4037932,\"mtimeMs\":1773732821062.2712},{\"name\":\"IMG_3800.jpg\",\"size\":5357269,\"mtimeMs\":1773732821078.8748},{\"name\":\"IMG_4275.JPEG\",\"size\":793179,\"mtimeMs\":1773732821082.1375},{\"name\":\"IMG_4374.JPEG\",\"size\":1077967,\"mtimeMs\":1773732821085.1338},{\"name\":\"IMG_4388.jpg\",\"size\":9031907,\"mtimeMs\":1773732821118.7554},{\"name\":\"IMG_4393.JPEG\",\"size\":991654,\"mtimeMs\":1773732821123.7812},{\"name\":\"IMG_4398.jpg\",\"size\":5006787,\"mtimeMs\":1773732821138.1758},{\"name\":\"IMG_4400.jpg\",\"size\":4853282,\"mtimeMs\":1773732821150.6836},{\"name\":\"IMG_4402.jpg\",\"size\":4953198,\"mtimeMs\":1773732821164.4377},{\"name\":\"IMG_4404.JPEG\",\"size\":991851,\"mtimeMs\":1773732821172.9502},{\"name\":\"IMG_4560.JPEG\",\"size\":1289331,\"mtimeMs\":1773732821180.9521},{\"name\":\"IMG_5075.png\",\"size\":12131909,\"mtimeMs\":1773732821214.2285},{\"name\":\"IMG_5434.JPEG\",\"size\":546171,\"mtimeMs\":1773732821217.2283},{\"name\":\"IMG_5445.JPEG\",\"size\":935849,\"mtimeMs\":1773732821220.7363},{\"name\":\"IMG_5449.JPEG\",\"size\":795482,\"mtimeMs\":1773732821223.7444},{\"name\":\"IMG_5504.JPEG\",\"size\":1390730,\"mtimeMs\":1773732821234.1848},{\"name\":\"IMG_5855.JPEG\",\"size\":1957808,\"mtimeMs\":1773732821249.6958},{\"name\":\"IMG_5893.JPEG\",\"size\":1291161,\"mtimeMs\":1773732821252.7483},{\"name\":\"IMG_5908.JPEG\",\"size\":1975480,\"mtimeMs\":1773732821258.7476},{\"name\":\"IMG_6031.JPEG\",\"size\":1474754,\"mtimeMs\":1773732821264.2595},{\"name\":\"TeslaLogo.png\",\"size\":2262169,\"mtimeMs\":1773732821276.779}]",
   "images": [
     {
       "id": "1",
@@ -571,223 +571,7 @@
       }
     },
     {
-      "id": "12",
-      "slug": "img-4402",
-      "title": "IMG 4402",
-      "alt": "IMG 4402",
-      "width": 4032,
-      "height": 3024,
-      "thumbnail": {
-        "width": 520,
-        "height": 390,
-        "avif": "/gallery/generated/img-4402/thumb-520.avif",
-        "webp": "/gallery/generated/img-4402/thumb-520.webp"
-      },
-      "responsive": [
-        {
-          "width": 480,
-          "height": 360,
-          "avif": "/gallery/generated/img-4402/480.avif",
-          "webp": "/gallery/generated/img-4402/480.webp"
-        },
-        {
-          "width": 768,
-          "height": 576,
-          "avif": "/gallery/generated/img-4402/768.avif",
-          "webp": "/gallery/generated/img-4402/768.webp"
-        },
-        {
-          "width": 1080,
-          "height": 810,
-          "avif": "/gallery/generated/img-4402/1080.avif",
-          "webp": "/gallery/generated/img-4402/1080.webp"
-        },
-        {
-          "width": 1440,
-          "height": 1080,
-          "avif": "/gallery/generated/img-4402/1440.avif",
-          "webp": "/gallery/generated/img-4402/1440.webp"
-        },
-        {
-          "width": 1920,
-          "height": 1440,
-          "avif": "/gallery/generated/img-4402/1920.avif",
-          "webp": "/gallery/generated/img-4402/1920.webp"
-        },
-        {
-          "width": 4032,
-          "height": 3024,
-          "avif": "/gallery/generated/img-4402/4032.avif",
-          "webp": "/gallery/generated/img-4402/4032.webp"
-        }
-      ],
-      "lightbox": {
-        "src": "/gallery/generated/img-4402/4032.webp",
-        "width": 4032,
-        "height": 3024
-      }
-    },
-    {
-      "id": "13",
-      "slug": "img-4403",
-      "title": "IMG 4403",
-      "alt": "IMG 4403",
-      "width": 2048,
-      "height": 1536,
-      "thumbnail": {
-        "width": 520,
-        "height": 390,
-        "avif": "/gallery/generated/img-4403/thumb-520.avif",
-        "webp": "/gallery/generated/img-4403/thumb-520.webp"
-      },
-      "responsive": [
-        {
-          "width": 480,
-          "height": 360,
-          "avif": "/gallery/generated/img-4403/480.avif",
-          "webp": "/gallery/generated/img-4403/480.webp"
-        },
-        {
-          "width": 768,
-          "height": 576,
-          "avif": "/gallery/generated/img-4403/768.avif",
-          "webp": "/gallery/generated/img-4403/768.webp"
-        },
-        {
-          "width": 1080,
-          "height": 810,
-          "avif": "/gallery/generated/img-4403/1080.avif",
-          "webp": "/gallery/generated/img-4403/1080.webp"
-        },
-        {
-          "width": 1440,
-          "height": 1080,
-          "avif": "/gallery/generated/img-4403/1440.avif",
-          "webp": "/gallery/generated/img-4403/1440.webp"
-        },
-        {
-          "width": 1920,
-          "height": 1440,
-          "avif": "/gallery/generated/img-4403/1920.avif",
-          "webp": "/gallery/generated/img-4403/1920.webp"
-        },
-        {
-          "width": 2048,
-          "height": 1536,
-          "avif": "/gallery/generated/img-4403/2048.avif",
-          "webp": "/gallery/generated/img-4403/2048.webp"
-        }
-      ],
-      "lightbox": {
-        "src": "/gallery/generated/img-4403/2048.webp",
-        "width": 2048,
-        "height": 1536
-      }
-    },
-    {
       "id": "14",
-      "slug": "img-4404",
-      "title": "IMG 4404",
-      "alt": "IMG 4404",
-      "width": 1536,
-      "height": 2048,
-      "thumbnail": {
-        "width": 520,
-        "height": 693,
-        "avif": "/gallery/generated/img-4404/thumb-520.avif",
-        "webp": "/gallery/generated/img-4404/thumb-520.webp"
-      },
-      "responsive": [
-        {
-          "width": 480,
-          "height": 640,
-          "avif": "/gallery/generated/img-4404/480.avif",
-          "webp": "/gallery/generated/img-4404/480.webp"
-        },
-        {
-          "width": 768,
-          "height": 1024,
-          "avif": "/gallery/generated/img-4404/768.avif",
-          "webp": "/gallery/generated/img-4404/768.webp"
-        },
-        {
-          "width": 1080,
-          "height": 1440,
-          "avif": "/gallery/generated/img-4404/1080.avif",
-          "webp": "/gallery/generated/img-4404/1080.webp"
-        },
-        {
-          "width": 1440,
-          "height": 1920,
-          "avif": "/gallery/generated/img-4404/1440.avif",
-          "webp": "/gallery/generated/img-4404/1440.webp"
-        },
-        {
-          "width": 1536,
-          "height": 2048,
-          "avif": "/gallery/generated/img-4404/1536.avif",
-          "webp": "/gallery/generated/img-4404/1536.webp"
-        }
-      ],
-      "lightbox": {
-        "src": "/gallery/generated/img-4404/1536.webp",
-        "width": 1536,
-        "height": 2048
-      }
-    },
-    {
-      "id": "15",
-      "slug": "img-4406",
-      "title": "IMG 4406",
-      "alt": "IMG 4406",
-      "width": 1536,
-      "height": 2048,
-      "thumbnail": {
-        "width": 520,
-        "height": 693,
-        "avif": "/gallery/generated/img-4406/thumb-520.avif",
-        "webp": "/gallery/generated/img-4406/thumb-520.webp"
-      },
-      "responsive": [
-        {
-          "width": 480,
-          "height": 640,
-          "avif": "/gallery/generated/img-4406/480.avif",
-          "webp": "/gallery/generated/img-4406/480.webp"
-        },
-        {
-          "width": 768,
-          "height": 1024,
-          "avif": "/gallery/generated/img-4406/768.avif",
-          "webp": "/gallery/generated/img-4406/768.webp"
-        },
-        {
-          "width": 1080,
-          "height": 1440,
-          "avif": "/gallery/generated/img-4406/1080.avif",
-          "webp": "/gallery/generated/img-4406/1080.webp"
-        },
-        {
-          "width": 1440,
-          "height": 1920,
-          "avif": "/gallery/generated/img-4406/1440.avif",
-          "webp": "/gallery/generated/img-4406/1440.webp"
-        },
-        {
-          "width": 1536,
-          "height": 2048,
-          "avif": "/gallery/generated/img-4406/1536.avif",
-          "webp": "/gallery/generated/img-4406/1536.webp"
-        }
-      ],
-      "lightbox": {
-        "src": "/gallery/generated/img-4406/1536.webp",
-        "width": 1536,
-        "height": 2048
-      }
-    },
-    {
-      "id": "16",
       "slug": "img-4560",
       "title": "IMG 4560",
       "alt": "IMG 4560",
@@ -838,7 +622,7 @@
       }
     },
     {
-      "id": "17",
+      "id": "15",
       "slug": "img-5075",
       "title": "IMG 5075",
       "alt": "IMG 5075",
@@ -895,7 +679,7 @@
       }
     },
     {
-      "id": "18",
+      "id": "16",
       "slug": "img-5434",
       "title": "IMG 5434",
       "alt": "IMG 5434",
@@ -946,7 +730,7 @@
       }
     },
     {
-      "id": "19",
+      "id": "17",
       "slug": "img-5445",
       "title": "IMG 5445",
       "alt": "IMG 5445",
@@ -997,7 +781,7 @@
       }
     },
     {
-      "id": "20",
+      "id": "18",
       "slug": "img-5449",
       "title": "IMG 5449",
       "alt": "IMG 5449",
@@ -1048,7 +832,7 @@
       }
     },
     {
-      "id": "21",
+      "id": "19",
       "slug": "img-5504",
       "title": "IMG 5504",
       "alt": "IMG 5504",
@@ -1099,7 +883,7 @@
       }
     },
     {
-      "id": "22",
+      "id": "20",
       "slug": "img-5855",
       "title": "IMG 5855",
       "alt": "IMG 5855",
@@ -1150,7 +934,7 @@
       }
     },
     {
-      "id": "23",
+      "id": "21",
       "slug": "img-5893",
       "title": "IMG 5893",
       "alt": "IMG 5893",
@@ -1201,7 +985,7 @@
       }
     },
     {
-      "id": "24",
+      "id": "22",
       "slug": "img-5908",
       "title": "IMG 5908",
       "alt": "IMG 5908",
@@ -1258,7 +1042,7 @@
       }
     },
     {
-      "id": "25",
+      "id": "23",
       "slug": "img-6031",
       "title": "IMG 6031",
       "alt": "IMG 6031",
@@ -1309,7 +1093,7 @@
       }
     },
     {
-      "id": "26",
+      "id": "24",
       "slug": "teslalogo",
       "title": "TeslaLogo",
       "alt": "TeslaLogo",

@@ -1,11 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ButtonLink } from "@/components/design-system";
+import Image from "next/image";
 import GalleryGrid from "@/components/GalleryGrid";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import { getGalleryImages } from "@/lib/gallery";
+
+function scrollToGrid() {
+  document.getElementById("gallery-grid")?.scrollIntoView({ behavior: "smooth" });
+}
 
 export default function GalleryPage() {
   const images = getGalleryImages();
@@ -57,19 +61,57 @@ export default function GalleryPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.45, duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <ButtonLink href="/contact" className="sm:w-auto">
-                    Schedule an Estimate
-                  </ButtonLink>
+                  <button
+                    type="button"
+                    onClick={scrollToGrid}
+                    className="gallery-scroll-cta"
+                  >
+                    <div className="gallery-scroll-cta__line" aria-hidden />
+                    <span>View Our Work</span>
+                  </button>
                 </motion.div>
               </motion.div>
 
+              {/* Right: owner photo */}
+              <motion.div
+                className="gallery-page-header__image"
+                initial={{ opacity: 0, x: 28 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.15, duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <Image
+                  src="/gallery/generated/img-4403/1080.webp"
+                  alt="Golden Epoxy owner"
+                  width={1080}
+                  height={810}
+                  priority
+                />
+              </motion.div>
 
             </div>
           </div>
+
+          {/* Scroll indicator */}
+          <motion.div
+            className="gallery-scroll-indicator"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
+            aria-hidden
+          >
+            <motion.div
+              animate={{ y: [0, 6, 0] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 7l6 6 6-6" stroke="rgba(255,214,91,0.5)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </motion.div>
+          </motion.div>
         </div>
 
         {/* ── Masonry gallery ────────────────────────────────── */}
-        <div className="content-shell gallery-grid-shell">
+        <div id="gallery-grid" className="content-shell gallery-grid-shell">
           <GalleryGrid images={images} />
         </div>
 
