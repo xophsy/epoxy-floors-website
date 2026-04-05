@@ -106,7 +106,7 @@ export default function SiteHeader({ homeLinks = true, overlayHero = false }: Pr
           {/* Spacer to push right side into position */}
           <div className="flex-1" />
           {/* Right side — always flex, content switches at lg */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-8">
             {/* Desktop nav links */}
             <ul className="hidden lg:flex items-center gap-7 text-sm text-white/72">
               {navLinks.map((link) => (
