@@ -35,7 +35,7 @@ const questions: ChoiceQuestion[] = [
     options: [
       { label: "Metallic / shimmer", image: "/legacy-images/metallic-floor.png" },
       { label: "Flake / terrazzo", image: "/legacy-images/flake-floor-v2.png" },
-      { label: "Solid color", image: "/legacy-images/solid-floor.png" },
+      { label: "Solid color", image: "/legacy-images/teslalogo-floor.png" },
       "Not sure yet",
     ],
   },

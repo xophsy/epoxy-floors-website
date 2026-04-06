@@ -73,7 +73,7 @@ export default function HeroSection() {
 
   const bgScale = 1 + progress * 0.04;
   const parallaxY = progress * 45;
-  const overlayOpacity = 0.46 + progress * 0.22;
+  const overlayOpacity = 0.28 + progress * 0.22;
   const overlayY = progress * -6;
   const contentY = Math.min(progress * 30, 30);
   const cueOpacity = Math.max(0, 1 - progress * 1.2);
@@ -107,7 +107,7 @@ export default function HeroSection() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, rgba(3,3,3,0.72), rgba(3,3,3,0.32) 55%, rgba(3,3,3,0.58)), url('/legacy-images/main.jpg')",
+              "linear-gradient(180deg, rgba(3,3,3,0.48), rgba(3,3,3,0.18) 55%, rgba(3,3,3,0.38)), url('/legacy-images/main.jpg')",
           }}
         />
       </div>
@@ -118,7 +118,7 @@ export default function HeroSection() {
 
       {/* ── Dark overlay ── */}
       <div
-        className="absolute top-0 left-1/2 h-full w-screen bg-gradient-to-b from-black/24 to-black/72"
+        className="absolute top-0 left-1/2 h-full w-screen bg-gradient-to-b from-black/10 to-black/50"
         style={{ opacity: overlayOpacity, transform: `translateX(-50%) translateY(${overlayY}px)` }}
         aria-hidden
       />
