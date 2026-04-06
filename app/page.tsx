@@ -13,7 +13,7 @@ import {
   motionPresets,
 } from "@/components/design-system";
 import HeroSection from "@/components/HeroSection";
-import ReviewsMarquee from "@/components/ReviewsMarquee";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import {
@@ -90,7 +90,7 @@ export default function Home() {
       <SiteHeader homeLinks overlayHero />
       <main>
       <HeroSection />
-      <ReviewsMarquee />
+      <ReviewsCarousel />
 
       {/* ── Services ──────────────────────────────────────────── */}
       <SectionShell id="services">
