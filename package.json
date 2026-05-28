@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "npm run gallery:build",
+    "predev": "npm run gallery:build && npm run catalog:build",
     "dev": "next dev",
+    "catalog:sync": "node ./scripts/sync-catalog.mjs",
+    "catalog:build": "node ./scripts/generate-catalog.mjs",
     "gallery:build": "node ./scripts/generate-gallery.mjs",
-    "prebuild": "npm run gallery:build",
+    "prebuild": "npm run gallery:build && npm run catalog:build",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

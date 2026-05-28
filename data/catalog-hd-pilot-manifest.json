@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-05-28T07:16:41.106Z",
+  "collection": "metallic-pilot-01-12",
+  "count": 12,
+  "entries": [
+    {
+      "id": "01_bright_white",
+      "name": "01 bright white",
+      "sourcePath": "public/catalog/source/metallic/01_bright_white.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/01_bright_white_hd_2048.png",
+      "targetRgb": [
+        223,
+        223,
+        223
+      ],
+      "targetHex": "#dfdfdf",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:25.155Z"
+    },
+    {
+      "id": "02_pearl",
+      "name": "02 pearl",
+      "sourcePath": "public/catalog/source/metallic/02_pearl.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/02_pearl_hd_2048.png",
+      "targetRgb": [
+        170,
+        160,
+        155
+      ],
+      "targetHex": "#aaa09b",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:26.551Z"
+    },
+    {
+      "id": "03_oyster",
+      "name": "03 oyster",
+      "sourcePath": "public/catalog/source/metallic/03_oyster.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/03_oyster_hd_2048.png",
+      "targetRgb": [
+        150,
+        142,
+        134
+      ],
+      "targetHex": "#968e86",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:28.276Z"
+    },
+    {
+      "id": "04_aluminum",
+      "name": "04 aluminum",
+      "sourcePath": "public/catalog/source/metallic/04_aluminum.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/04_aluminum_hd_2048.png",
+      "targetRgb": [
+        141,
+        143,
+        142
+      ],
+      "targetHex": "#8d8f8e",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:29.550Z"
+    },
+    {
+      "id": "05_smoke_gray",
+      "name": "05 smoke gray",
+      "sourcePath": "public/catalog/source/metallic/05_smoke_gray.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/05_smoke_gray_hd_2048.png",
+      "targetRgb": [
+        85,
+        87,
+        100
+      ],
+      "targetHex": "#555764",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:30.882Z"
+    },
+    {
+      "id": "06_graphite",
+      "name": "06 graphite",
+      "sourcePath": "public/catalog/source/metallic/06_graphite.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/06_graphite_hd_2048.png",
+      "targetRgb": [
+        92,
+        91,
+        102
+      ],
+      "targetHex": "#5c5b66",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:32.068Z"
+    },
+    {
+      "id": "07_charcoal",
+      "name": "07 charcoal",
+      "sourcePath": "public/catalog/source/metallic/07_charcoal.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/07_charcoal_hd_2048.png",
+      "targetRgb": [
+        84,
+        82,
+        94
+      ],
+      "targetHex": "#54525e",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:33.369Z"
+    },
+    {
+      "id": "08_black_pearl",
+      "name": "08 black pearl",
+      "sourcePath": "public/catalog/source/metallic/08_black_pearl.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/08_black_pearl_hd_2048.png",
+      "targetRgb": [
+        69,
+        73,
+        72
+      ],
+      "targetHex": "#454948",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:34.218Z"
+    },
+    {
+      "id": "09_lemonade",
+      "name": "09 lemonade",
+      "sourcePath": "public/catalog/source/metallic/09_lemonade.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/09_lemonade_hd_2048.png",
+      "targetRgb": [
+        240,
+        200,
+        60
+      ],
+      "targetHex": "#f0c83c",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:35.161Z"
+    },
+    {
+      "id": "10_olive",
+      "name": "10 olive",
+      "sourcePath": "public/catalog/source/metallic/10_olive.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/10_olive_hd_2048.png",
+      "targetRgb": [
+        138,
+        165,
+        63
+      ],
+      "targetHex": "#8aa53f",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:37.161Z"
+    },
+    {
+      "id": "11_lime",
+      "name": "11 lime",
+      "sourcePath": "public/catalog/source/metallic/11_lime.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/11_lime_hd_2048.png",
+      "targetRgb": [
+        119,
+        194,
+        91
+      ],
+      "targetHex": "#77c25b",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:39.238Z"
+    },
+    {
+      "id": "12_apple_green",
+      "name": "12 apple green",
+      "sourcePath": "public/catalog/source/metallic/12_apple_green.png",
+      "outputPath": "public/catalog/hd/pilot/metallic/12_apple_green_hd_2048.png",
+      "targetRgb": [
+        110,
+        157,
+        53
+      ],
+      "targetHex": "#6e9d35",
+      "width": 2048,
+      "height": 2048,
+      "generatedAt": "2026-05-28T07:16:41.106Z"
+    }
+  ]
+}

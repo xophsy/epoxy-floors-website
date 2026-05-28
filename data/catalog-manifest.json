@@ -1,0 +1,3485 @@
+{
+  "generatedAt": "2026-05-28T06:48:30.085Z",
+  "sourceDir": "public/catalog/source",
+  "sourceFingerprint": "[{\"category\":\"metallic\",\"name\":\"01_bright_white.png\",\"size\":25953,\"mtimeMs\":1778717082124.2908},{\"category\":\"metallic\",\"name\":\"02_pearl.png\",\"size\":24369,\"mtimeMs\":1778717082142.682},{\"category\":\"metallic\",\"name\":\"03_oyster.png\",\"size\":15680,\"mtimeMs\":1778717082159.6887},{\"category\":\"metallic\",\"name\":\"04_aluminum.png\",\"size\":29601,\"mtimeMs\":1778717082177.4026},{\"category\":\"metallic\",\"name\":\"05_smoke_gray.png\",\"size\":21364,\"mtimeMs\":1778717082193.6287},{\"category\":\"metallic\",\"name\":\"06_graphite.png\",\"size\":27692,\"mtimeMs\":1778717082210.3506},{\"category\":\"metallic\",\"name\":\"07_charcoal.png\",\"size\":24954,\"mtimeMs\":1778717082228.2659},{\"category\":\"metallic\",\"name\":\"08_black_pearl.png\",\"size\":11324,\"mtimeMs\":1778717082102.82},{\"category\":\"metallic\",\"name\":\"09_lemonade.png\",\"size\":37675,\"mtimeMs\":1778717106711.486},{\"category\":\"metallic\",\"name\":\"10_olive.png\",\"size\":21043,\"mtimeMs\":1778717106726.618},{\"category\":\"metallic\",\"name\":\"11_lime.png\",\"size\":21240,\"mtimeMs\":1778717106742.1726},{\"category\":\"metallic\",\"name\":\"12_apple_green.png\",\"size\":40154,\"mtimeMs\":1778717106759.7354},{\"category\":\"metallic\",\"name\":\"13_pistachio.png\",\"size\":16046,\"mtimeMs\":1778717106775.2212},{\"category\":\"metallic\",\"name\":\"14_sea_green.png\",\"size\":18729,\"mtimeMs\":1778717106791.9685},{\"category\":\"metallic\",\"name\":\"15_winter_green.png\",\"size\":18526,\"mtimeMs\":1778717106808.4353},{\"category\":\"metallic\",\"name\":\"16_jade.png\",\"size\":22826,\"mtimeMs\":1778717106694.792},{\"category\":\"metallic\",\"name\":\"17_sage_green.png\",\"size\":23141,\"mtimeMs\":1778717132898.3325},{\"category\":\"metallic\",\"name\":\"18_turquoise.png\",\"size\":21452,\"mtimeMs\":1778717132914.2083},{\"category\":\"metallic\",\"name\":\"19_peacock.png\",\"size\":23641,\"mtimeMs\":1778717132930.8613},{\"category\":\"metallic\",\"name\":\"20_tea_green.png\",\"size\":14690,\"mtimeMs\":1778717132947.131},{\"category\":\"metallic\",\"name\":\"21_dark_emerald.png\",\"size\":10505,\"mtimeMs\":1778717132961.9946},{\"category\":\"metallic\",\"name\":\"22_luster_blue.png\",\"size\":41473,\"mtimeMs\":1778717132979.117},{\"category\":\"metallic\",\"name\":\"23_surf_blue.png\",\"size\":21323,\"mtimeMs\":1778717132996.6345},{\"category\":\"metallic\",\"name\":\"24_shimmer_blue.png\",\"size\":18947,\"mtimeMs\":1778717132882.2607},{\"category\":\"metallic\",\"name\":\"25_electric_blue.png\",\"size\":21030,\"mtimeMs\":1778717165219.1626},{\"category\":\"metallic\",\"name\":\"26_cobalt.png\",\"size\":20084,\"mtimeMs\":1778717165235.9792},{\"category\":\"metallic\",\"name\":\"27_royal_blue.png\",\"size\":15748,\"mtimeMs\":1778717165251.724},{\"category\":\"metallic\",\"name\":\"28_twilight_blue.png\",\"size\":15976,\"mtimeMs\":1778717165266.6348},{\"category\":\"metallic\",\"name\":\"29_sapphire.png\",\"size\":15715,\"mtimeMs\":1778717165282.341},{\"category\":\"metallic\",\"name\":\"30_bright_orange.png\",\"size\":26758,\"mtimeMs\":1778717165297.517},{\"category\":\"metallic\",\"name\":\"31_gold_rush.png\",\"size\":25494,\"mtimeMs\":1778717165312.697},{\"category\":\"metallic\",\"name\":\"32_aztec_gold.png\",\"size\":25231,\"mtimeMs\":1778717165329.4492},{\"category\":\"metallic\",\"name\":\"33_marigold.png\",\"size\":33980,\"mtimeMs\":1778717332279.032},{\"category\":\"metallic\",\"name\":\"34_copper.png\",\"size\":41388,\"mtimeMs\":1778717332244.0598},{\"category\":\"metallic\",\"name\":\"35_crimson.png\",\"size\":38901,\"mtimeMs\":1778717332248.619},{\"category\":\"metallic\",\"name\":\"36_chestnut_brown.png\",\"size\":31184,\"mtimeMs\":1778717332255.9563},{\"category\":\"metallic\",\"name\":\"37_walnut_brown.png\",\"size\":14257,\"mtimeMs\":1778717332260.8462},{\"category\":\"metallic\",\"name\":\"38_mocha_brown.png\",\"size\":12321,\"mtimeMs\":1778717332264.3694},{\"category\":\"metallic\",\"name\":\"39_bronze.png\",\"size\":12985,\"mtimeMs\":1778717332268.9092},{\"category\":\"metallic\",\"name\":\"40_pink.png\",\"size\":19035,\"mtimeMs\":1778717332274.4773},{\"category\":\"metallic\",\"name\":\"41_red_blossom.png\",\"size\":17523,\"mtimeMs\":1778717369715.7393},{\"category\":\"metallic\",\"name\":\"42_rose.png\",\"size\":20692,\"mtimeMs\":1778717369731.473},{\"category\":\"metallic\",\"name\":\"43_scarlet.png\",\"size\":19097,\"mtimeMs\":1778717369744.8035},{\"category\":\"metallic\",\"name\":\"44_cabernet.png\",\"size\":36943,\"mtimeMs\":1778717369759.49},{\"category\":\"metallic\",\"name\":\"45_magenta.png\",\"size\":23199,\"mtimeMs\":1778717369774.4253},{\"category\":\"metallic\",\"name\":\"46_merlot.png\",\"size\":28560,\"mtimeMs\":1778717369787.8137},{\"category\":\"metallic\",\"name\":\"47_violet.png\",\"size\":36254,\"mtimeMs\":1778717369802.854},{\"category\":\"metallic\",\"name\":\"48_lavender.png\",\"size\":18516,\"mtimeMs\":1778717369701.7812},{\"category\":\"metallic\",\"name\":\"49_purple.png\",\"size\":16398,\"mtimeMs\":1778717388146.3823},{\"category\":\"flakes\",\"name\":\"01_Autumn_Brown.png\",\"size\":618606,\"mtimeMs\":1778717007897.8801},{\"category\":\"flakes\",\"name\":\"02_Cabin_Fever.png\",\"size\":521463,\"mtimeMs\":1778717007922.3315},{\"category\":\"flakes\",\"name\":\"03_Coyote.png\",\"size\":513535,\"mtimeMs\":1778717007944.4695},{\"category\":\"flakes\",\"name\":\"04_Creekbed.png\",\"size\":510480,\"mtimeMs\":1778717007967.8716},{\"category\":\"flakes\",\"name\":\"05_Domino.png\",\"size\":573408,\"mtimeMs\":1778717007991.659},{\"category\":\"flakes\",\"name\":\"06_Feather_Gray.png\",\"size\":378743,\"mtimeMs\":1778717008012.0483},{\"category\":\"flakes\",\"name\":\"07_Glacier.png\",\"size\":390993,\"mtimeMs\":1778717008034.4016},{\"category\":\"flakes\",\"name\":\"08_Gravel.png\",\"size\":417642,\"mtimeMs\":1778717007869.6807},{\"category\":\"flakes\",\"name\":\"09_Nightfall.png\",\"size\":461877,\"mtimeMs\":1778717032856.5632},{\"category\":\"flakes\",\"name\":\"10_Orbit.png\",\"size\":697743,\"mtimeMs\":1778717032865.146},{\"category\":\"flakes\",\"name\":\"11_Outback.png\",\"size\":613574,\"mtimeMs\":1778717032872.2415},{\"category\":\"flakes\",\"name\":\"12_Safari.png\",\"size\":525705,\"mtimeMs\":1778717032879.8596},{\"category\":\"flakes\",\"name\":\"13_Shoreline.png\",\"size\":562114,\"mtimeMs\":1778717032886.9556},{\"category\":\"flakes\",\"name\":\"14_Stargazer.png\",\"size\":362166,\"mtimeMs\":1778717032892.5195},{\"category\":\"flakes\",\"name\":\"15_Tidal_Wave.png\",\"size\":425635,\"mtimeMs\":1778717032849.8008},{\"category\":\"neon\",\"name\":\"50_neon_yellow.png\",\"size\":3110,\"mtimeMs\":1778717428742.3247},{\"category\":\"neon\",\"name\":\"51_neon_orange_yellow.png\",\"size\":3110,\"mtimeMs\":1778717428755.214},{\"category\":\"neon\",\"name\":\"52_neon_orange.png\",\"size\":3110,\"mtimeMs\":1778717428767.288},{\"category\":\"neon\",\"name\":\"53_neon_red.png\",\"size\":3110,\"mtimeMs\":1778717428781.2544},{\"category\":\"neon\",\"name\":\"54_neon_bright_red.png\",\"size\":3106,\"mtimeMs\":1778717428794.878},{\"category\":\"neon\",\"name\":\"55_neon_pink.png\",\"size\":3110,\"mtimeMs\":1778717428808.2786},{\"category\":\"neon\",\"name\":\"56_neon_magenta.png\",\"size\":3109,\"mtimeMs\":1778717428822.1948},{\"category\":\"neon\",\"name\":\"57_neon_green.png\",\"size\":3109,\"mtimeMs\":1778717428835.8032},{\"category\":\"neon\",\"name\":\"58_neon_blue.png\",\"size\":3106,\"mtimeMs\":1778717428728.91},{\"category\":\"neon\",\"name\":\"59_neon_purple.png\",\"size\":3106,\"mtimeMs\":1778717438697.5051}]",
+  "images": [
+    {
+      "id": "1",
+      "slug": "metallic-01-bright-white",
+      "category": "metallic",
+      "number": 1,
+      "title": "Bright White",
+      "alt": "Bright White metallic epoxy color swatch",
+      "width": 795,
+      "height": 795,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-01-bright-white/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-01-bright-white/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-01-bright-white/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-01-bright-white/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-01-bright-white/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-01-bright-white/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-01-bright-white/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-01-bright-white/768.webp"
+        },
+        {
+          "width": 795,
+          "height": 795,
+          "avif": "/catalog/generated/metallic/metallic-01-bright-white/795.avif",
+          "webp": "/catalog/generated/metallic/metallic-01-bright-white/795.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-01-bright-white/795.webp",
+        "width": 795,
+        "height": 795
+      }
+    },
+    {
+      "id": "2",
+      "slug": "metallic-02-pearl",
+      "category": "metallic",
+      "number": 2,
+      "title": "Pearl",
+      "alt": "Pearl metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-02-pearl/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-02-pearl/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-02-pearl/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-02-pearl/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-02-pearl/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-02-pearl/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-02-pearl/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-02-pearl/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-02-pearl/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-02-pearl/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-02-pearl/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "3",
+      "slug": "metallic-03-oyster",
+      "category": "metallic",
+      "number": 3,
+      "title": "Oyster",
+      "alt": "Oyster metallic epoxy color swatch",
+      "width": 786,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-03-oyster/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-03-oyster/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-03-oyster/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-03-oyster/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-03-oyster/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-03-oyster/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-03-oyster/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-03-oyster/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-03-oyster/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-03-oyster/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-03-oyster/786.webp",
+        "width": 786,
+        "height": 786
+      }
+    },
+    {
+      "id": "4",
+      "slug": "metallic-04-aluminum",
+      "category": "metallic",
+      "number": 4,
+      "title": "Aluminum",
+      "alt": "Aluminum metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-04-aluminum/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-04-aluminum/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-04-aluminum/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-04-aluminum/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-04-aluminum/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-04-aluminum/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-04-aluminum/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-04-aluminum/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-04-aluminum/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-04-aluminum/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-04-aluminum/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "5",
+      "slug": "metallic-05-smoke-gray",
+      "category": "metallic",
+      "number": 5,
+      "title": "Smoke Gray",
+      "alt": "Smoke Gray metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-05-smoke-gray/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-05-smoke-gray/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-05-smoke-gray/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-05-smoke-gray/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-05-smoke-gray/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-05-smoke-gray/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-05-smoke-gray/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-05-smoke-gray/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-05-smoke-gray/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-05-smoke-gray/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-05-smoke-gray/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "6",
+      "slug": "metallic-06-graphite",
+      "category": "metallic",
+      "number": 6,
+      "title": "Graphite",
+      "alt": "Graphite metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-06-graphite/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-06-graphite/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-06-graphite/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-06-graphite/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-06-graphite/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-06-graphite/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-06-graphite/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-06-graphite/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-06-graphite/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-06-graphite/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-06-graphite/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "7",
+      "slug": "metallic-07-charcoal",
+      "category": "metallic",
+      "number": 7,
+      "title": "Charcoal",
+      "alt": "Charcoal metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-07-charcoal/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-07-charcoal/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-07-charcoal/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-07-charcoal/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-07-charcoal/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-07-charcoal/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-07-charcoal/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-07-charcoal/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-07-charcoal/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-07-charcoal/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-07-charcoal/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "8",
+      "slug": "metallic-08-black-pearl",
+      "category": "metallic",
+      "number": 8,
+      "title": "Black Pearl",
+      "alt": "Black Pearl metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-08-black-pearl/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-08-black-pearl/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-08-black-pearl/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-08-black-pearl/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-08-black-pearl/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-08-black-pearl/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-08-black-pearl/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-08-black-pearl/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-08-black-pearl/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-08-black-pearl/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-08-black-pearl/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "9",
+      "slug": "metallic-09-lemonade",
+      "category": "metallic",
+      "number": 9,
+      "title": "Lemonade",
+      "alt": "Lemonade metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-09-lemonade/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-09-lemonade/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-09-lemonade/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-09-lemonade/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-09-lemonade/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-09-lemonade/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-09-lemonade/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-09-lemonade/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-09-lemonade/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-09-lemonade/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-09-lemonade/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "10",
+      "slug": "metallic-10-olive",
+      "category": "metallic",
+      "number": 10,
+      "title": "Olive",
+      "alt": "Olive metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-10-olive/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-10-olive/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-10-olive/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-10-olive/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-10-olive/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-10-olive/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-10-olive/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-10-olive/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-10-olive/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-10-olive/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-10-olive/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "11",
+      "slug": "metallic-11-lime",
+      "category": "metallic",
+      "number": 11,
+      "title": "Lime",
+      "alt": "Lime metallic epoxy color swatch",
+      "width": 786,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-11-lime/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-11-lime/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-11-lime/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-11-lime/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-11-lime/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-11-lime/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-11-lime/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-11-lime/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-11-lime/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-11-lime/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-11-lime/786.webp",
+        "width": 786,
+        "height": 786
+      }
+    },
+    {
+      "id": "12",
+      "slug": "metallic-12-apple-green",
+      "category": "metallic",
+      "number": 12,
+      "title": "Apple Green",
+      "alt": "Apple Green metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-12-apple-green/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-12-apple-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-12-apple-green/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-12-apple-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-12-apple-green/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-12-apple-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-12-apple-green/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-12-apple-green/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-12-apple-green/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-12-apple-green/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-12-apple-green/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "13",
+      "slug": "metallic-13-pistachio",
+      "category": "metallic",
+      "number": 13,
+      "title": "Pistachio",
+      "alt": "Pistachio metallic epoxy color swatch",
+      "width": 786,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-13-pistachio/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-13-pistachio/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-13-pistachio/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-13-pistachio/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-13-pistachio/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-13-pistachio/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-13-pistachio/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-13-pistachio/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-13-pistachio/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-13-pistachio/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-13-pistachio/786.webp",
+        "width": 786,
+        "height": 786
+      }
+    },
+    {
+      "id": "14",
+      "slug": "metallic-14-sea-green",
+      "category": "metallic",
+      "number": 14,
+      "title": "Sea Green",
+      "alt": "Sea Green metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-14-sea-green/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-14-sea-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-14-sea-green/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-14-sea-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-14-sea-green/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-14-sea-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-14-sea-green/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-14-sea-green/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-14-sea-green/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-14-sea-green/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-14-sea-green/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "15",
+      "slug": "metallic-15-winter-green",
+      "category": "metallic",
+      "number": 15,
+      "title": "Winter Green",
+      "alt": "Winter Green metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-15-winter-green/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-15-winter-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-15-winter-green/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-15-winter-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-15-winter-green/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-15-winter-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-15-winter-green/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-15-winter-green/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-15-winter-green/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-15-winter-green/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-15-winter-green/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "16",
+      "slug": "metallic-16-jade",
+      "category": "metallic",
+      "number": 16,
+      "title": "Jade",
+      "alt": "Jade metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-16-jade/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-16-jade/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-16-jade/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-16-jade/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-16-jade/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-16-jade/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-16-jade/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-16-jade/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-16-jade/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-16-jade/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-16-jade/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "17",
+      "slug": "metallic-17-sage-green",
+      "category": "metallic",
+      "number": 17,
+      "title": "Sage Green",
+      "alt": "Sage Green metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-17-sage-green/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-17-sage-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-17-sage-green/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-17-sage-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-17-sage-green/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-17-sage-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-17-sage-green/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-17-sage-green/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-17-sage-green/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-17-sage-green/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-17-sage-green/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "18",
+      "slug": "metallic-18-turquoise",
+      "category": "metallic",
+      "number": 18,
+      "title": "Turquoise",
+      "alt": "Turquoise metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-18-turquoise/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-18-turquoise/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-18-turquoise/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-18-turquoise/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-18-turquoise/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-18-turquoise/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-18-turquoise/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-18-turquoise/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-18-turquoise/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-18-turquoise/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-18-turquoise/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "19",
+      "slug": "metallic-19-peacock",
+      "category": "metallic",
+      "number": 19,
+      "title": "Peacock",
+      "alt": "Peacock metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-19-peacock/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-19-peacock/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-19-peacock/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-19-peacock/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-19-peacock/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-19-peacock/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-19-peacock/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-19-peacock/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-19-peacock/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-19-peacock/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-19-peacock/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "20",
+      "slug": "metallic-20-tea-green",
+      "category": "metallic",
+      "number": 20,
+      "title": "Tea Green",
+      "alt": "Tea Green metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-20-tea-green/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-20-tea-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-20-tea-green/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-20-tea-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-20-tea-green/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-20-tea-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-20-tea-green/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-20-tea-green/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-20-tea-green/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-20-tea-green/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-20-tea-green/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "21",
+      "slug": "metallic-21-dark-emerald",
+      "category": "metallic",
+      "number": 21,
+      "title": "Dark Emerald",
+      "alt": "Dark Emerald metallic epoxy color swatch",
+      "width": 786,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-21-dark-emerald/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-21-dark-emerald/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-21-dark-emerald/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-21-dark-emerald/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-21-dark-emerald/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-21-dark-emerald/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-21-dark-emerald/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-21-dark-emerald/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-21-dark-emerald/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-21-dark-emerald/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-21-dark-emerald/786.webp",
+        "width": 786,
+        "height": 786
+      }
+    },
+    {
+      "id": "22",
+      "slug": "metallic-22-luster-blue",
+      "category": "metallic",
+      "number": 22,
+      "title": "Luster Blue",
+      "alt": "Luster Blue metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-22-luster-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-22-luster-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-22-luster-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-22-luster-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-22-luster-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-22-luster-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-22-luster-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-22-luster-blue/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-22-luster-blue/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-22-luster-blue/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-22-luster-blue/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "23",
+      "slug": "metallic-23-surf-blue",
+      "category": "metallic",
+      "number": 23,
+      "title": "Surf Blue",
+      "alt": "Surf Blue metallic epoxy color swatch",
+      "width": 786,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-23-surf-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-23-surf-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-23-surf-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-23-surf-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-23-surf-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-23-surf-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-23-surf-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-23-surf-blue/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-23-surf-blue/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-23-surf-blue/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-23-surf-blue/786.webp",
+        "width": 786,
+        "height": 786
+      }
+    },
+    {
+      "id": "24",
+      "slug": "metallic-24-shimmer-blue",
+      "category": "metallic",
+      "number": 24,
+      "title": "Shimmer Blue",
+      "alt": "Shimmer Blue metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-24-shimmer-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-24-shimmer-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-24-shimmer-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-24-shimmer-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-24-shimmer-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-24-shimmer-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-24-shimmer-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-24-shimmer-blue/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-24-shimmer-blue/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-24-shimmer-blue/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-24-shimmer-blue/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "25",
+      "slug": "metallic-25-electric-blue",
+      "category": "metallic",
+      "number": 25,
+      "title": "Electric Blue",
+      "alt": "Electric Blue metallic epoxy color swatch",
+      "width": 787,
+      "height": 786,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-25-electric-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-25-electric-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-25-electric-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-25-electric-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-25-electric-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-25-electric-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-25-electric-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-25-electric-blue/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 786,
+          "avif": "/catalog/generated/metallic/metallic-25-electric-blue/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-25-electric-blue/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-25-electric-blue/787.webp",
+        "width": 787,
+        "height": 786
+      }
+    },
+    {
+      "id": "26",
+      "slug": "metallic-26-cobalt",
+      "category": "metallic",
+      "number": 26,
+      "title": "Cobalt",
+      "alt": "Cobalt metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-26-cobalt/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-26-cobalt/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-26-cobalt/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-26-cobalt/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-26-cobalt/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-26-cobalt/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-26-cobalt/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-26-cobalt/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-26-cobalt/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-26-cobalt/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-26-cobalt/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "27",
+      "slug": "metallic-27-royal-blue",
+      "category": "metallic",
+      "number": 27,
+      "title": "Royal Blue",
+      "alt": "Royal Blue metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-27-royal-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-27-royal-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-27-royal-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-27-royal-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-27-royal-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-27-royal-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-27-royal-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-27-royal-blue/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-27-royal-blue/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-27-royal-blue/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-27-royal-blue/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "28",
+      "slug": "metallic-28-twilight-blue",
+      "category": "metallic",
+      "number": 28,
+      "title": "Twilight Blue",
+      "alt": "Twilight Blue metallic epoxy color swatch",
+      "width": 786,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-28-twilight-blue/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-28-twilight-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-28-twilight-blue/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-28-twilight-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-28-twilight-blue/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-28-twilight-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-28-twilight-blue/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-28-twilight-blue/768.webp"
+        },
+        {
+          "width": 786,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-28-twilight-blue/786.avif",
+          "webp": "/catalog/generated/metallic/metallic-28-twilight-blue/786.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-28-twilight-blue/786.webp",
+        "width": 786,
+        "height": 787
+      }
+    },
+    {
+      "id": "29",
+      "slug": "metallic-29-sapphire",
+      "category": "metallic",
+      "number": 29,
+      "title": "Sapphire",
+      "alt": "Sapphire metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-29-sapphire/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-29-sapphire/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-29-sapphire/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-29-sapphire/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-29-sapphire/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-29-sapphire/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-29-sapphire/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-29-sapphire/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-29-sapphire/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-29-sapphire/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-29-sapphire/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "30",
+      "slug": "metallic-30-bright-orange",
+      "category": "metallic",
+      "number": 30,
+      "title": "Bright Orange",
+      "alt": "Bright Orange metallic epoxy color swatch",
+      "width": 787,
+      "height": 787,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-30-bright-orange/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-30-bright-orange/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-30-bright-orange/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-30-bright-orange/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-30-bright-orange/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-30-bright-orange/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-30-bright-orange/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-30-bright-orange/768.webp"
+        },
+        {
+          "width": 787,
+          "height": 787,
+          "avif": "/catalog/generated/metallic/metallic-30-bright-orange/787.avif",
+          "webp": "/catalog/generated/metallic/metallic-30-bright-orange/787.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-30-bright-orange/787.webp",
+        "width": 787,
+        "height": 787
+      }
+    },
+    {
+      "id": "31",
+      "slug": "metallic-31-gold-rush",
+      "category": "metallic",
+      "number": 31,
+      "title": "Gold Rush",
+      "alt": "Gold Rush metallic epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-31-gold-rush/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-31-gold-rush/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-31-gold-rush/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-31-gold-rush/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-31-gold-rush/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-31-gold-rush/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-31-gold-rush/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-31-gold-rush/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/metallic/metallic-31-gold-rush/809.avif",
+          "webp": "/catalog/generated/metallic/metallic-31-gold-rush/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-31-gold-rush/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "32",
+      "slug": "metallic-32-aztec-gold",
+      "category": "metallic",
+      "number": 32,
+      "title": "Aztec Gold",
+      "alt": "Aztec Gold metallic epoxy color swatch",
+      "width": 810,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-32-aztec-gold/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-32-aztec-gold/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-32-aztec-gold/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-32-aztec-gold/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-32-aztec-gold/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-32-aztec-gold/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-32-aztec-gold/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-32-aztec-gold/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 809,
+          "avif": "/catalog/generated/metallic/metallic-32-aztec-gold/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-32-aztec-gold/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-32-aztec-gold/810.webp",
+        "width": 810,
+        "height": 809
+      }
+    },
+    {
+      "id": "33",
+      "slug": "metallic-33-marigold",
+      "category": "metallic",
+      "number": 33,
+      "title": "Marigold",
+      "alt": "Marigold metallic epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-33-marigold/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-33-marigold/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-33-marigold/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-33-marigold/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-33-marigold/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-33-marigold/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-33-marigold/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-33-marigold/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/metallic/metallic-33-marigold/809.avif",
+          "webp": "/catalog/generated/metallic/metallic-33-marigold/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-33-marigold/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "34",
+      "slug": "metallic-34-copper",
+      "category": "metallic",
+      "number": 34,
+      "title": "Copper",
+      "alt": "Copper metallic epoxy color swatch",
+      "width": 810,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-34-copper/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-34-copper/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-34-copper/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-34-copper/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-34-copper/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-34-copper/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-34-copper/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-34-copper/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 809,
+          "avif": "/catalog/generated/metallic/metallic-34-copper/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-34-copper/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-34-copper/810.webp",
+        "width": 810,
+        "height": 809
+      }
+    },
+    {
+      "id": "35",
+      "slug": "metallic-35-crimson",
+      "category": "metallic",
+      "number": 35,
+      "title": "Crimson",
+      "alt": "Crimson metallic epoxy color swatch",
+      "width": 810,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-35-crimson/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-35-crimson/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-35-crimson/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-35-crimson/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 519,
+          "avif": "/catalog/generated/metallic/metallic-35-crimson/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-35-crimson/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 767,
+          "avif": "/catalog/generated/metallic/metallic-35-crimson/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-35-crimson/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 809,
+          "avif": "/catalog/generated/metallic/metallic-35-crimson/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-35-crimson/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-35-crimson/810.webp",
+        "width": 810,
+        "height": 809
+      }
+    },
+    {
+      "id": "36",
+      "slug": "metallic-36-chestnut-brown",
+      "category": "metallic",
+      "number": 36,
+      "title": "Chestnut Brown",
+      "alt": "Chestnut Brown metallic epoxy color swatch",
+      "width": 809,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-36-chestnut-brown/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-36-chestnut-brown/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-36-chestnut-brown/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-36-chestnut-brown/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-36-chestnut-brown/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-36-chestnut-brown/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-36-chestnut-brown/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-36-chestnut-brown/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-36-chestnut-brown/809.avif",
+          "webp": "/catalog/generated/metallic/metallic-36-chestnut-brown/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-36-chestnut-brown/809.webp",
+        "width": 809,
+        "height": 810
+      }
+    },
+    {
+      "id": "37",
+      "slug": "metallic-37-walnut-brown",
+      "category": "metallic",
+      "number": 37,
+      "title": "Walnut Brown",
+      "alt": "Walnut Brown metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-37-walnut-brown/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-37-walnut-brown/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-37-walnut-brown/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-37-walnut-brown/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-37-walnut-brown/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-37-walnut-brown/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-37-walnut-brown/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-37-walnut-brown/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-37-walnut-brown/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-37-walnut-brown/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-37-walnut-brown/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "38",
+      "slug": "metallic-38-mocha-brown",
+      "category": "metallic",
+      "number": 38,
+      "title": "Mocha Brown",
+      "alt": "Mocha Brown metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-38-mocha-brown/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-38-mocha-brown/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-38-mocha-brown/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-38-mocha-brown/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-38-mocha-brown/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-38-mocha-brown/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-38-mocha-brown/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-38-mocha-brown/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-38-mocha-brown/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-38-mocha-brown/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-38-mocha-brown/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "39",
+      "slug": "metallic-39-bronze",
+      "category": "metallic",
+      "number": 39,
+      "title": "Bronze",
+      "alt": "Bronze metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-39-bronze/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-39-bronze/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-39-bronze/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-39-bronze/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-39-bronze/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-39-bronze/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-39-bronze/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-39-bronze/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-39-bronze/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-39-bronze/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-39-bronze/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "40",
+      "slug": "metallic-40-pink",
+      "category": "metallic",
+      "number": 40,
+      "title": "Pink",
+      "alt": "Pink metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-40-pink/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-40-pink/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-40-pink/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-40-pink/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-40-pink/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-40-pink/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-40-pink/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-40-pink/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-40-pink/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-40-pink/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-40-pink/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "41",
+      "slug": "metallic-41-red-blossom",
+      "category": "metallic",
+      "number": 41,
+      "title": "Red Blossom",
+      "alt": "Red Blossom metallic epoxy color swatch",
+      "width": 809,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-41-red-blossom/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-41-red-blossom/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-41-red-blossom/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-41-red-blossom/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-41-red-blossom/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-41-red-blossom/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-41-red-blossom/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-41-red-blossom/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-41-red-blossom/809.avif",
+          "webp": "/catalog/generated/metallic/metallic-41-red-blossom/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-41-red-blossom/809.webp",
+        "width": 809,
+        "height": 810
+      }
+    },
+    {
+      "id": "42",
+      "slug": "metallic-42-rose",
+      "category": "metallic",
+      "number": 42,
+      "title": "Rose",
+      "alt": "Rose metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-42-rose/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-42-rose/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-42-rose/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-42-rose/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-42-rose/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-42-rose/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-42-rose/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-42-rose/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-42-rose/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-42-rose/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-42-rose/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "43",
+      "slug": "metallic-43-scarlet",
+      "category": "metallic",
+      "number": 43,
+      "title": "Scarlet",
+      "alt": "Scarlet metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-43-scarlet/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-43-scarlet/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-43-scarlet/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-43-scarlet/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-43-scarlet/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-43-scarlet/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-43-scarlet/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-43-scarlet/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-43-scarlet/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-43-scarlet/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-43-scarlet/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "44",
+      "slug": "metallic-44-cabernet",
+      "category": "metallic",
+      "number": 44,
+      "title": "Cabernet",
+      "alt": "Cabernet metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-44-cabernet/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-44-cabernet/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-44-cabernet/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-44-cabernet/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-44-cabernet/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-44-cabernet/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-44-cabernet/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-44-cabernet/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-44-cabernet/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-44-cabernet/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-44-cabernet/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "45",
+      "slug": "metallic-45-magenta",
+      "category": "metallic",
+      "number": 45,
+      "title": "Magenta",
+      "alt": "Magenta metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-45-magenta/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-45-magenta/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-45-magenta/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-45-magenta/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-45-magenta/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-45-magenta/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-45-magenta/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-45-magenta/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-45-magenta/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-45-magenta/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-45-magenta/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "46",
+      "slug": "metallic-46-merlot",
+      "category": "metallic",
+      "number": 46,
+      "title": "Merlot",
+      "alt": "Merlot metallic epoxy color swatch",
+      "width": 809,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-46-merlot/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-46-merlot/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-46-merlot/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-46-merlot/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/metallic/metallic-46-merlot/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-46-merlot/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/metallic/metallic-46-merlot/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-46-merlot/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-46-merlot/809.avif",
+          "webp": "/catalog/generated/metallic/metallic-46-merlot/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-46-merlot/809.webp",
+        "width": 809,
+        "height": 810
+      }
+    },
+    {
+      "id": "47",
+      "slug": "metallic-47-violet",
+      "category": "metallic",
+      "number": 47,
+      "title": "Violet",
+      "alt": "Violet metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-47-violet/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-47-violet/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-47-violet/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-47-violet/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-47-violet/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-47-violet/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-47-violet/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-47-violet/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-47-violet/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-47-violet/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-47-violet/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "48",
+      "slug": "metallic-48-lavender",
+      "category": "metallic",
+      "number": 48,
+      "title": "Lavender",
+      "alt": "Lavender metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-48-lavender/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-48-lavender/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-48-lavender/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-48-lavender/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-48-lavender/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-48-lavender/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-48-lavender/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-48-lavender/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-48-lavender/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-48-lavender/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-48-lavender/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "49",
+      "slug": "metallic-49-purple",
+      "category": "metallic",
+      "number": 49,
+      "title": "Purple",
+      "alt": "Purple metallic epoxy color swatch",
+      "width": 810,
+      "height": 810,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/metallic/metallic-49-purple/thumb-340.avif",
+        "webp": "/catalog/generated/metallic/metallic-49-purple/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/metallic/metallic-49-purple/360.avif",
+          "webp": "/catalog/generated/metallic/metallic-49-purple/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/metallic/metallic-49-purple/520.avif",
+          "webp": "/catalog/generated/metallic/metallic-49-purple/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/metallic/metallic-49-purple/768.avif",
+          "webp": "/catalog/generated/metallic/metallic-49-purple/768.webp"
+        },
+        {
+          "width": 810,
+          "height": 810,
+          "avif": "/catalog/generated/metallic/metallic-49-purple/810.avif",
+          "webp": "/catalog/generated/metallic/metallic-49-purple/810.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/metallic/metallic-49-purple/810.webp",
+        "width": 810,
+        "height": 810
+      }
+    },
+    {
+      "id": "50",
+      "slug": "flakes-01-autumn-brown",
+      "category": "flakes",
+      "number": 1,
+      "title": "Autumn Brown",
+      "alt": "Autumn Brown flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-01-autumn-brown/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-01-autumn-brown/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-01-autumn-brown/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-01-autumn-brown/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-01-autumn-brown/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-01-autumn-brown/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-01-autumn-brown/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-01-autumn-brown/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-01-autumn-brown/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-01-autumn-brown/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-01-autumn-brown/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "51",
+      "slug": "flakes-02-cabin-fever",
+      "category": "flakes",
+      "number": 2,
+      "title": "Cabin Fever",
+      "alt": "Cabin Fever flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-02-cabin-fever/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-02-cabin-fever/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-02-cabin-fever/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-02-cabin-fever/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-02-cabin-fever/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-02-cabin-fever/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-02-cabin-fever/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-02-cabin-fever/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-02-cabin-fever/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-02-cabin-fever/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-02-cabin-fever/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "52",
+      "slug": "flakes-03-coyote",
+      "category": "flakes",
+      "number": 3,
+      "title": "Coyote",
+      "alt": "Coyote flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-03-coyote/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-03-coyote/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-03-coyote/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-03-coyote/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-03-coyote/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-03-coyote/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-03-coyote/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-03-coyote/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-03-coyote/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-03-coyote/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-03-coyote/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "53",
+      "slug": "flakes-04-creekbed",
+      "category": "flakes",
+      "number": 4,
+      "title": "Creekbed",
+      "alt": "Creekbed flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-04-creekbed/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-04-creekbed/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-04-creekbed/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-04-creekbed/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-04-creekbed/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-04-creekbed/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-04-creekbed/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-04-creekbed/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-04-creekbed/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-04-creekbed/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-04-creekbed/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "54",
+      "slug": "flakes-05-domino",
+      "category": "flakes",
+      "number": 5,
+      "title": "Domino",
+      "alt": "Domino flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-05-domino/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-05-domino/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-05-domino/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-05-domino/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-05-domino/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-05-domino/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-05-domino/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-05-domino/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-05-domino/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-05-domino/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-05-domino/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "55",
+      "slug": "flakes-06-feather-gray",
+      "category": "flakes",
+      "number": 6,
+      "title": "Feather Gray",
+      "alt": "Feather Gray flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-06-feather-gray/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-06-feather-gray/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-06-feather-gray/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-06-feather-gray/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-06-feather-gray/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-06-feather-gray/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-06-feather-gray/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-06-feather-gray/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-06-feather-gray/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-06-feather-gray/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-06-feather-gray/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "56",
+      "slug": "flakes-07-glacier",
+      "category": "flakes",
+      "number": 7,
+      "title": "Glacier",
+      "alt": "Glacier flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-07-glacier/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-07-glacier/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-07-glacier/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-07-glacier/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-07-glacier/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-07-glacier/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-07-glacier/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-07-glacier/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-07-glacier/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-07-glacier/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-07-glacier/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "57",
+      "slug": "flakes-08-gravel",
+      "category": "flakes",
+      "number": 8,
+      "title": "Gravel",
+      "alt": "Gravel flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-08-gravel/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-08-gravel/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-08-gravel/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-08-gravel/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-08-gravel/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-08-gravel/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-08-gravel/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-08-gravel/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-08-gravel/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-08-gravel/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-08-gravel/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "58",
+      "slug": "flakes-09-nightfall",
+      "category": "flakes",
+      "number": 9,
+      "title": "Nightfall",
+      "alt": "Nightfall flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-09-nightfall/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-09-nightfall/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-09-nightfall/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-09-nightfall/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-09-nightfall/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-09-nightfall/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-09-nightfall/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-09-nightfall/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-09-nightfall/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-09-nightfall/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-09-nightfall/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "59",
+      "slug": "flakes-10-orbit",
+      "category": "flakes",
+      "number": 10,
+      "title": "Orbit",
+      "alt": "Orbit flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-10-orbit/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-10-orbit/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-10-orbit/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-10-orbit/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-10-orbit/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-10-orbit/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-10-orbit/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-10-orbit/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-10-orbit/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-10-orbit/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-10-orbit/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "60",
+      "slug": "flakes-11-outback",
+      "category": "flakes",
+      "number": 11,
+      "title": "Outback",
+      "alt": "Outback flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-11-outback/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-11-outback/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-11-outback/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-11-outback/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-11-outback/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-11-outback/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-11-outback/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-11-outback/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-11-outback/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-11-outback/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-11-outback/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "61",
+      "slug": "flakes-12-safari",
+      "category": "flakes",
+      "number": 12,
+      "title": "Safari",
+      "alt": "Safari flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-12-safari/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-12-safari/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-12-safari/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-12-safari/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-12-safari/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-12-safari/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-12-safari/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-12-safari/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-12-safari/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-12-safari/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-12-safari/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "62",
+      "slug": "flakes-13-shoreline",
+      "category": "flakes",
+      "number": 13,
+      "title": "Shoreline",
+      "alt": "Shoreline flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-13-shoreline/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-13-shoreline/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-13-shoreline/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-13-shoreline/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-13-shoreline/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-13-shoreline/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-13-shoreline/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-13-shoreline/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-13-shoreline/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-13-shoreline/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-13-shoreline/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "63",
+      "slug": "flakes-14-stargazer",
+      "category": "flakes",
+      "number": 14,
+      "title": "Stargazer",
+      "alt": "Stargazer flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-14-stargazer/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-14-stargazer/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-14-stargazer/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-14-stargazer/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-14-stargazer/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-14-stargazer/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-14-stargazer/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-14-stargazer/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-14-stargazer/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-14-stargazer/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-14-stargazer/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "64",
+      "slug": "flakes-15-tidal-wave",
+      "category": "flakes",
+      "number": 15,
+      "title": "Tidal Wave",
+      "alt": "Tidal Wave flakes epoxy color swatch",
+      "width": 800,
+      "height": 800,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/flakes/flakes-15-tidal-wave/thumb-340.avif",
+        "webp": "/catalog/generated/flakes/flakes-15-tidal-wave/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/flakes/flakes-15-tidal-wave/360.avif",
+          "webp": "/catalog/generated/flakes/flakes-15-tidal-wave/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/flakes/flakes-15-tidal-wave/520.avif",
+          "webp": "/catalog/generated/flakes/flakes-15-tidal-wave/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/flakes/flakes-15-tidal-wave/768.avif",
+          "webp": "/catalog/generated/flakes/flakes-15-tidal-wave/768.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "avif": "/catalog/generated/flakes/flakes-15-tidal-wave/800.avif",
+          "webp": "/catalog/generated/flakes/flakes-15-tidal-wave/800.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/flakes/flakes-15-tidal-wave/800.webp",
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "id": "65",
+      "slug": "neon-50-neon-yellow",
+      "category": "neon",
+      "number": 50,
+      "title": "Neon Yellow",
+      "alt": "Neon Yellow neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-50-neon-yellow/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-50-neon-yellow/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-50-neon-yellow/360.avif",
+          "webp": "/catalog/generated/neon/neon-50-neon-yellow/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-50-neon-yellow/520.avif",
+          "webp": "/catalog/generated/neon/neon-50-neon-yellow/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-50-neon-yellow/768.avif",
+          "webp": "/catalog/generated/neon/neon-50-neon-yellow/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-50-neon-yellow/809.avif",
+          "webp": "/catalog/generated/neon/neon-50-neon-yellow/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-50-neon-yellow/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "66",
+      "slug": "neon-51-neon-orange-yellow",
+      "category": "neon",
+      "number": 51,
+      "title": "Neon Orange Yellow",
+      "alt": "Neon Orange Yellow neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-51-neon-orange-yellow/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-51-neon-orange-yellow/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-51-neon-orange-yellow/360.avif",
+          "webp": "/catalog/generated/neon/neon-51-neon-orange-yellow/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-51-neon-orange-yellow/520.avif",
+          "webp": "/catalog/generated/neon/neon-51-neon-orange-yellow/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-51-neon-orange-yellow/768.avif",
+          "webp": "/catalog/generated/neon/neon-51-neon-orange-yellow/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-51-neon-orange-yellow/809.avif",
+          "webp": "/catalog/generated/neon/neon-51-neon-orange-yellow/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-51-neon-orange-yellow/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "67",
+      "slug": "neon-52-neon-orange",
+      "category": "neon",
+      "number": 52,
+      "title": "Neon Orange",
+      "alt": "Neon Orange neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-52-neon-orange/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-52-neon-orange/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-52-neon-orange/360.avif",
+          "webp": "/catalog/generated/neon/neon-52-neon-orange/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-52-neon-orange/520.avif",
+          "webp": "/catalog/generated/neon/neon-52-neon-orange/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-52-neon-orange/768.avif",
+          "webp": "/catalog/generated/neon/neon-52-neon-orange/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-52-neon-orange/809.avif",
+          "webp": "/catalog/generated/neon/neon-52-neon-orange/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-52-neon-orange/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "68",
+      "slug": "neon-53-neon-red",
+      "category": "neon",
+      "number": 53,
+      "title": "Neon Red",
+      "alt": "Neon Red neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-53-neon-red/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-53-neon-red/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-53-neon-red/360.avif",
+          "webp": "/catalog/generated/neon/neon-53-neon-red/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-53-neon-red/520.avif",
+          "webp": "/catalog/generated/neon/neon-53-neon-red/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-53-neon-red/768.avif",
+          "webp": "/catalog/generated/neon/neon-53-neon-red/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-53-neon-red/809.avif",
+          "webp": "/catalog/generated/neon/neon-53-neon-red/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-53-neon-red/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "69",
+      "slug": "neon-54-neon-bright-red",
+      "category": "neon",
+      "number": 54,
+      "title": "Neon Bright Red",
+      "alt": "Neon Bright Red neon epoxy color swatch",
+      "width": 808,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-54-neon-bright-red/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-54-neon-bright-red/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-54-neon-bright-red/360.avif",
+          "webp": "/catalog/generated/neon/neon-54-neon-bright-red/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/neon/neon-54-neon-bright-red/520.avif",
+          "webp": "/catalog/generated/neon/neon-54-neon-bright-red/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/neon/neon-54-neon-bright-red/768.avif",
+          "webp": "/catalog/generated/neon/neon-54-neon-bright-red/768.webp"
+        },
+        {
+          "width": 808,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-54-neon-bright-red/808.avif",
+          "webp": "/catalog/generated/neon/neon-54-neon-bright-red/808.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-54-neon-bright-red/808.webp",
+        "width": 808,
+        "height": 809
+      }
+    },
+    {
+      "id": "70",
+      "slug": "neon-55-neon-pink",
+      "category": "neon",
+      "number": 55,
+      "title": "Neon Pink",
+      "alt": "Neon Pink neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-55-neon-pink/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-55-neon-pink/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-55-neon-pink/360.avif",
+          "webp": "/catalog/generated/neon/neon-55-neon-pink/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-55-neon-pink/520.avif",
+          "webp": "/catalog/generated/neon/neon-55-neon-pink/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-55-neon-pink/768.avif",
+          "webp": "/catalog/generated/neon/neon-55-neon-pink/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-55-neon-pink/809.avif",
+          "webp": "/catalog/generated/neon/neon-55-neon-pink/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-55-neon-pink/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "71",
+      "slug": "neon-56-neon-magenta",
+      "category": "neon",
+      "number": 56,
+      "title": "Neon Magenta",
+      "alt": "Neon Magenta neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-56-neon-magenta/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-56-neon-magenta/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-56-neon-magenta/360.avif",
+          "webp": "/catalog/generated/neon/neon-56-neon-magenta/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-56-neon-magenta/520.avif",
+          "webp": "/catalog/generated/neon/neon-56-neon-magenta/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-56-neon-magenta/768.avif",
+          "webp": "/catalog/generated/neon/neon-56-neon-magenta/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-56-neon-magenta/809.avif",
+          "webp": "/catalog/generated/neon/neon-56-neon-magenta/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-56-neon-magenta/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "72",
+      "slug": "neon-57-neon-green",
+      "category": "neon",
+      "number": 57,
+      "title": "Neon Green",
+      "alt": "Neon Green neon epoxy color swatch",
+      "width": 809,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-57-neon-green/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-57-neon-green/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-57-neon-green/360.avif",
+          "webp": "/catalog/generated/neon/neon-57-neon-green/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 520,
+          "avif": "/catalog/generated/neon/neon-57-neon-green/520.avif",
+          "webp": "/catalog/generated/neon/neon-57-neon-green/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "avif": "/catalog/generated/neon/neon-57-neon-green/768.avif",
+          "webp": "/catalog/generated/neon/neon-57-neon-green/768.webp"
+        },
+        {
+          "width": 809,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-57-neon-green/809.avif",
+          "webp": "/catalog/generated/neon/neon-57-neon-green/809.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-57-neon-green/809.webp",
+        "width": 809,
+        "height": 809
+      }
+    },
+    {
+      "id": "73",
+      "slug": "neon-58-neon-blue",
+      "category": "neon",
+      "number": 58,
+      "title": "Neon Blue",
+      "alt": "Neon Blue neon epoxy color swatch",
+      "width": 808,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-58-neon-blue/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-58-neon-blue/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-58-neon-blue/360.avif",
+          "webp": "/catalog/generated/neon/neon-58-neon-blue/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/neon/neon-58-neon-blue/520.avif",
+          "webp": "/catalog/generated/neon/neon-58-neon-blue/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/neon/neon-58-neon-blue/768.avif",
+          "webp": "/catalog/generated/neon/neon-58-neon-blue/768.webp"
+        },
+        {
+          "width": 808,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-58-neon-blue/808.avif",
+          "webp": "/catalog/generated/neon/neon-58-neon-blue/808.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-58-neon-blue/808.webp",
+        "width": 808,
+        "height": 809
+      }
+    },
+    {
+      "id": "74",
+      "slug": "neon-59-neon-purple",
+      "category": "neon",
+      "number": 59,
+      "title": "Neon Purple",
+      "alt": "Neon Purple neon epoxy color swatch",
+      "width": 808,
+      "height": 809,
+      "thumbnail": {
+        "width": 340,
+        "height": 340,
+        "avif": "/catalog/generated/neon/neon-59-neon-purple/thumb-340.avif",
+        "webp": "/catalog/generated/neon/neon-59-neon-purple/thumb-340.webp"
+      },
+      "responsive": [
+        {
+          "width": 360,
+          "height": 360,
+          "avif": "/catalog/generated/neon/neon-59-neon-purple/360.avif",
+          "webp": "/catalog/generated/neon/neon-59-neon-purple/360.webp"
+        },
+        {
+          "width": 520,
+          "height": 521,
+          "avif": "/catalog/generated/neon/neon-59-neon-purple/520.avif",
+          "webp": "/catalog/generated/neon/neon-59-neon-purple/520.webp"
+        },
+        {
+          "width": 768,
+          "height": 769,
+          "avif": "/catalog/generated/neon/neon-59-neon-purple/768.avif",
+          "webp": "/catalog/generated/neon/neon-59-neon-purple/768.webp"
+        },
+        {
+          "width": 808,
+          "height": 809,
+          "avif": "/catalog/generated/neon/neon-59-neon-purple/808.avif",
+          "webp": "/catalog/generated/neon/neon-59-neon-purple/808.webp"
+        }
+      ],
+      "lightbox": {
+        "src": "/catalog/generated/neon/neon-59-neon-purple/808.webp",
+        "width": 808,
+        "height": 809
+      }
+    }
+  ]
+}
