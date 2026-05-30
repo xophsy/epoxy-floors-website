@@ -61,9 +61,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at top, rgba(255, 214, 91, 0.12), transparent 28%),
-    linear-gradient(180deg, #090909 0%, #101112 45%, #0f0f10 100%);
+  background: linear-gradient(180deg, #080808 0%, #0b0b0c 34%, #0d0d0e 68%, #0f0f10 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
@@ -174,8 +172,8 @@ textarea {
 
 .section-highlight {
   background: linear-gradient(180deg, rgba(3, 3, 3, 0.85), rgba(7, 7, 7, 0.95));
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .section-cta {
@@ -402,33 +400,46 @@ textarea {
 
 .gallery-page-header {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding-top: clamp(4.5rem, 8vw, 6.5rem);
   padding-bottom: clamp(2rem, 3.5vw, 3rem);
-  background: #0d0d0e;
+  background: transparent;
 }
 
 .gallery-page-header__glow {
   pointer-events: none;
   position: absolute;
-  border-radius: 999px;
-  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.82;
 }
 
 .gallery-page-header__glow--1 {
-  top: -10%;
-  right: -5%;
-  width: 55%;
-  aspect-ratio: 1;
-  background: radial-gradient(circle, rgba(255, 214, 91, 0.1) 0%, transparent 70%);
+  top: 6%;
+  right: -14%;
+  width: min(62vw, 52rem);
+  aspect-ratio: 1.2;
+  background: radial-gradient(
+    ellipse at 58% 42%,
+    rgba(255, 214, 91, 0.08) 0%,
+    rgba(255, 214, 91, 0.05) 30%,
+    rgba(255, 214, 91, 0.025) 54%,
+    rgba(255, 214, 91, 0.01) 70%,
+    transparent 84%
+  );
 }
 
 .gallery-page-header__glow--2 {
-  bottom: -20%;
-  left: -10%;
-  width: 45%;
-  aspect-ratio: 1;
-  background: radial-gradient(circle, rgba(255, 214, 91, 0.06) 0%, transparent 70%);
+  top: 50%;
+  left: -20%;
+  width: min(52vw, 44rem);
+  aspect-ratio: 1.05;
+  background: radial-gradient(
+    ellipse at 44% 52%,
+    rgba(255, 214, 91, 0.055) 0%,
+    rgba(255, 214, 91, 0.034) 30%,
+    rgba(255, 214, 91, 0.016) 56%,
+    transparent 80%
+  );
 }
 
 .gallery-page-header__layout {
@@ -620,7 +631,7 @@ textarea {
 
 .gallery-grid-shell {
   padding-bottom: clamp(4rem, 8vw, 6rem);
-  background: #0d0d0e;
+  background: transparent;
 }
 
 /* ── Masonry gallery ──────────────────────────────────── */
@@ -942,7 +953,7 @@ textarea {
 .reviews-carousel-section {
   position: relative;
   padding-block: var(--section-space);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .reviews-carousel__glow {
@@ -950,20 +961,32 @@ textarea {
   position: absolute;
   width: 50%;
   aspect-ratio: 1;
-  border-radius: 999px;
-  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.78;
 }
 
 .reviews-carousel__glow--left {
-  top: 20%;
-  left: -15%;
-  background: radial-gradient(circle, rgba(255, 214, 91, 0.05) 0%, transparent 70%);
+  top: 18%;
+  left: -18%;
+  background: radial-gradient(
+    ellipse at 50% 48%,
+    rgba(255, 214, 91, 0.045) 0%,
+    rgba(255, 214, 91, 0.026) 36%,
+    rgba(255, 214, 91, 0.01) 60%,
+    transparent 82%
+  );
 }
 
 .reviews-carousel__glow--right {
-  bottom: 0;
-  right: -15%;
-  background: radial-gradient(circle, rgba(255, 214, 91, 0.04) 0%, transparent 70%);
+  top: 44%;
+  right: -18%;
+  background: radial-gradient(
+    ellipse at 54% 48%,
+    rgba(255, 214, 91, 0.04) 0%,
+    rgba(255, 214, 91, 0.024) 34%,
+    rgba(255, 214, 91, 0.009) 58%,
+    transparent 80%
+  );
 }
 
 .reviews-carousel__header {
@@ -1549,8 +1572,8 @@ textarea.field-input {
   background:
     linear-gradient(180deg, rgba(3, 3, 3, 0.92), rgba(3, 3, 3, 0.72) 18%, rgba(3, 3, 3, 0.82)),
     #030303;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 0;
+  border-bottom: 0;
   padding-block: 0;
 }
 

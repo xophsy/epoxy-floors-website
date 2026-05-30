@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-04T23:51:30.407Z",
+  "generatedAt": "2026-05-28T11:25:11.440Z",
   "sourceDir": "public/gallery/source",
-  "sourceFingerprint": "[{\"name\":\"IMG_0804.JPEG\",\"size\":810677,\"mtimeMs\":1773732821043.6428},{\"name\":\"IMG_1587.jpg\",\"size\":909194,\"mtimeMs\":1773732821048.6436},{\"name\":\"IMG_3732.JPEG\",\"size\":977576,\"mtimeMs\":1773732821051.7593},{\"name\":\"IMG_3765.jpg\",\"size\":4037932,\"mtimeMs\":1773732821062.2712},{\"name\":\"IMG_3800.jpg\",\"size\":5357269,\"mtimeMs\":1773732821078.8748},{\"name\":\"IMG_4275.JPEG\",\"size\":793179,\"mtimeMs\":1773732821082.1375},{\"name\":\"IMG_4374.JPEG\",\"size\":1077967,\"mtimeMs\":1773732821085.1338},{\"name\":\"IMG_4388.jpg\",\"size\":9031907,\"mtimeMs\":1773732821118.7554},{\"name\":\"IMG_4393.JPEG\",\"size\":991654,\"mtimeMs\":1773732821123.7812},{\"name\":\"IMG_4398.jpg\",\"size\":5006787,\"mtimeMs\":1773732821138.1758},{\"name\":\"IMG_4400.jpg\",\"size\":4853282,\"mtimeMs\":1773732821150.6836},{\"name\":\"IMG_4402.jpg\",\"size\":4953198,\"mtimeMs\":1773732821164.4377},{\"name\":\"IMG_4404.JPEG\",\"size\":991851,\"mtimeMs\":1773732821172.9502},{\"name\":\"IMG_4560.JPEG\",\"size\":1289331,\"mtimeMs\":1773732821180.9521},{\"name\":\"IMG_5075.png\",\"size\":12131909,\"mtimeMs\":1773732821214.2285},{\"name\":\"IMG_5434.JPEG\",\"size\":546171,\"mtimeMs\":1773732821217.2283},{\"name\":\"IMG_5445.JPEG\",\"size\":935849,\"mtimeMs\":1773732821220.7363},{\"name\":\"IMG_5449.JPEG\",\"size\":795482,\"mtimeMs\":1773732821223.7444},{\"name\":\"IMG_5504.JPEG\",\"size\":1390730,\"mtimeMs\":1773732821234.1848},{\"name\":\"IMG_5855.JPEG\",\"size\":1957808,\"mtimeMs\":1773732821249.6958},{\"name\":\"IMG_5893.JPEG\",\"size\":1291161,\"mtimeMs\":1773732821252.7483},{\"name\":\"IMG_5908.JPEG\",\"size\":1975480,\"mtimeMs\":1773732821258.7476},{\"name\":\"IMG_6031.JPEG\",\"size\":1474754,\"mtimeMs\":1773732821264.2595},{\"name\":\"TeslaLogo.png\",\"size\":2262169,\"mtimeMs\":1773732821276.779}]",
+  "sourceFingerprint": "[{\"relativePath\":\"public/gallery/source/IMG_0804.JPEG\",\"name\":\"IMG_0804.JPEG\",\"size\":810677,\"sha256\":\"e408df8c16cad392d5e211976abbfaa2a10642dc211206bd00effa12d7df66a7\"},{\"relativePath\":\"public/gallery/source/IMG_1587.jpg\",\"name\":\"IMG_1587.jpg\",\"size\":909194,\"sha256\":\"fcff57197d0b4377e75b43d3deba444b9b0c1b4ab7c8d433692c9d552dca77d1\"},{\"relativePath\":\"public/gallery/source/IMG_3732.JPEG\",\"name\":\"IMG_3732.JPEG\",\"size\":977576,\"sha256\":\"501c81a000c2801c017f45111183a8c4f57679a04e2348e761658ac87e7dfc26\"},{\"relativePath\":\"public/gallery/source/IMG_3765.jpg\",\"name\":\"IMG_3765.jpg\",\"size\":4037932,\"sha256\":\"d8cf895842476d58c4fe3c1bf2671e864bca50d213f33830c94f5bff8b6ffd87\"},{\"relativePath\":\"public/gallery/source/IMG_3800.jpg\",\"name\":\"IMG_3800.jpg\",\"size\":5357269,\"sha256\":\"cce6c9ae903eab3672161032ffd6d70df46d53eda71d6047a9e19a86e1ee3918\"},{\"relativePath\":\"public/gallery/source/IMG_4275.JPEG\",\"name\":\"IMG_4275.JPEG\",\"size\":793179,\"sha256\":\"162262f71ddb0f50e0beae72f61853170e3bebf71ec3598b6a274c8075ea333d\"},{\"relativePath\":\"public/gallery/source/IMG_4374.JPEG\",\"name\":\"IMG_4374.JPEG\",\"size\":1077967,\"sha256\":\"bef9549f06df332a4d3c8f8feea11828dc07c68210a88b90a39bc81dc79933cc\"},{\"relativePath\":\"public/gallery/source/IMG_4388.jpg\",\"name\":\"IMG_4388.jpg\",\"size\":9031907,\"sha256\":\"157780c9d2a28382a95f6d2709569826b2f5dcecad5423539360cd10d13cde6e\"},{\"relativePath\":\"public/gallery/source/IMG_4393.JPEG\",\"name\":\"IMG_4393.JPEG\",\"size\":991654,\"sha256\":\"a4fa5912e5ca31a93a2f340fbb916c8af6726f8b09b149a2100e637489434783\"},{\"relativePath\":\"public/gallery/source/IMG_4398.jpg\",\"name\":\"IMG_4398.jpg\",\"size\":5006787,\"sha256\":\"22201f968cc117b9aab3d458b88576382f402aa32166d46e6002a3dfeb35a463\"},{\"relativePath\":\"public/gallery/source/IMG_4400.jpg\",\"name\":\"IMG_4400.jpg\",\"size\":4853282,\"sha256\":\"b784a2f7d9cab1bf212a049b123a58d143ea006f42e3e056eeb553a09e2bc3ea\"},{\"relativePath\":\"public/gallery/source/IMG_4560.JPEG\",\"name\":\"IMG_4560.JPEG\",\"size\":1289331,\"sha256\":\"5dd408cb71ebdfb789efd76f89d93461579c9c4a68e5b1eb2ca6c76804780684\"},{\"relativePath\":\"public/gallery/source/IMG_5075.png\",\"name\":\"IMG_5075.png\",\"size\":12131909,\"sha256\":\"421198b560126608045a1429cee2244f7d476b59a5cdac2fc0af1236b9f2f691\"},{\"relativePath\":\"public/gallery/source/IMG_5434.JPEG\",\"name\":\"IMG_5434.JPEG\",\"size\":546171,\"sha256\":\"664ddb8400ce30cf5c5c3977fc0bfe6943336f0cf0c2d757bf4e9bd868d0f6fc\"},{\"relativePath\":\"public/gallery/source/IMG_5445.JPEG\",\"name\":\"IMG_5445.JPEG\",\"size\":935849,\"sha256\":\"57ac87391dfbbc74e070e5049de010925b0dab1b8dbbdfbaa1fd42d0188e93ad\"},{\"relativePath\":\"public/gallery/source/IMG_5449.JPEG\",\"name\":\"IMG_5449.JPEG\",\"size\":795482,\"sha256\":\"e65dca48aaba2428036c0365ed482be261c06ba1184c11ec4c0d69e43b55b0f5\"},{\"relativePath\":\"public/gallery/source/IMG_5504.JPEG\",\"name\":\"IMG_5504.JPEG\",\"size\":1390730,\"sha256\":\"6753d8f6a29dd7b06dc00ecd8da89ca94f102307235f09f952a45ccafa8621e9\"},{\"relativePath\":\"public/gallery/source/IMG_5855.JPEG\",\"name\":\"IMG_5855.JPEG\",\"size\":1957808,\"sha256\":\"b0266fb75afc7023689fd58dc25be9e26ec8f490d5236c767abc071f3b55d2ce\"},{\"relativePath\":\"public/gallery/source/IMG_5893.JPEG\",\"name\":\"IMG_5893.JPEG\",\"size\":1291161,\"sha256\":\"008ac64b731dd34bca9870fa5757718f85a3c8263c3c76c8d5b5703b34842ed9\"},{\"relativePath\":\"public/gallery/source/IMG_5908.JPEG\",\"name\":\"IMG_5908.JPEG\",\"size\":1975480,\"sha256\":\"4b3f979a67f7895c087f2b71d756cd7e3395767e4cbd14207c5d54b668da9439\"},{\"relativePath\":\"public/gallery/source/IMG_6031.JPEG\",\"name\":\"IMG_6031.JPEG\",\"size\":1474754,\"sha256\":\"4ceeb45a738cb8127e093c03e62cf421d3bd7d9ab5d6acf613931e37ceb30ba4\"},{\"relativePath\":\"public/gallery/source/TeslaLogo.png\",\"name\":\"TeslaLogo.png\",\"size\":2262169,\"sha256\":\"9c95ada118fcc9b74213ab99f63e71a9657e7bf202339197dfbcfff1a3ed380f\"}]",
   "images": [
     {
       "id": "1",
@@ -571,7 +571,7 @@
       }
     },
     {
-      "id": "14",
+      "id": "12",
       "slug": "img-4560",
       "title": "IMG 4560",
       "alt": "IMG 4560",
@@ -622,7 +622,7 @@
       }
     },
     {
-      "id": "15",
+      "id": "13",
       "slug": "img-5075",
       "title": "IMG 5075",
       "alt": "IMG 5075",
@@ -679,7 +679,7 @@
       }
     },
     {
-      "id": "16",
+      "id": "14",
       "slug": "img-5434",
       "title": "IMG 5434",
       "alt": "IMG 5434",
@@ -730,7 +730,7 @@
       }
     },
     {
-      "id": "17",
+      "id": "15",
       "slug": "img-5445",
       "title": "IMG 5445",
       "alt": "IMG 5445",
@@ -781,7 +781,7 @@
       }
     },
     {
-      "id": "18",
+      "id": "16",
       "slug": "img-5449",
       "title": "IMG 5449",
       "alt": "IMG 5449",
@@ -832,7 +832,7 @@
       }
     },
     {
-      "id": "19",
+      "id": "17",
       "slug": "img-5504",
       "title": "IMG 5504",
       "alt": "IMG 5504",
@@ -883,7 +883,7 @@
       }
     },
     {
-      "id": "20",
+      "id": "18",
       "slug": "img-5855",
       "title": "IMG 5855",
       "alt": "IMG 5855",
@@ -934,7 +934,7 @@
       }
     },
     {
-      "id": "21",
+      "id": "19",
       "slug": "img-5893",
       "title": "IMG 5893",
       "alt": "IMG 5893",
@@ -985,7 +985,7 @@
       }
     },
     {
-      "id": "22",
+      "id": "20",
       "slug": "img-5908",
       "title": "IMG 5908",
       "alt": "IMG 5908",
@@ -1042,7 +1042,7 @@
       }
     },
     {
-      "id": "23",
+      "id": "21",
       "slug": "img-6031",
       "title": "IMG 6031",
       "alt": "IMG 6031",
@@ -1093,7 +1093,7 @@
       }
     },
     {
-      "id": "24",
+      "id": "22",
       "slug": "teslalogo",
       "title": "TeslaLogo",
       "alt": "TeslaLogo",

@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 const root = process.cwd();
@@ -11,6 +12,8 @@ const supportedExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif", 
 const extensionPriority = [".jpg", ".jpeg", ".png", ".webp", ".avif", ".heic", ".heif"];
 const widths = [360, 520, 768, 1080];
 const thumbWidth = 340;
+const args = new Set(process.argv.slice(2));
+const verifyMode = args.has("--verify");
 
 function toPosix(value) {
   return value.split(path.sep).join("/");
@@ -66,6 +69,11 @@ async function readJson(targetPath) {
   }
 }
 
+async function hashFile(filePath) {
+  const bytes = await fs.readFile(filePath);
+  return createHash("sha256").update(bytes).digest("hex");
+}
+
 function chooseFiles(entries) {
   const grouped = new Map();
 
@@ -116,11 +124,13 @@ async function getSourceFingerprint(files) {
   const stats = await Promise.all(
     files.map(async (file) => {
       const fileStat = await fs.stat(file.inputPath);
+      const contentHash = await hashFile(file.inputPath);
       return {
         category: file.category,
         name: file.name,
+        relativePath: toPosix(path.relative(root, file.inputPath)),
         size: fileStat.size,
-        mtimeMs: fileStat.mtimeMs,
+        sha256: contentHash,
       };
     }),
   );
@@ -128,7 +138,46 @@ async function getSourceFingerprint(files) {
   return JSON.stringify(stats);
 }
 
-async function canReuseExistingBuild(files, sourceFingerprint) {
+function generatedPathToAbsolute(webPath) {
+  if (!webPath?.startsWith("/")) return null;
+  return path.join(root, "public", webPath.slice(1));
+}
+
+async function hasAllGeneratedAssets(images) {
+  const generatedFiles = new Set();
+
+  for (const image of images) {
+    const paths = [
+      image?.thumbnail?.avif,
+      image?.thumbnail?.webp,
+      ...(Array.isArray(image?.responsive)
+        ? image.responsive.flatMap((item) => [item?.avif, item?.webp])
+        : []),
+      image?.lightbox?.src,
+    ];
+
+    for (const webPath of paths) {
+      const absolutePath = generatedPathToAbsolute(webPath);
+      if (!absolutePath) continue;
+      generatedFiles.add(absolutePath);
+    }
+  }
+
+  const checks = await Promise.all(
+    Array.from(generatedFiles).map(async (absolutePath) => {
+      try {
+        await fs.access(absolutePath);
+        return true;
+      } catch {
+        return false;
+      }
+    }),
+  );
+
+  return checks.every(Boolean);
+}
+
+async function canReuseExistingBuild(files, sourceFingerprint, options = { verifyAssets: false }) {
   const [existingManifest, outputDirExists] = await Promise.all([
     readJson(manifestPath),
     pathExists(outputDir),
@@ -142,15 +191,15 @@ async function canReuseExistingBuild(files, sourceFingerprint) {
     return false;
   }
 
-  if (existingManifest.sourceFingerprint === sourceFingerprint) {
-    return true;
+  if (existingManifest.sourceFingerprint !== sourceFingerprint) {
+    return false;
   }
 
-  const manifestStat = await fs.stat(manifestPath);
-  const sourceStats = await Promise.all(files.map((file) => fs.stat(file.inputPath)));
-  const latestSourceMtimeMs = Math.max(0, ...sourceStats.map((stat) => stat.mtimeMs));
+  if (options.verifyAssets) {
+    return hasAllGeneratedAssets(existingManifest.images);
+  }
 
-  return latestSourceMtimeMs <= manifestStat.mtimeMs;
+  return true;
 }
 
 async function canReuseCheckedInBuildWithoutSourceFiles() {
@@ -222,7 +271,19 @@ async function main() {
   }
 
   const sourceFingerprint = await getSourceFingerprint(files);
-  if (await canReuseExistingBuild(files, sourceFingerprint)) {
+  const upToDate = await canReuseExistingBuild(files, sourceFingerprint, { verifyAssets: verifyMode });
+
+  if (verifyMode) {
+    if (!upToDate) {
+      throw new Error(
+        "Catalog generated assets are stale. Run `npm run catalog:build` and commit updated `public/catalog/generated` + `data/catalog-manifest.json`.",
+      );
+    }
+    console.log(`Catalog assets verified (${files.length} source image${files.length === 1 ? "" : "s"}).`);
+    return;
+  }
+
+  if (upToDate) {
     console.log(`Catalog assets are up to date (${files.length} source image${files.length === 1 ? "" : "s"}).`);
     return;
   }

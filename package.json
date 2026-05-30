@@ -7,8 +7,12 @@
     "dev": "next dev",
     "catalog:sync": "node ./scripts/sync-catalog.mjs",
     "catalog:build": "node ./scripts/generate-catalog.mjs",
+    "catalog:verify": "node ./scripts/generate-catalog.mjs --verify",
+    "catalog:pilot:chatgpt": "node ./scripts/chatgpt-catalog-pilot.mjs",
+    "catalog:pilot:chatgpt:preflight": "node ./scripts/chatgpt-catalog-pilot.mjs --preflight",
     "gallery:build": "node ./scripts/generate-gallery.mjs",
-    "prebuild": "npm run gallery:build && npm run catalog:build",
+    "gallery:verify": "node ./scripts/generate-gallery.mjs --verify",
+    "prebuild": "node ./scripts/prebuild-assets.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

@@ -2,6 +2,14 @@
 setlocal
 
 set "PROJECT_ROOT=%~dp0"
+echo Using PROJECT_ROOT: %PROJECT_ROOT%
+
+if not exist "%PROJECT_ROOT%app\catalog\page.tsx" (
+    echo ERROR: Catalog page not found in PROJECT_ROOT.
+    echo Expected: %PROJECT_ROOT%app\catalog\page.tsx
+    exit /b 1
+)
+
 pushd "%PROJECT_ROOT%" >nul
 
 if not exist "node_modules\" (
